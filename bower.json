@@ -1,0 +1,12 @@
+{
+  "name": "portfolio",
+  "version": "0.0.0",
+  "build": "0",
+  "description": "Ekin's Portfolio Website",
+  "author": "Sinem Semsioglu",
+  "license": "Private",
+  "dependencies": {
+    "angular": "~1.4.0",
+    "angular-ui-router": "0.2.15"
+  }
+}
