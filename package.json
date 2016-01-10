@@ -1,0 +1,17 @@
+{
+  "name": "portfolio",
+  "version": "0.0.0",
+  "build": "0",
+  "description": "Ekin's Portfolio Website",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sinem Semsioglu",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.1.1",
+    "gulp-less": "^3.0.5",
+    "gulp-zip": "^3.0.2"
+  },
+  "devDependencies": {}
+}
