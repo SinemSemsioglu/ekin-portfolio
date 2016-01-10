@@ -13,5 +13,8 @@
     "gulp-less": "^3.0.5",
     "gulp-zip": "^3.0.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "browser-sync": "^2.11.0",
+    "gulp-webserver": "^0.9.1"
+  }
 }
