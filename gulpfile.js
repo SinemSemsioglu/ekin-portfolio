@@ -10,8 +10,8 @@ var gulp = require("gulp"),
 gulp.task("default", ["watch"]);
 
 var pathList = ["bower_components/angular/angular.js", "bower_components/angular-route/angular-route.js",
-    "bower_components/angular-ui-router/release/angular-ui-router.min.js", "src/app.js",
-    "src/js/**"];
+    "bower_components/angular-ui-router/release/angular-ui-router.min.js", "src/core/app.js",
+    "src/**/**.js"];
 
 gulp.task("browser-sync", function () {
 
@@ -25,16 +25,16 @@ gulp.task("browser-sync", function () {
 });
 
 gulp.task("less", function () {
-    return gulp.src("src/style/events.less")
+    return gulp.src("src/portfolio.less")
         .pipe(less({
             "paths": [path.join(__dirname, "less", "includes")]
         }))
-        .pipe(concat("events.css"))
+        .pipe(concat("portfolio.css"))
         .pipe(gulp.dest("dist/style/"));
 });
 
 gulp.task("eslint", function () {
-    return gulp.src("src/js/**")
+    return gulp.src("src/**/**.js")
         .pipe(eslint())
         .pipe(eslint.format())
         .pipe(eslint.failOnError());
@@ -54,7 +54,7 @@ gulp.task("webserver", function () {
 
 gulp.task("scripts", function () {
     return gulp.src(pathList)
-        .pipe(concat("ekin.js"))
+        .pipe(concat("portfolio.js"))
         .pipe(gulp.dest("dist/"));
 });
 
@@ -64,7 +64,7 @@ gulp.task("copyAssets", function () {
 });
 
 gulp.task("copyTemplates", function () {
-    return gulp.src("src/templates/**")
+    return gulp.src("src/**/**.html")
         .pipe(gulp.dest("dist/templates/"));
 });
 
@@ -78,7 +78,7 @@ gulp.task("build", ["less", "copyAssets", "copyTemplates", "scripts", "copyIndex
 gulp.task("watch", function () {
     gulp.watch("/src/style/**", ["less"]);
     gulp.watch(pathList,["scripts"]);
-    gulp.watch("/src/**").on("change", browserSync.reload);
+    gulp.watch("/src/**").on("change", "build");
 });
 
 gulp.task("dev-live", ["eslint", "build", "browser-sync", "watch"]);

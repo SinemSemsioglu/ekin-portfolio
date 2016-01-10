@@ -1,0 +1,44 @@
+@side-nav-height: 138px;
+@side-nav-width: 34px;
+@button-diameter: 10px;
+@wrapper-diameter: 12px;
+@side-nav-border-radius: 15px;
+
+.side-nav-container {
+  height: @side-nav-height;
+  width: @side-nav-width;
+  display: flex;
+  flex-direction: column;
+
+  position: fixed;
+  right: 35px;
+  top: 50%;
+
+  background-color: white;
+  border-radius: @side-nav-border-radius;
+
+  align-items: center;
+  justify-content: space-around;
+
+  padding: 10px 0;
+
+  .nav-button-wrapper {
+    .circle(@wrapper-diameter);
+    margin: 5px;
+    background-color: transparent;
+
+    &.selected {
+      background-color: grey;
+    }
+
+    .nav-button {
+      .circle(@button-diameter);
+      background-color: grey;
+      margin: auto;
+
+      &.selected {
+        background-color: transparent;
+      }
+    }
+  }
+}

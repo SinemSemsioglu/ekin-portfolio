@@ -5,7 +5,7 @@
   "description": "Ekin's Portfolio Website",
   "engines": {
     "node": "5.1.0"
-  }
+  },
   "scripts": {
     "start": "gulp webserver",
     "postinstall": "gulp build"

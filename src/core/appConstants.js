@@ -1,0 +1,1 @@
+app.constant("numberOfSections", 5);

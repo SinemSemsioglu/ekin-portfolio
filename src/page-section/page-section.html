@@ -1,0 +1,16 @@
+<div class="section-container" id="{{section.class}}">
+    <div class="content-container">
+        <div class="section-date"
+             ng-bind="section.date"></div>
+        <div class="section-title"
+             ng-bind="section.title"></div>
+        <div class="section-description"
+             ng-bind="section.description"></div>
+        <div class="section-link"
+             ng-bind="section.link"></div>
+    </div>
+    <div class="image-container">
+        <img class="section-image"
+             ng-src="{{section.image_path}}"/>
+    </div>
+</div>
