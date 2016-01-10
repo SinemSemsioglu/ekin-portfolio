@@ -9,6 +9,7 @@
   },
   "author": "Sinem Semsioglu",
   "dependencies": {
+    "bower": "1.5.3",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
     "gulp-eslint": "^1.1.1",
