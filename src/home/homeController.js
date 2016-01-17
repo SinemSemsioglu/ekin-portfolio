@@ -7,7 +7,7 @@ app.controller("homeController", [
         this.regularSections = [];
         this.scrolling = false;
 
-        /* scroll event stuff
+        /* scroll event stuff */
         var document = $($window);
 
         document.bind("scroll", function() {
@@ -24,7 +24,7 @@ app.controller("homeController", [
             }, 2000)
 
         });
-*/
+
         for (var index = 1; index <= numberOfSections; index++) {
             var section = sectionData["section_" + (index)];
 
