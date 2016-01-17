@@ -8,7 +8,8 @@ app.value("sectionData", {
         "class": "section-1",
         "color": {
             "background": "white",
-            "font": "black"
+            "font": "black",
+            "nav": "black"
         }
     },
     "section_2": {
@@ -21,7 +22,8 @@ app.value("sectionData", {
         "class": "section-2",
         "color": {
             "background": "#ff595c",
-            "font": "white"
+            "font": "white",
+            "nav": "white"
         }
     },
     "section_3": {
@@ -38,7 +40,8 @@ app.value("sectionData", {
         "class": "section-3",
         "color": {
             "background": "white",
-            "font": "black"
+            "font": "black",
+            "nav": "black"
         }
     },
     "section_4": {
@@ -50,7 +53,8 @@ app.value("sectionData", {
         "type": "regular",
         "color": {
             "background": "#00adf2",
-            "font": "white"
+            "font": "white",
+            "nav": "white"
         }
     },
     "section_5": {
@@ -63,7 +67,8 @@ app.value("sectionData", {
         "class": "section-5",
         "color": {
             "background": "#c3c2c0",
-            "font": "black"
+            "font": "black",
+            "nav": "black"
         }
     },
     "section_6": {
@@ -72,7 +77,8 @@ app.value("sectionData", {
         "class": "section-6",
         "color": {
             "background": "white",
-            "font": "black"
+            "font": "black",
+            "nav": "black"
         }
     },
     "section_7": {
@@ -85,7 +91,8 @@ app.value("sectionData", {
         "class": "section-7",
         "color": {
             "background": "#ffde17",
-            "font": "black"
+            "font": "black",
+            "nav": "black"
         }
     },
     "section_8": {
@@ -100,7 +107,8 @@ app.value("sectionData", {
         "class": "section-8",
         "color": {
             "background": "black",
-            "font": "white"
+            "font": "white",
+            "nav": "white"
         }
     },
     "section_9": {
@@ -113,7 +121,8 @@ app.value("sectionData", {
         "class": "section-9",
         "color": {
             "background": "black",
-            "font": "white"
+            "font": "white",
+            "nav": "white"
         }
     },
     "section_10": {
@@ -126,7 +135,8 @@ app.value("sectionData", {
         "class": "section-10",
         "color": {
             "background": "white",
-            "font": "black"
+            "font": "black",
+            "nav": "black"
         }
     },
     "section_11": {
@@ -139,7 +149,8 @@ app.value("sectionData", {
         "class": "section-11",
         "color": {
             "background": "white",
-            "font": "black"
+            "font": "black",
+            "nav": "black"
         }
     },
     "section_12": {
@@ -152,7 +163,8 @@ app.value("sectionData", {
         "class": "section-12",
         "color": {
             "background": "#00aeef",
-            "font": "black"
+            "font": "black",
+            "nav": "black"
         }
     }
 });

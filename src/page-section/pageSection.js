@@ -10,6 +10,10 @@ app.directive("pageSection",
             link: function (scope, element) {
                 element.css("background-color", scope.section.color.background);
                 element.css("color", scope.section.color.font);
+
+
+
+                /*
                 var elementVerticalOffset = $(element).offset().top;
                 var windowVerticalOffset = appUtil.getWindowVerticalOffset();
                 var screenHeight = appUtil.getScreenHeight();
@@ -29,7 +33,7 @@ app.directive("pageSection",
                 } else {
                     element.removeClass("selected");
                     navElement.removeClass("selected");
-                }
+                }*/
             },
             templateUrl: "templates/page-section/page-section.html"
         };
