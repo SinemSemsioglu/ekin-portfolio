@@ -1,8 +1,19 @@
-<div class="section-wrapper">
-    <descriptive-section section="home.headSection"></descriptive-section>
+<div class="home-container">
+    <div class="section-wrapper">
+        <descriptive-section section="home.headSection"></descriptive-section>
+    </div>
+    <div class="section-wrapper"
+         ng-repeat="homeSection in ::home.regularSections">
+        <page-section section="homeSection"></page-section>
+    </div>
+    <div class="navigation">
+        <div class="logo nav-item">
+        </div>
+        <div class="page-nav nav-item">
+            <side-nav></side-nav>
+        </div>
+        <div class="blog nav-item">
+            BLOG
+        </div>
+    </div>
 </div>
-<div class="section-wrapper"
-     ng-repeat="homeSection in ::home.regularSections">
-    <page-section section="homeSection"></page-section>
-</div>
-<side-nav></side-nav>

@@ -10,7 +10,8 @@ var gulp = require("gulp"),
 gulp.task("default", ["watch"]);
 
 var pathList = ["bower_components/angular/angular.js", "bower_components/angular-route/angular-route.js",
-    "bower_components/angular-ui-router/release/angular-ui-router.min.js", "src/core/app.js",
+    "bower_components/angular-ui-router/release/angular-ui-router.min.js",
+    "bower_components/jquery/dist/jquery.js", "src/core/app.js",
     "src/**/**.js"];
 
 gulp.task("browser-sync", function () {
@@ -59,7 +60,7 @@ gulp.task("scripts", function () {
 });
 
 gulp.task("copyAssets", function () {
-    return gulp.src("src/assets/**")
+    return gulp.src("assets/**")
         .pipe(gulp.dest("dist/assets/"));
 });
 
@@ -76,7 +77,7 @@ gulp.task("copyIndex", function () {
 gulp.task("build", ["less", "copyAssets", "copyTemplates", "scripts", "copyIndex"]);
 
 gulp.task("watch", function () {
-    gulp.watch("/src/style/**", ["less"]);
+    gulp.watch("/src/**.less", ["less"]);
     gulp.watch(pathList,["scripts"]);
     gulp.watch("/src/**").on("change", "build");
 });

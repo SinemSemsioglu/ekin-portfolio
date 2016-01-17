@@ -1,6 +1,6 @@
-@image-section-width: 35%;
-@content-section-width: 50%;
-@content-section-height: 50%;
+@image-section-width: 30vw;
+@content-section-width: 60vw;
+@content-section-height: 50vh;
 
 .section-container {
   height: 100%;
@@ -15,21 +15,33 @@
     flex-direction: column;
     width: @content-section-width;
     height: @content-section-height;
-    padding: 25vh 0 0 10vw;
+    //padding: 25vh 0 0 10vw;
 
     .section-title {
       font-size: @font-size-1;
+      font-weight: @extra-bold-font-weight;
     }
 
     .section-description {
       font-size: @font-size-3;
+      font-weight: @light-font-weight;
     }
 
-    .section-date, .section-link {
+
+    .section-date, .section-link, .section-more {
       font-size: @font-size-4;
+      font-weight: @bold-font-weight;
     }
 
-    .section-title, .section-description, .section-date, .section-link {
+    .section-links {
+      display: flex;
+
+      .section-more {
+        margin-right: 30px;
+      }
+    }
+
+    .section-title, .section-description, .section-date, .section-links {
       padding: 20px 0;
     }
   }

@@ -3,11 +3,14 @@ app.controller("sideNavController",
         function (numberOfSections, arrayUtil, $window, $anchorScroll, $location) {
             this.numberOfSections = arrayUtil.getNumberArray(numberOfSections);
 
-            var screenHeight = $window.innerHeight;
-
             this.goToSection = function (sectionIndex) {
-                var elementId = "section-"+sectionIndex;
-                $location.hash(elementId);
+                var sectionId = "section-" + sectionIndex;
+                var buttonClasses = "." + sectionId + ".nav-button-wrapper";
+
+                var navElement = $(document).find(buttonClasses);
+                navElement.addClass("selected");
+
+                $location.hash(sectionId);
                 $anchorScroll();
                 $location.hash("");
             };

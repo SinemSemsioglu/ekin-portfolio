@@ -1,6 +1,6 @@
 app.directive("pageSection",
-    ["$window",
-        function ($window) {
+    ["$window", "appUtil",
+        function ($window, appUtil) {
         return {
             replace: true,
             restrict: "E",
@@ -8,13 +8,28 @@ app.directive("pageSection",
                 section: "="
             },
             link: function (scope, element) {
-                /*elementVerticalOffset = scope.section.;
-                windowVerticalOffset = $window.pageYOffset;
-                windowHeight = $window.innerHeight;
+                element.css("background-color", scope.section.color.background);
+                element.css("color", scope.section.color.font);
+                var elementVerticalOffset = $(element).offset().top;
+                var windowVerticalOffset = appUtil.getWindowVerticalOffset();
+                var screenHeight = appUtil.getScreenHeight();
 
-                if (elementVerticalOffset - windowVerticalOffet >= 0){
+
+                var buttonClasses = "." + scope.section.class + ".nav-button-wrapper";
+                var navElement = $(document).find(buttonClasses);
+
+                var diff = elementVerticalOffset - windowVerticalOffset;
+
+                //console.log(scope.section.class + ": element" + elementVerticalOffset + ", window" + windowVerticalOffset );
+                //console.log(scope.section.class + ": " + diff);
+
+                if (diff >= 0 && diff <= screenHeight / 2){
                     element.addClass("selected");
-                }*/
+                    navElement.addClass("selected");
+                } else {
+                    element.removeClass("selected");
+                    navElement.removeClass("selected");
+                }
             },
             templateUrl: "templates/page-section/page-section.html"
         };

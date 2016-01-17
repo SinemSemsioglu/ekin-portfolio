@@ -1,8 +1,23 @@
 @section-height: 100vh;
 @section-width: 100%;
+@nav-width: 60%;
 
-.section-wrapper {
-  height: @section-height;
-  width: @section-width;
-  margin: 90pt 0 30px;
+.home-container {
+  font-family: din;
+
+  .section-wrapper {
+    height: @section-height;
+    width: @section-width;
+
+    .section-container {
+      padding: 90pt @medium-screen-side;
+    }
+  }
+
+  .navigation {
+    position: fixed;
+    left: @medium-screen-side;
+    top: 10px;
+    width: @nav-width;
+  }
 }

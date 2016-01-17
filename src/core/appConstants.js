@@ -1,1 +1,1 @@
-app.constant("numberOfSections", 5);
+app.constant("numberOfSections", 12);

@@ -1,9 +1,9 @@
 <div class="side-nav-container">
-    <div class="nav-button-wrapper"
-         ng-repeat="buttonId in ::sideNav.numberOfSections"
-         ng-class="">
+    <div class="nav-button-wrapper {{home.regularSections[buttonId-1].class}}"
+         ng-repeat="buttonId in ::sideNav.numberOfSections">
         <div class="nav-button"
-             ng-click="sideNav.goToSection(buttonId)">
+             ng-click="sideNav.goToSection(buttonId)"
+             ng-bind="buttonId">
         </div>
     </div>
 </div>

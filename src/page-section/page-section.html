@@ -6,8 +6,14 @@
              ng-bind="section.title"></div>
         <div class="section-description"
              ng-bind="section.description"></div>
-        <div class="section-link"
-             ng-bind="section.link"></div>
+        <div class ="section-links">
+            <div class="section-more">
+                LEARN MORE
+            </div>
+            <div class="section-link"
+                 ng-if="section.link"
+                 ng-bind="section.link"></div>
+        </div>
     </div>
     <div class="image-container">
         <img class="section-image"
