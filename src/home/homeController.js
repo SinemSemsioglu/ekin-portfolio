@@ -14,31 +14,31 @@ app.controller("homeController", [
         var navBar = scrollUtil.getNavBarElement();
 
         window.bind("scroll", function() {
-
             if(!scrollStarted) {
                 window.trigger("scrollstart");
             }
             scrollStarted = true;
-
         });
 
         window.bind("scrollstart", function () {
-            navBar.css("opacity", 0);
-            navBar.animate({
-                "opacity": 1
-            }, 2000);
+            self.scrolling = true;
+            $scope.$apply();
 
             $timeout( function () {
                 window.trigger("scrollstop");
-            }, 2000)
+            }, 1000);
         });
 
         window.bind("scrollstop", function () {
-            self.scrolling = false;
-            $scope.$apply();
-
             scrollUtil.decideWhereToGo();
-            scrollStarted = false;
+
+
+            $timeout( function () {
+                scrollStarted = false;
+                self.scrolling = false;
+                $scope.$apply();
+            }, 1500);
+
         });
 
         for (var index = 1; index <= numberOfSections; index++) {

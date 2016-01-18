@@ -1,5 +1,5 @@
-app.service("scrollUtil", ["$window", "appUtil", "sectionData",
-    function ($window, appUtil, sectionData) {
+app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout",
+    function ($window, appUtil, sectionData, $timeout) {
 
         var self = this;
 
@@ -16,19 +16,29 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData",
 
             var targetOffset = self.getElementOffsetTop(sectionElement);
 
+            $('html,body').animate({
+                scrollTop: targetOffset
+            }, 1000);
+
+            $timeout(function () {
+                self.navBarElementOnTransition(sectionId);
+            }, 1500);
+        };
+
+        this.navBarElementOnTransition = function (sectionId) {
             var sectionName = "section_" + sectionId;
             var navColor = sectionData[sectionName].color.nav;
 
             var navbarElement = self.getNavBarElement();
             var logoElement = $(navbarElement.find(".logo"));
-            console.log(JSON.stringify(logoElement));
 
+            navbarElement.css("opacity", 0);
             navbarElement.css("color", navColor);
             logoElement.css("background-image", "url(\"/assets/images/logo-" + navColor + ".svg\")");
 
-            $('html,body').animate({
-                scrollTop: targetOffset
-            }, 1000);
+            navbarElement.animate({
+                "opacity": 1
+            }, 800);
         };
 
         this.decideWhereToGo = function () {
