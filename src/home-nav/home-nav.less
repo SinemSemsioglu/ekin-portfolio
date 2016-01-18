@@ -6,7 +6,7 @@
 @wrapper-z-index: 0;
 @button-z-index: 1;
 
-.side-nav-container {
+.home-nav-container {
   display: flex;
   flex-direction: row;
 
@@ -16,23 +16,17 @@
   padding: 10px 0;
 
   .nav-button-wrapper {
-    //.circle(@wrapper-diameter);
     margin: 5px;
-    //background-color: transparent;
     z-index: @wrapper-z-index;
 
     .nav-button {
-   //   .circle(@button-diameter);
-   //   background-color: grey;
       margin: auto;
       z-index: @button-z-index;
     }
 
     &.selected {
-    //  background-color: grey;
-      text-decoration: underline;
       .nav-button {
-        //background-color: white;
+        text-decoration: underline;
       }
     }
   }

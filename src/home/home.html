@@ -1,18 +1,17 @@
 <div class="home-container">
-    {{home.scrolling}}
     <div class="section-wrapper">
         <descriptive-section section="home.headSection"></descriptive-section>
     </div>
     <div class="section-wrapper"
          ng-repeat="homeSection in ::home.regularSections">
-        <page-section section="homeSection"></page-section>
+        <regular-section section="homeSection"></regular-section>
     </div>
 
     <div class="navigation" ng-hide="home.scrolling">
         <div class="logo nav-item">
         </div>
         <div class="page-nav nav-item">
-            <side-nav></side-nav>
+            <home-nav></home-nav>
         </div>
         <div class="blog nav-item">
             BLOG
