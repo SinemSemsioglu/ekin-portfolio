@@ -7,7 +7,7 @@ app.value("sectionData", {
         "ever since, securing mentorship...",
         "date": "NOV 2015",
         "link": "GO TO SITE",
-        "image_path": "",
+        "image_path": "../assets/images/o-01.svg",
         "type": "regular",
         "class": "section-1",
         "color": {
@@ -25,7 +25,7 @@ app.value("sectionData", {
         "that Spotify users might appreciate.",
         "date": "NOV 2015",
         "link": "GO TO SITE",
-        "image_path": "",
+        "image_path": "../assets/images/d.svg",
         "type": "regular",
         "class": "section-2",
         "color": {
@@ -42,7 +42,7 @@ app.value("sectionData", {
         "miss out on great events by reputable sources of Art and Design.",
         "date": "JUN 2015",
         "link": "GO TO SITE",
-        "image_path": "",
+        "image_path": "../assets/images/c-01.svg",
         "type": "regular",
         "class": "section-3",
         "color": {
@@ -60,7 +60,7 @@ app.value("sectionData", {
         "Slack tag along!",
         "date": "SEP 2015",
         "link": "GO TO SITE",
-        "image_path": "",
+        "image_path": "../assets/images/kp-01.svg",
         "type": "regular",
         "class": "section-4",
         "color": {
@@ -78,7 +78,7 @@ app.value("sectionData", {
         "early 2016.",
         "date": "SEP 2015",
         "link": "GO TO SITE",
-        "image_path": "",
+        "image_path": "../assets/images/of.png",
         "type": "regular",
         "class": "section-5",
         "color": {
@@ -95,7 +95,7 @@ app.value("sectionData", {
         "ever since, securing mentorship...",
         "date": "SEP 2015",
         "link": "GO TO SITE",
-        "image_path": "",
+        "image_path": "../assets/images/b1.jpg",
         "type": "regular",
         "class": "section-6",
         "color": {
@@ -112,7 +112,7 @@ app.value("sectionData", {
         "ever since, securing mentorship...",
         "date": "NOV 2015",
         "link": "GO TO SITE",
-        "image_path": "",
+        "image_path": "../assets/images/watch-01.png",
         "type": "regular",
         "class": "section-7",
         "color": {
@@ -129,7 +129,7 @@ app.value("sectionData", {
         "ever since, securing mentorship...",
         "date": "NOV 2015",
         "link": "GO TO SITE",
-        "image_path": "",
+        "image_path": "../assets/images/quant.jpg",
         "type": "regular",
         "class": "section-8",
         "color": {
@@ -146,7 +146,7 @@ app.value("sectionData", {
         "ever since, securing mentorship...",
         "date": "NOV 2015",
         "link": "GO TO SITE",
-        "image_path": "",
+        "image_path": "../assets/images/pseud.jpg",
         "type": "regular",
         "class": "section-9",
         "color": {
@@ -163,7 +163,7 @@ app.value("sectionData", {
         "ever since, securing mentorship...",
         "date": "NOV 2015",
         "link": "GO TO SITE",
-        "image_path": "",
+        "image_path": "../assets/images/logos-01.svg",
         "type": "regular",
         "class": "section-10",
         "color": {
@@ -197,7 +197,7 @@ app.value("sectionData", {
         "ever since, securing mentorship...",
         "date": "NOV 2015",
         "link": "GO TO SITE",
-        "image_path": "",
+        "image_path": "../assets/images/auton-01.svg",
         "type": "regular",
         "class": "section-12",
         "color": {
