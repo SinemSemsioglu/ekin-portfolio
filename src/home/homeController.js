@@ -10,25 +10,35 @@ app.controller("homeController", [
         var scrollStarted = false;
 
         /* scroll event stuff */
-        var document = $($window);
+        var window = $($window);
+        var navBar = scrollUtil.getNavBarElement();
 
-        document.bind("scroll", function() {
-            //alert("scrolling");
-            if(!self.scrolling){
-                self.scrolling = true;
-                $scope.$apply();
-            }
+        window.bind("scroll", function() {
 
             if(!scrollStarted) {
-                $timeout( function () {
-                    self.scrolling = false;
-                    $scope.$apply();
-                    scrollUtil.decideWhereToGo();
-                    scrollStarted = false;
-                }, 2000)
+                window.trigger("scrollstart");
             }
             scrollStarted = true;
 
+        });
+
+        window.bind("scrollstart", function () {
+            navBar.css("opacity", 0);
+            navBar.animate({
+                "opacity": 1
+            }, 2000);
+
+            $timeout( function () {
+                window.trigger("scrollstop");
+            }, 2000)
+        });
+
+        window.bind("scrollstop", function () {
+            self.scrolling = false;
+            $scope.$apply();
+
+            scrollUtil.decideWhereToGo();
+            scrollStarted = false;
         });
 
         for (var index = 1; index <= numberOfSections; index++) {

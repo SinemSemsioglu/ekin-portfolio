@@ -19,7 +19,7 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData",
             var sectionName = "section_" + sectionId;
             var navColor = sectionData[sectionName].color.nav;
 
-            var navbarElement = $($(document).find(".navigation"));
+            var navbarElement = self.getNavBarElement();
             var logoElement = $(navbarElement.find(".logo"));
             console.log(JSON.stringify(logoElement));
 
@@ -54,6 +54,10 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData",
             var sectionElement = $(document).find("#" + sectionId);
 
             return $(sectionElement);
+        };
+
+        this.getNavBarElement = function () {
+            return $($(document).find(".navigation"));
         };
 
         this.findNavElement = function (sectionIndex) {
