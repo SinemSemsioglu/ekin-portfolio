@@ -36,7 +36,7 @@ app.controller("homeController", [
                 scrollStarted = false;
                 self.scrolling = false;
                 $scope.$apply();
-            }, TRANSITION_DURATION + NAV_ANIMATION_DURATION);
+            }, scrollTimeValues.TRANSITION_DURATION + 200);
 
         });
 

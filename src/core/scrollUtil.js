@@ -1,5 +1,5 @@
-app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout",
-    function ($window, appUtil, sectionData, $timeout) {
+app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scrollTimeValues",
+    function ($window, appUtil, sectionData, $timeout, scrollTimeValues) {
 
         var self = this;
 
