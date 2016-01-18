@@ -7,23 +7,29 @@ app.controller("homeController", [
         this.regularSections = [];
         this.scrolling = false;
 
-        /* scroll event stuff
+        var scrollStarted = false;
+
+        /* scroll event stuff */
         var document = $($window);
 
         document.bind("scroll", function() {
-          //  alert("scrolling");
+            //alert("scrolling");
             if(!self.scrolling){
-                $scope.$apply();
                 self.scrolling = true;
+                $scope.$apply();
             }
 
-            $timeout( function (){
-                self.scrolling = false;
-                scrollUtil.decideWhereToGo();
-                $scope.$apply();
-            }, 2000)
+            if(!scrollStarted) {
+                $timeout( function () {
+                    self.scrolling = false;
+                    $scope.$apply();
+                    scrollUtil.decideWhereToGo();
+                    scrollStarted = false;
+                }, 2000)
+            }
+            scrollStarted = true;
 
-        });*/
+        });
 
         for (var index = 1; index <= numberOfSections; index++) {
             var section = sectionData["section_" + (index)];
