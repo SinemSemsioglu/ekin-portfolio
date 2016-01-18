@@ -1,6 +1,6 @@
 app.controller("homeController", [
-    "sectionData", "numberOfSections", "scrollUtil", "$scope", "$window", "$timeout",
-    function (sectionData, numberOfSections, scrollUtil, $scope, $window, $timeout) {
+    "sectionData", "numberOfSections", "scrollUtil", "$scope", "$window", "$timeout", "scrollTimeValues",
+    function (sectionData, numberOfSections, scrollUtil, $scope, $window, $timeout, scrollTimeValues) {
 
         var self = this;
 
@@ -26,18 +26,17 @@ app.controller("homeController", [
 
             $timeout( function () {
                 window.trigger("scrollstop");
-            }, 1000);
+            }, scrollTimeValues.TRANSITION_WAIT);
         });
 
         window.bind("scrollstop", function () {
             scrollUtil.decideWhereToGo();
 
-
             $timeout( function () {
                 scrollStarted = false;
                 self.scrolling = false;
                 $scope.$apply();
-            }, 1500);
+            }, TRANSITION_DURATION + NAV_ANIMATION_DURATION);
 
         });
 

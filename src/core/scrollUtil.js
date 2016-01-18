@@ -18,11 +18,11 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout",
 
             $('html,body').animate({
                 scrollTop: targetOffset
-            }, 1000);
+            }, scrollTimeValues.TRANSITION_DURATION);
 
             $timeout(function () {
                 self.navBarElementOnTransition(sectionId);
-            }, 1500);
+            }, scrollTimeValues.TRANSTION_DURATION + 200);
         };
 
         this.navBarElementOnTransition = function (sectionId) {
@@ -38,7 +38,7 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout",
 
             navbarElement.animate({
                 "opacity": 1
-            }, 800);
+            }, scrollTimeValues.NAV_ANIMATION_DURATION);
         };
 
         this.decideWhereToGo = function () {
