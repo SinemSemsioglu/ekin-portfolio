@@ -1,5 +1,6 @@
 @section-height: 100vh;
 @section-width: 100%;
+@container-width: calculate(@section-width - @medium-screen-side);
 @nav-width: 60%;
 
 .home-container {
@@ -11,6 +12,7 @@
 
     .section-container {
       padding: 90pt @medium-screen-side;
+      width: @container-width;
     }
   }
 
