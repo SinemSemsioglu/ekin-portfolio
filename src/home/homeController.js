@@ -21,11 +21,10 @@ app.controller("homeController", [
         });
 
         window.bind("scrollstart", function () {
-            self.scrolling = true;
-            $scope.$apply();
-
             $timeout( function () {
                 window.trigger("scrollstop");
+                self.scrolling = true;
+                $scope.$apply();
             }, scrollTimeValues.TRANSITION_WAIT);
         });
 

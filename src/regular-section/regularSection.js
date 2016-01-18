@@ -9,6 +9,10 @@ app.directive("regularSection",
             link: function (scope, element) {
                 element.css("background-color", scope.section.color.background);
                 element.css("color", scope.section.color.font);
+                var imageElement = $($(element).find(".section-image"));
+                console.log(imageElement);
+                imageElement.css("background-image","url(\"" + scope.section.image_path + "\")");
+
             },
             templateUrl: "templates/regular-section/regular-section.html"
         };
