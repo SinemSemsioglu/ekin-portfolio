@@ -23,9 +23,11 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
                 page.off("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove");
             });
 
-            $timeout(function () {
-                self.navBarElementOnTransition(sectionId);
-            }, scrollTimeValues.TRANSTION_DURATION + 200);
+            if (sectionId !== 0){
+                $timeout(function () {
+                    self.navBarElementOnTransition(sectionId);
+                }, scrollTimeValues.TRANSTION_DURATION + 200);
+            }
         };
 
         this.navBarElementOnTransition = function (sectionId) {
