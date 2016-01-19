@@ -28,6 +28,7 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
         this.navBarElementOnTransition = function (sectionId) {
             var sectionName = "section_" + sectionId;
             var navColor = sectionData[sectionName].color.nav;
+            var targetOpacity = appUtil.isScreenNarrow ? 0.6 : 1;
 
             var navbarElement = self.getNavBarElement();
             var logoElement = $(navbarElement.find(".logo"));
@@ -37,7 +38,7 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
             logoElement.css("background-image", "url(\"/assets/images/logo-" + navColor + ".svg\")");
 
             navbarElement.animate({
-                "opacity": 1
+                "opacity": targetOpacity
             }, scrollTimeValues.NAV_ANIMATION_DURATION);
         };
 

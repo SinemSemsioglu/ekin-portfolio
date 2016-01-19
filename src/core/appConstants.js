@@ -4,3 +4,6 @@ app.constant("scrollTimeValues", {
     "TRANSITION_DURATION": 800,
     "NAV_ANIMATION_DURATION": 1000
 });
+app.constant("screenWidths", {
+    "MEDIUM_MIN": 768
+});
