@@ -12,10 +12,18 @@ app.controller("homeController", [
 
         var scrollStarted = false;
 
+        var scrollEvents = "scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove";
+
         /* scroll event stuff */
         var window = $($window);
         var navBar = scrollUtil.getNavBarElement();
 
+        window.resize( function () {
+            self.mobile = appUtil.isScreenNarrow();
+            window.stop();
+        });
+
+        //decide which scroll events to bind, fucks up clicking on the nav
         window.bind("scroll", function () {
             if (!scrollStarted) {
                 window.trigger("scrollstart");
@@ -43,10 +51,19 @@ app.controller("homeController", [
 
         });
 
-        for (var index = 1; index <= numberOfSections; index++) {
-            var section = sectionData["section_" + (index)];
+        /* -- resize-stuff end -- */
 
-            if (section.type !== "irregular") {
+        this.goToAboutSection = function () {
+            scrollUtil.goToSection(0);
+        };
+
+        for (var index = 0; index <= numberOfSections; index++) {
+            var section = sectionData["section_" + (index)];
+            var sectionType = section.type;
+
+            if (sectionType === "about") {
+                this.aboutSection = section;
+            } else if (sectionType === "regular") {
                 this.regularSections.push(section);
             }
         }

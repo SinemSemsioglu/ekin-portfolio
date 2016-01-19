@@ -1,6 +1,6 @@
 <div class="home-container">
     <div class="section-wrapper">
-        <descriptive-section section="home.headSection"></descriptive-section>
+        <about-section section="home.aboutSection"></about-section>
     </div>
     <div class="section-wrapper"
          ng-repeat="homeSection in ::home.regularSections">
@@ -8,7 +8,8 @@
     </div>
 
     <div class="navigation" ng-hide="home.scrolling">
-        <div class="logo nav-item">
+        <div class="logo nav-item"
+             ng-click="home.goToAboutSection()">
         </div>
         <div class="page-nav nav-item"
              ng-if="!home.mobile">

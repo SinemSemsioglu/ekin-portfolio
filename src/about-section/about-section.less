@@ -1,0 +1,36 @@
+.section-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+
+    .section-text {
+      font-size: @font-size-2;
+      font-weight: @extra-bold-font-weight;
+      line-height: 100%;
+      letter-spacing: -2px;
+    }
+  }
+
+}
+
+@media @small-device {
+  .section-container {
+    width: 100%;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+
+    .text-container {
+      width: auto;
+      height: auto;
+      padding: 0 @small-screen-side;
+
+      .section-text {
+        font-size: @font-size-2-1;
+      }
+    }
+  }
+}

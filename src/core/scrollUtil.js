@@ -15,10 +15,13 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
             navElement.addClass("selected");
 
             var targetOffset = self.getElementOffsetTop(sectionElement);
+            var page = $('html,body');
 
-            $('html,body').animate({
+            page.animate({
                 scrollTop: targetOffset
-            }, scrollTimeValues.TRANSITION_DURATION);
+            }, scrollTimeValues.TRANSITION_DURATION, function () {
+                page.off("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove");
+            });
 
             $timeout(function () {
                 self.navBarElementOnTransition(sectionId);
@@ -28,7 +31,8 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
         this.navBarElementOnTransition = function (sectionId) {
             var sectionName = "section_" + sectionId;
             var navColor = sectionData[sectionName].color.nav;
-            var targetOpacity = appUtil.isScreenNarrow ? 0.6 : 1;
+            //be careful about resize events
+            var targetOpacity = appUtil.isScreenNarrow() ? 0.6 : 1;
 
             var navbarElement = self.getNavBarElement();
             var logoElement = $(navbarElement.find(".logo"));
@@ -54,11 +58,9 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
         this.findSectionElement = function (sectionIndex) {
             var sectionId;
 
-            if (sectionIndex <=12 && sectionIndex > 0) {
+            if (sectionIndex <=12 && sectionIndex >= 0) {
                 sectionId = "section-" + sectionIndex;
-            } else if (sectionIndex === 0){
-                //homepage
-            } else {
+            }  else {
                 //blog?
             }
 
