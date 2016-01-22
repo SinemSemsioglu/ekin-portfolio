@@ -1,9 +1,11 @@
 app.controller("portfolioPageController",
-    ["$state", "portfolioData", "appUtil", "$stateParams", "numberOfSections",
-        function ($state, portfolioData, appUtil, $stateParams, numberOfSections) {
+    ["$state", "portfolioData", "appUtil", "$stateParams", "numberOfSections", "scrollUtil",
+        function ($state, portfolioData, appUtil, $stateParams, numberOfSections, scrollUtil) {
             "use strict";
 
             var self = this;
+
+            scrollUtil.unsetScrollProperties();
 
             //goes to the first portfolio item if nothing is given
             //actually info is in the url so we should probably take that

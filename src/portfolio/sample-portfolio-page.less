@@ -1,5 +1,6 @@
 @portfolio-page-right-side-section-width: 65%;
 @portfolio-element-bottom-space: 30px;
+@portfolio-element-bottom-space-small: 15px;
 
 .portfolio-page {
   .portfolio-header-container {
@@ -19,14 +20,23 @@
     display: flex;
     justify-content: space-around;
 
-    margin: (2 * @medium-screen-side) @medium-screen-side;
+    margin: 70px @medium-screen-side;
     font-size: @font-size-1-1;
   }
 }
 
 @media @small-device {
   .portfolio-page {
+    .portfolio-header-container {
+      padding-bottom: @portfolio-element-bottom-space-small;
+    }
+
+    .text-content, .image-content {
+      margin-bottom: @portfolio-element-bottom-space-small;
+    }
+
     .portfolio-page-bottom-links {
+      margin: 30px @small-screen-side;
       font-size: @font-size-3;
     }
   }

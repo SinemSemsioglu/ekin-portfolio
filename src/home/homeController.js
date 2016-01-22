@@ -10,60 +10,16 @@ app.controller("homeController", [
         this.scrolling = false;
         this.mobile = appUtil.isScreenNarrow();
 
-        var scrollStarted = false;
-
-        var scrollEvents = "scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove";
-
-        /* scroll event stuff */
-        var window = $($window);
-        var navBar = scrollUtil.getNavBarElement();
-
-        window.resize( function () {
-            self.mobile = appUtil.isScreenNarrow();
-            window.stop();
-        });
-
-        //decide which scroll events to bind, fucks up clicking on the nav
-        window.bind("scroll", function () {
-            if (!scrollStarted) {
-                window.trigger("scrollstart");
-            }
-            scrollStarted = true;
-        });
-
-        window.bind("scrollstart", function () {
-            self.scrolling = true;
-            $scope.$apply();
-
-            $timeout(function () {
-                window.trigger("scrollstop");
-            }, scrollTimeValues.TRANSITION_WAIT);
-        });
-
-        window.bind("scrollstop", function () {
-            var sectionToBeScrolled = scrollUtil.decideWhereToGo();
-
-            if (sectionToBeScrolled === 0){
-                scrollStarted = false;
-                self.scrolling = false;
-            } else {
-                $timeout(function () {
-                    scrollStarted = false;
-                    self.scrolling = false;
-                    $scope.$apply();
-                }, scrollTimeValues.TRANSITION_DURATION);
-            }
-
-        });
-
-        /* -- resize-stuff end -- */
+        scrollUtil.setScrollPropertiesForHomePage(self, $scope);
 
         this.goToAboutSection = function () {
             scrollUtil.goToSection(0);
         };
 
         this.goToPortfolioPage = function (portfolioIndex) {
-            $state.go("portfolio." + portfolioIndex);
+            $state.go("portfolio." + portfolioIndex, {
+                "portfolioIndex": portfolioIndex
+            });
         };
 
         for (var index = 0; index <= numberOfSections; index++) {

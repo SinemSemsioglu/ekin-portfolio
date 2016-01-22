@@ -3,6 +3,62 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
 
         var self = this;
 
+        this.unsetScrollProperties = function () {
+            var window = $($window);
+            window.off("resize, scroll, scrollstart, scrollstop");
+        };
+
+        this.setScrollPropertiesForHomePage = function (homeController, scope) {
+            var scrollStarted = false;
+
+            var scrollEvents = "scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove";
+
+            /* scroll event stuff */
+            var window = $($window);
+            var navBar = self.getNavBarElement();
+
+            window.resize( function () {
+                homeController.mobile = appUtil.isScreenNarrow();
+                window.stop();
+            });
+
+            //decide which scroll events to bind, fucks up clicking on the nav
+            window.bind("scroll", function (event) {
+                if (!scrollStarted) {
+                    window.trigger("scrollstart");
+                }
+                event.preventDefault();
+                scrollStarted = true;
+            });
+
+            window.bind("scrollstart", function () {
+                homeController.scrolling = true;
+                scope.$apply();
+
+                $timeout(function () {
+                    window.trigger("scrollstop");
+                }, scrollTimeValues.TRANSITION_WAIT);
+            });
+
+            window.bind("scrollstop", function () {
+                var sectionToBeScrolled = self.decideWhereToGo();
+
+                if (sectionToBeScrolled === 0){
+                    scrollStarted = false;
+                    homeController.scrolling = false;
+                } else {
+                    $timeout(function () {
+                        scrollStarted = false;
+                        homeController.scrolling = false;
+                        scope.$apply();
+                    }, scrollTimeValues.TRANSITION_DURATION);
+                }
+
+            });
+
+            /* -- scroll-stuff end -- */
+        };
+
         this.getElementOffsetTop = function (element) {
             return element.offset().top;
         };
@@ -17,11 +73,12 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
             var targetOffset = self.getElementOffsetTop(sectionElement);
             var page = $('html,body');
 
-            page.animate({
+            var window = $($window);
+
+            page.stop().animate({
                 scrollTop: targetOffset
-            }, scrollTimeValues.TRANSITION_DURATION, function () {
-                page.off("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove");
-            });
+            }, scrollTimeValues.TRANSITION_DURATION);
+
 
             if (sectionId === 0) {
                 self.navBarElementOnTransition(sectionId);
