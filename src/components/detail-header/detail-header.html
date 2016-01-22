@@ -25,10 +25,12 @@
             <div class="header-tag"
                  ng-repeat="tag in ::headerInfo.tags">
                 <div class="tag"
+                     ng-class="{odd: $odd, even: $even}"
                      ng-bind="tag">
                 </div>
                 <div class="separator"
                      ng-hide="$last">
+                    |
                 </div>
             </div>
         </div>

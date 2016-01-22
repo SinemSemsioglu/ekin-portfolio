@@ -67,3 +67,29 @@
     }
   }
 }
+
+@media @large-device {
+  .image-section {
+    flex-direction: column-reverse;
+    align-items: center;
+
+    margin: 0;
+
+    //could be declared in either here or in text-section.less
+    //if the annotation properties are going to stay the same
+    .annotation-container {
+      align-self: auto;
+    }
+
+    .image-container {
+      &.centered, &.without-padding, &.regular {
+        width: 100%;
+        margin: 0;
+
+        .section-image {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

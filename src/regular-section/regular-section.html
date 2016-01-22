@@ -1,7 +1,11 @@
 <div class="section-container" id="{{section.class}}">
     <div class="content-container">
-        <div class="section-date"
-             ng-bind="section.date"></div>
+        <div class="section-date">
+            <span class="section-month"
+                  ng-bind="section.date.month"></span>
+            <span class="section-year"
+                  ng-bind="section.date.year"></span>
+        </div>
         <div class="section-title"
              ng-bind="section.title"></div>
         <div class="section-description"
