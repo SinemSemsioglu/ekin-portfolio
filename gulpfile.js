@@ -9,9 +9,10 @@ var gulp = require("gulp"),
 
 gulp.task("default", ["watch"]);
 
-var pathList = ["bower_components/angular/angular.js", "bower_components/angular-route/angular-route.js",
+var pathList = ["bower_components/jquery/dist/jquery.js", "bower_components/angular/angular.js",
+    "bower_components/angular-route/angular-route.js",
     "bower_components/angular-ui-router/release/angular-ui-router.min.js",
-    "bower_components/jquery/dist/jquery.js", "src/core/app.js",
+    "src/core/app.js",
     "src/**/**.js"];
 
 gulp.task("browser-sync", function () {

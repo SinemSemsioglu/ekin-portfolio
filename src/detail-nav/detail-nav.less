@@ -1,0 +1,33 @@
+@side-nav-height: 138px;
+@side-nav-width: 34px;
+@side-nav-border-radius: 15px;
+@wrapper-z-index: 0;
+@button-z-index: 1;
+
+.detail-nav-container {
+  background-color: white;
+  box-shadow: grey;
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: space-around;
+
+  padding: 10px 0;
+
+  .nav-button-wrapper {
+    margin: 5px;
+    z-index: @wrapper-z-index;
+
+    .nav-button {
+      margin: auto;
+      z-index: @button-z-index;
+    }
+
+    &.selected {
+      .nav-button {
+        text-decoration: underline;
+      }
+    }
+  }
+}

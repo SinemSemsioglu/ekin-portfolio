@@ -4,7 +4,8 @@ app.directive("regularSection",
             replace: true,
             restrict: "E",
             scope: {
-                section: "="
+                section: "=",
+                goToPortfolioPage: "="
             },
             link: function (scope, element) {
                 element.css("background-color", scope.section.color.background);

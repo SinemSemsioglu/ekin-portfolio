@@ -23,10 +23,12 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
                 page.off("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove");
             });
 
-            if (sectionId !== 0){
+            if (sectionId === 0) {
+                self.navBarElementOnTransition(sectionId);
+            } else {
                 $timeout(function () {
                     self.navBarElementOnTransition(sectionId);
-                }, scrollTimeValues.TRANSTION_DURATION + 200);
+                }, null, scrollTimeValues.TRANSTION_DURATION + 200);
             }
         };
 
@@ -39,13 +41,15 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
             var navbarElement = self.getNavBarElement();
             var logoElement = $(navbarElement.find(".logo"));
 
-            navbarElement.css("opacity", 0);
             navbarElement.css("color", navColor);
             logoElement.css("background-image", "url(\"/assets/images/logo-" + navColor + ".svg\")");
 
-            navbarElement.animate({
-                "opacity": targetOpacity
-            }, scrollTimeValues.NAV_ANIMATION_DURATION);
+            if (sectionId != 0){
+                navbarElement.css("opacity", 0);
+                navbarElement.animate({
+                    "opacity": targetOpacity
+                }, scrollTimeValues.NAV_ANIMATION_DURATION, "linear");
+            }
         };
 
         this.decideWhereToGo = function () {
@@ -55,6 +59,8 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
             var sectionId = Math.round(windowVerticalOffset / screenHeight);
 
             self.goToSection(sectionId);
+
+            return sectionId;
         };
 
         this.findSectionElement = function (sectionIndex) {

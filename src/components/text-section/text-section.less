@@ -1,0 +1,64 @@
+@text-section-padding-vertical: 20px;
+
+.text-section {
+  margin: 0 @medium-screen-side;
+  padding: @text-section-padding-vertical 0;
+  position: relative;
+
+  font-weight: @light-font-weight;
+  font-size: @font-size-6;
+  line-height: 1.3em;
+  text-align: justify;
+
+  .text-wrapper {
+    display: inline-block;
+    position: absolute;
+    width: @portfolio-page-right-side-section-width;
+    right: 0;
+
+    &.bottom {
+      bottom: 0;
+    }
+
+    &.top {
+      top: 0;
+    }
+
+    .text-container {
+      column-gap: 30px;
+    }
+  }
+
+  .annotation-container {
+    display: inline-block;
+
+    .bottom-annotation {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+
+    .top-annotation {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
+@media @small-device {
+  .text-section {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    .text-wrapper {
+      width: 100%;
+      position: relative;
+    }
+
+    .top-annotation, .bottom-annotation {
+      font-weight: @regular-font-weight
+    }
+  }
+}

@@ -1,0 +1,67 @@
+@image-section-padding-vertical: 20px;
+
+.image-section {
+  margin: 0 @medium-screen-side;
+  padding: @text-section-padding-vertical 0;
+
+  max-width: 100%;
+  font-weight: @light-font-weight;
+  font-size: @font-size-6;
+
+  display: flex;
+  justify-content: space-between;
+
+  //could be declared in either here or in text-section.less
+  //if the annotation properties are going to stay the same
+  .annotation-container {
+    align-self: flex-end;
+  }
+
+  .image-container {
+    .section-image {
+      max-width: 100%;
+    }
+
+    &.centered {
+      width: 100%;
+
+      .section-image {
+        width: 100%;
+      }
+    }
+
+    &.without-padding {
+      margin-right: (0 - @medium-screen-side);
+      width: calc(@portfolio-page-right-side-section-width ~"+" @medium-screen-side);
+    }
+
+    &.regular {
+      width: @portfolio-page-right-side-section-width;
+    }
+  }
+}
+
+@media @small-device {
+  .image-section {
+    flex-direction: column-reverse;
+    align-items: center;
+    font-weight: @regular-font-weight;
+
+    //could be declared in either here or in text-section.less
+    //if the annotation properties are going to stay the same
+    .annotation-container {
+      align-self: auto;
+    }
+
+    .image-container {
+      &.centered, &.without-padding, &.regular {
+        width: 100%;
+        margin: 0;
+
+        .section-image {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+<div class="portfolio-page">
+    <div class="portfolio-header-container">
+        <detail-header header-info="portfolioPage.portfolioItem.header"
+                       go-to-home-page="portfolioPage.goToHomePage"
+                       go-to-portfolio-page="portfolioPage.goToPortfolioPage"
+                       is-screen-narrow="portfolioPage.isScreenNarrow"></detail-header>
+    </div>
+    <div class="portfolio-content-container">
+        <text-section class="text-content"
+                      number-of-columns="portfolioPage.portfolioItem.text_sections[0].number_of_columns"
+                      text="portfolioPage.portfolioItem.text_sections[0].text"
+                      annotations="portfolioPage.portfolioItem.text_sections[0].annotations">
+        </text-section>
+        <image-section class="image-content"
+                       image="portfolioPage.portfolioItem.image_sections[0]">
+        </image-section>
+        <text-section class="text-content"
+                      number-of-columns="portfolioPage.portfolioItem.text_sections[1].number_of_columns"
+                      text="portfolioPage.portfolioItem.text_sections[1].text"
+                      annotations="portfolioPage.portfolioItem.text_sections[1].annotations">
+        </text-section>
+        <image-section class="image-content"
+                       image="portfolioPage.portfolioItem.image_sections[1]">
+        </image-section>
+        <text-section class="text-content"
+                      number-of-columns="portfolioPage.portfolioItem.text_sections[2].number_of_columns"
+                      text="portfolioPage.portfolioItem.text_sections[2].text"
+                      annotations="portfolioPage.portfolioItem.text_sections[2].annotations">
+        </text-section>
+        <image-section class="image-content"
+                       image="portfolioPage.portfolioItem.image_sections[2]">
+        </image-section>
+    </div>
+    <div class="portfolio-page-bottom-links">
+        <div class="next-project"
+             ng-click="portfolioPage.goToNextPortfolioItem()">
+            Next Project
+        </div>
+        <div class="go-live">
+            <!-- add link here, also to the portfolio data ie portfolioItem.link_to_live_site !-->
+            Go to live site
+        </div>
+    </div>
+</div>

@@ -1,8 +1,8 @@
 app.controller("homeController", [
     "sectionData", "numberOfSections", "scrollUtil", "$scope", "$window", "$timeout",
-    "scrollTimeValues", "appUtil",
+    "scrollTimeValues", "appUtil", "$state",
     function (sectionData, numberOfSections, scrollUtil, $scope, $window, $timeout,
-              scrollTimeValues, appUtil) {
+              scrollTimeValues, appUtil, $state) {
 
         var self = this;
 
@@ -41,13 +41,18 @@ app.controller("homeController", [
         });
 
         window.bind("scrollstop", function () {
-            scrollUtil.decideWhereToGo();
+            var sectionToBeScrolled = scrollUtil.decideWhereToGo();
 
-            $timeout(function () {
+            if (sectionToBeScrolled === 0){
                 scrollStarted = false;
                 self.scrolling = false;
-                $scope.$apply();
-            }, scrollTimeValues.TRANSITION_DURATION + 200);
+            } else {
+                $timeout(function () {
+                    scrollStarted = false;
+                    self.scrolling = false;
+                    $scope.$apply();
+                }, scrollTimeValues.TRANSITION_DURATION);
+            }
 
         });
 
@@ -55,6 +60,10 @@ app.controller("homeController", [
 
         this.goToAboutSection = function () {
             scrollUtil.goToSection(0);
+        };
+
+        this.goToPortfolioPage = function (portfolioIndex) {
+            $state.go("portfolio." + portfolioIndex);
         };
 
         for (var index = 0; index <= numberOfSections; index++) {

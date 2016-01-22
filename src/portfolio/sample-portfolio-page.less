@@ -1,0 +1,33 @@
+@portfolio-page-right-side-section-width: 65%;
+@portfolio-element-bottom-space: 30px;
+
+.portfolio-page {
+  .portfolio-header-container {
+    padding-bottom: @portfolio-element-bottom-space;
+  }
+
+  .portfolio-content-container {
+    display: flex;
+    flex-direction: column;
+
+    .text-content, .image-content {
+      margin-bottom: @portfolio-element-bottom-space;
+    }
+  }
+
+  .portfolio-page-bottom-links {
+    display: flex;
+    justify-content: space-around;
+
+    margin: (2 * @medium-screen-side) @medium-screen-side;
+    font-size: @font-size-1-1;
+  }
+}
+
+@media @small-device {
+  .portfolio-page {
+    .portfolio-page-bottom-links {
+      font-size: @font-size-3;
+    }
+  }
+}

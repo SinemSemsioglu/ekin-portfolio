@@ -7,7 +7,8 @@
         <div class="section-description"
              ng-bind="section.description"></div>
         <div class ="section-links">
-            <div class="section-more">
+            <div class="section-more"
+                 ng-click="goToPortfolioPage(section.id)">
                 LEARN MORE
             </div>
             <div class="section-link"

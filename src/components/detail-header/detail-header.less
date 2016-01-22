@@ -1,0 +1,107 @@
+@section-height: 100vh;
+@section-width: 100%;
+@container-width: calculate(@section-width - @medium-screen-side);
+@nav-width: 60%;
+@detail-header-element-bottom-margin: 15px;
+
+.detail-header-container {
+  //put in a more general portfolio styling file
+
+  .navigation-wrapper {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: @nav-height;
+    background-color: white;
+    box-shadow: 0 0 2px 0 #cccccc;
+
+    z-index: 100;
+
+    .navigation {
+      z-index: 101;
+    }
+  }
+
+  .header-image {
+    width: 100%;
+    height: 100%;
+    margin-top: @nav-height;
+    margin-bottom: @detail-header-element-bottom-margin;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    .image-image {
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    .header-tags, .detail-header-date {
+      font-size: @font-size-6;
+    }
+
+    .header-tags {
+      display: inline-flex;
+      .header-tag {
+        // add background image for separator
+        .tag {
+          margin-right: 5px;
+        }
+
+        .separator {
+          margin-right: 5px;
+        }
+      }
+
+      margin-bottom: @detail-header-element-bottom-margin;
+    }
+
+    .detail-header-title {
+      font-size: @font-size-1-1;
+      margin-bottom: @detail-header-element-bottom-margin;
+      max-width: 70%;
+    }
+
+    .detail-header-description {
+      font-size: @font-size-5;
+      font-weight: @light-font-weight;
+      max-width: 50%;
+    }
+
+    .detail-header-date {
+      margin-top: 20px;
+    }
+  }
+
+  .navigation {
+    position: fixed;
+    left: @medium-screen-side;
+    top: 20px;
+    width: @nav-width;
+  }
+}
+
+@media @small-device {
+  .detail-header-container {
+
+    .navigation {
+      left: @small-screen-side;
+    }
+
+    .text-container {
+      .detail-header-title {
+        font-size: @font-size-3;
+      }
+    }
+  }
+}

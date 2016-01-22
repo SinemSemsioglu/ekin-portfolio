@@ -13,6 +13,7 @@ app.value("sectionData", {
         }
     },
     "section_1": {
+        "id": 1,
         "title": "Infrastructure for human enhancement",
         "description": "Natural selection for your copy. Cilio " + 
         "intelligently optimizes your writing for traction. Built " + 
@@ -30,6 +31,7 @@ app.value("sectionData", {
         }
     },
     "section_2": {
+        "id": 2,
         "title": "Commenting the web of music, a treatise",
         "description": "Dunemoon came out of my fascination with the " +
         "Spotify API, it might sound weird but thinking that something " + 
@@ -48,6 +50,7 @@ app.value("sectionData", {
         }
     },
     "section_3": {
+        "id": 3,
         "title": "A small fix to the architect’s burden, behold...",
         "description": "Cantilever. It is meant to solve a problem. An architect " +
         "will suffer in NYC. But it’s also very rewarding, how do you balance the " + 
@@ -65,6 +68,7 @@ app.value("sectionData", {
         }
     },
     "section_4": {
+        "id": 4,
         "title": "This one is for the good folks at KPCB",
         "description": "Ever since I found out about it, " + 
         "I’ve been eager to apply to the KPCB Fellows Program, " + 
@@ -83,6 +87,7 @@ app.value("sectionData", {
         }
     },
     "section_5": {
+        "id": 5,
         "title": "Rebranding the world’s first carbon fiber 3D Printer",
         "description": "I’ve had the opportunity of interning as a designer " + 
         "at Markforged last summer. The startup that’s building a 3d printer for " + 
@@ -101,6 +106,7 @@ app.value("sectionData", {
         }
     },
     "section_6": {
+        "id": 6,
         "title": "A puffy arrangement: building a hookah startup?",
         "description": "Natural selection for your copy. Cilio " + 
         "intelligently optimizes your writing for traction. Built " + 
@@ -118,6 +124,7 @@ app.value("sectionData", {
         }
     },
     "section_7": {
+        "id": 7,
         "title": "Horology and information design problems",
         "description": "Natural selection for your copy. Cilio " + 
         "intelligently optimizes your writing for traction. Built " + 
@@ -135,6 +142,7 @@ app.value("sectionData", {
         }
     },
     "section_8": {
+        "id": 8,
         "title": "Diagrams of quantified unquantifiables",
         "description": "Natural selection for your copy. Cilio " + 
         "intelligently optimizes your writing for traction. Built " + 
@@ -152,6 +160,7 @@ app.value("sectionData", {
         }
     },
     "section_9": {
+        "id": 9,
         "title": "Spatial neurotransmission of helical pseudonyms",
         "description": "Natural selection for your copy. Cilio " + 
         "intelligently optimizes your writing for traction. Built " + 
@@ -169,6 +178,7 @@ app.value("sectionData", {
         }
     },
     "section_10": {
+        "id": 10,
         "title": "A tale of three logos",
         "description": "Natural selection for your copy. Cilio " + 
         "intelligently optimizes your writing for traction. Built " + 
@@ -186,6 +196,7 @@ app.value("sectionData", {
         }
     },
     "section_11": {
+        "id": 11,
         "title": "A vacation house",
         "description": "Natural selection for your copy. Cilio " + 
         "intelligently optimizes your writing for traction. Built " + 
@@ -203,6 +214,7 @@ app.value("sectionData", {
         }
     },
     "section_12": {
+        "id": 12,
         "title": "The sharing economy of reprogrammable architecture",
         "description": "Natural selection for your copy. Cilio " + 
         "intelligently optimizes your writing for traction. Built " + 

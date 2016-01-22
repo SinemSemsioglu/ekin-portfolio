@@ -4,7 +4,10 @@
     </div>
     <div class="section-wrapper"
          ng-repeat="homeSection in ::home.regularSections">
-        <regular-section section="homeSection"></regular-section>
+        <regular-section
+                section="homeSection"
+                go-to-portfolio-page="home.goToPortfolioPage">
+        </regular-section>
     </div>
 
     <div class="navigation" ng-hide="home.scrolling">
