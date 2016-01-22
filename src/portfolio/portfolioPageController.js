@@ -10,7 +10,6 @@ app.controller("portfolioPageController",
             //goes to the first portfolio item if nothing is given
             //actually info is in the url so we should probably take that
             var portfolioIndex = $stateParams.portfolioIndex || 0;
-            console.log(portfolioIndex);
 
             //use portfolioIndex instead of 0 when portfolioData is populated
             this.portfolioItem = portfolioData[0];
@@ -22,7 +21,7 @@ app.controller("portfolioPageController",
 
             this.goToNextPortfolioItem = function () {
                 if (portfolioIndex && portfolioIndex < numberOfSections) {
-                    self.goToPortfolioPage (portfolioIndex + 1);
+                    self.goToPortfolioPage (parseInt(portfolioIndex) + 1);
                 }
             };
 

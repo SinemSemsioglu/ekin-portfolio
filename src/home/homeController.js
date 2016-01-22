@@ -17,9 +17,10 @@ app.controller("homeController", [
         };
 
         this.goToPortfolioPage = function (portfolioIndex) {
-            $state.go("portfolio." + portfolioIndex, {
-                "portfolioIndex": portfolioIndex
-            });
+            console.log("/portfolio/" + portfolioIndex);
+            $state.transitionTo("portfolio." + portfolioIndex,{
+                    "portfolioIndex": portfolioIndex
+                });
         };
 
         for (var index = 0; index <= numberOfSections; index++) {

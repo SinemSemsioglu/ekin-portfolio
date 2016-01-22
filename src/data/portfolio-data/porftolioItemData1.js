@@ -1,4 +1,5 @@
-app.value("portfolioData", [
+app.value("portfolioData", []);
+app.value("portfolioItemData1",
     {
         "header": {
             "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
@@ -56,4 +57,8 @@ app.value("portfolioData", [
             }
         ]
     }
-]);
+);
+app.run(["portfolioData", "portfolioItemData1",
+    function (portfolioData, portfolioItemData1) {
+        portfolioData.push(portfolioItemData1);
+}]);

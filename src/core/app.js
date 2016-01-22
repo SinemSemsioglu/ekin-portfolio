@@ -15,13 +15,10 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         })
         .state("portfolio", {
             "url": "/portfolio",
-            "abstract": true,
-            "params": {
-                "portfolioIndex": null
-            }
+            "abstract": true
         })
         .state("portfolio.1", {
-            "url": "/1",
+            "url": "/:portfolioIndex",
             "views": {
                 "appContainer@": {
                     "controller": "portfolioPageController as portfolioPage",
@@ -30,7 +27,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             }
         })
         .state("portfolio.2", {
-            "url": "/2",
+            "url": "/:portfolioIndex",
             "views": {
                 "appContainer@": {
                     "controller": "portfolioPageController as portfolioPage",
@@ -38,15 +35,15 @@ app.config(function ($stateProvider, $urlRouterProvider) {
                 }
             }
         }).state("portfolio.3", {
-            "url": "/3",
+            "url": "/:portfolioIndex",
             "views": {
                 "appContainer@": {
                     "controller": "portfolioPageController as portfolioPage",
                     "templateUrl": "templates/portfolio/sample-portfolio-page.html"
                 }
-        }
+            }
         }).state("portfolio.4", {
-            "url": "/4",
+            "url": "/:portfolioIndex",
             "views": {
                 "appContainer@": {
                     "controller": "portfolioPageController as portfolioPage",
@@ -54,7 +51,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
                 }
             }
         }).state("portfolio.5", {
-            "url": "/3",
+            "url": "/:portfolioIndex",
             "views": {
                 "appContainer@": {
                     "controller": "portfolioPageController as portfolioPage",
@@ -62,15 +59,15 @@ app.config(function ($stateProvider, $urlRouterProvider) {
                 }
             }
         }).state("portfolio.6", {
-        "url": "/6",
-        "views": {
-            "appContainer@": {
-                "controller": "portfolioPageController as portfolioPage",
-                "templateUrl": "templates/portfolio/sample-portfolio-page.html"
+            "url": "/:portfolioIndex",
+            "views": {
+                "appContainer@": {
+                    "controller": "portfolioPageController as portfolioPage",
+                    "templateUrl": "templates/portfolio/sample-portfolio-page.html"
+                }
             }
-        }
         }).state("portfolio.7", {
-            "url": "/7",
+            "url": "/:portfolioIndex",
             "views": {
                 "appContainer@": {
                     "controller": "portfolioPageController as portfolioPage",
@@ -78,7 +75,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
                 }
             }
         }).state("portfolio.8", {
-            "url": "/8",
+            "url": "/:portfolioIndex",
             "views": {
                 "appContainer@": {
                     "controller": "portfolioPageController as portfolioPage",
@@ -86,7 +83,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
                 }
             }
         }).state("portfolio.9", {
-            "url": "/9",
+            "url": "/:portfolioIndex",
             "views": {
                 "appContainer@": {
                     "controller": "portfolioPageController as portfolioPage",
@@ -94,7 +91,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
                 }
             }
         }).state("portfolio.10", {
-            "url": "/10",
+            "url": "/:portfolioIndex",
             "views": {
                 "appContainer@": {
                     "controller": "portfolioPageController as portfolioPage",
@@ -102,7 +99,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
                 }
             }
         }).state("portfolio.11", {
-            "url": "/11",
+            "url": "/:portfolioIndex",
             "views": {
                 "appContainer@": {
                     "controller": "portfolioPageController as portfolioPage",
@@ -110,7 +107,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
                 }
             }
         }).state("portfolio.12", {
-            "url": "/12",
+            "url": "/:portfolioIndex",
             "views": {
                 "appContainer@": {
                     "controller": "portfolioPageController as portfolioPage",
