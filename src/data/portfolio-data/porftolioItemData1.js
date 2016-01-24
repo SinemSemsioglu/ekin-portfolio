@@ -2,11 +2,11 @@ app.value("portfolioData", []);
 app.value("portfolioItemData1",
     {
         "header": {
-            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-            "description": " et dolore magna aliqua. Ut enim ad minim veniam,",
-            "image_path": "/assets/images/quant.jpg",
-            "tags": ["et dolore magna", "Duis aute irure"],
-            "date": "September 2014"
+            "title": "Helping architects get the most out of events",
+            "description": "Cantilever is a simple tool to keep up with design and architecture events.",
+            "image_path": "/assets/images/bg.jpg",
+            "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
+            "date": "SEPTEMBER 2014"
         },
         "text_sections": [
             {
@@ -14,7 +14,7 @@ app.value("portfolioItemData1",
                 " accumsan at lacus non dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada" +
                 " fames ac turpis egestas. Phasellus et semper erat. Etiam convallis mauris quis nibh tristique" +
                 " pharetra. Aliquam",
-                "number_of_columns": 2,
+                "number_of_columns": 1,
                 "annotations": {
                     "top": "Lorem ipsum dolor sit amet"
                 }
@@ -42,16 +42,16 @@ app.value("portfolioItemData1",
         ],
         "image_sections": [
             {
-                "path": "/assets/images/pseud.jpg",
-                "class": "without-padding",
+                "path": "/assets/images/size.jpg",
+                "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             },
             {
-                "path": "/assets/images/pseud.jpg",
-                "class": "centered"
+                "path": "/assets/images/size2.jpg",
+                "class": "regular"
             },
             {
-                "path": "/assets/images/pseud.jpg",
+                "path": "/assets/images/size3.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             }
