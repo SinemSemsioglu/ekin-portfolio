@@ -1,8 +1,7 @@
-app.value("portfolioData", []);
-app.value("portfolioItemData1",
+app.value("portfolioItemData2",
     {
         "header": {
-            "title": "1Helping architects get the most out of events",
+            "title": "2Helping architects get the most out of events",
             "description": "Cantilever is a simple tool to keep up with design and architecture events.",
             "image_path": "/assets/images/bg.jpg",
             "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
@@ -55,7 +54,7 @@ app.value("portfolioItemData1",
         ]
     }
 );
-app.run(["portfolioData", "portfolioItemData1",
-    function (portfolioData, portfolioItemData1) {
-        portfolioData.push(portfolioItemData1);
+app.run(["portfolioData", "portfolioItemData2",
+    function (portfolioData, portfolioItemData2) {
+        portfolioData.push(portfolioItemData2);
 }]);
