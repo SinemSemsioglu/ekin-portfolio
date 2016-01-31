@@ -12,8 +12,13 @@
              ng-bind="section.description"></div>
         <div class ="section-links">
             <div class="section-more"
+                 ng-if="section.details"
                  ng-click="goToPortfolioPage(section.id)">
                 LEARN MORE
+            </div>
+            <div class="section-more"
+                 ng-if="!section.details">
+                DETAILS COMING SOON
             </div>
             <div class="section-link"
                  ng-if="section.link"

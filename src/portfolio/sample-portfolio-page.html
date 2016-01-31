@@ -33,10 +33,12 @@
     </div>
     <div class="portfolio-page-bottom-links">
         <div class="next-project"
+             ng-if="portfolioPage.portfolioItem.footer.showNext"
              ng-click="portfolioPage.goToNextPortfolioItem()">
             Next Project
         </div>
-        <div class="go-live">
+        <div class="go-live"
+             ng-if="portfolioPage.portfolioItem.footer.showLive">
             <!-- add link here, also to the portfolio data ie portfolioItem.link_to_live_site !-->
             Go to live site
         </div>

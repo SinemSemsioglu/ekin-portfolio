@@ -1,9 +1,12 @@
 @text-section-padding-vertical: 20px;
+@centered-screen-annotation-padding-top: 15px;
 
 .text-section {
   margin: 0 @medium-screen-side;
   padding: @text-section-padding-vertical 0;
-  position: relative;
+  //position: relative;
+  display: flex;
+  justify-content: space-between;
 
   font-weight: @light-font-weight;
   font-size: @font-size-9;
@@ -12,17 +15,7 @@
 
   .text-wrapper {
     display: inline-block;
-    position: absolute;
     width: @portfolio-page-right-side-section-width;
-    right: 0;
-
-    &.bottom {
-      bottom: 0;
-    }
-
-    &.top {
-      top: 0;
-    }
 
     .text-container {
       column-gap: 30px;
@@ -33,15 +26,11 @@
     display: inline-block;
 
     .bottom-annotation {
-      position: absolute;
-      left: 0;
-      bottom: 0;
+      align-self: flex-end;
     }
 
     .top-annotation {
-      position: absolute;
-      left: 0;
-      top: 0;
+      align-self: flex-start;
     }
   }
 }
@@ -60,8 +49,10 @@
     }
 
     .top-annotation, .bottom-annotation {
-      font-weight: @regular-font-weight
+      font-weight: @regular-font-weight;
+      padding-top: @centered-screen-annotation-padding-top;
     }
+
   }
 }
 
@@ -74,8 +65,12 @@
     align-items: center;
 
     .text-wrapper {
-      width: 100%;
-      position: relative;
+      width: 75%;
+    }
+
+    .top-annotation, .bottom-annotation {
+      font-weight: @regular-font-weight;
+      padding-top: @centered-screen-annotation-padding-top;
     }
   }
 }

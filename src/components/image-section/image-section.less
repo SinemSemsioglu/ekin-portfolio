@@ -6,7 +6,7 @@
 
   max-width: 100%;
   font-weight: @light-font-weight;
-  font-size: @font-size-6;
+  font-size: @font-size-9;
 
   display: flex;
   justify-content: space-between;
@@ -53,6 +53,11 @@
     //if the annotation properties are going to stay the same
     .annotation-container {
       align-self: auto;
+
+      .top-annotation, .bottom-annotation {
+        font-weight: @regular-font-weight;
+        padding-top: @centered-screen-annotation-padding-top;
+      }
     }
 
     .image-container {
@@ -79,11 +84,16 @@
     //if the annotation properties are going to stay the same
     .annotation-container {
       align-self: auto;
+
+      .top-annotation, .bottom-annotation {
+        font-weight: @regular-font-weight;
+        padding-top: @centered-screen-annotation-padding-top;
+      }
     }
 
     .image-container {
       &.centered, &.without-padding, &.regular {
-        width: 100%;
+        width: 75%;
         margin: 0;
 
         .section-image {
