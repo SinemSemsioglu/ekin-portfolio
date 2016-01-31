@@ -7,6 +7,10 @@ app.value("portfolioItemData2",
             "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
             "date": "SEPTEMBER 2014"
         },
+        "footer": {
+            "showNext": true,
+            "showLive": true
+        },
         "text_sections": [
             {
                 "text": "Built upon the slopes of Mount Ingino in Umbria, the ancient town of Gubbio boasts many well-preserved structures that document its glorious history. Founded by the Etruscans between the second and first centuries B.C., its Roman theater, Consuls Palace, and various churches and fountains are spectacular monuments to the Roman, Medieval, and Renaissance periods.",
@@ -56,5 +60,5 @@ app.value("portfolioItemData2",
 );
 app.run(["portfolioData", "portfolioItemData2",
     function (portfolioData, portfolioItemData2) {
-        portfolioData.push(portfolioItemData2);
-}]);
+        portfolioData.item2 = portfolioItemData2;
+    }]);

@@ -1,4 +1,4 @@
-app.value("portfolioData", []);
+app.value("portfolioData", {});
 app.value("portfolioItemData1",
     {
         "header": {
@@ -7,6 +7,10 @@ app.value("portfolioItemData1",
             "image_path": "/assets/images/bg.jpg",
             "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
             "date": "SEPTEMBER 2014"
+        },
+        "footer": {
+            "showNext": false,
+            "showLive": false
         },
         "text_sections": [
             {
@@ -57,5 +61,5 @@ app.value("portfolioItemData1",
 );
 app.run(["portfolioData", "portfolioItemData1",
     function (portfolioData, portfolioItemData1) {
-        portfolioData.push(portfolioItemData1);
+        portfolioData.item1 = portfolioItemData1;
 }]);

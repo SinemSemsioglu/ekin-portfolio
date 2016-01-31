@@ -56,5 +56,5 @@ app.value("portfolioItemData6",
 );
 app.run(["portfolioData", "portfolioItemData6",
     function (portfolioData, portfolioItemData6) {
-        portfolioData.push(portfolioItemData6);
+        portfolioData.item6 = portfolioItemData6;
 }]);

@@ -23,7 +23,8 @@ app.value("sectionData", {
             "month": "NOV",
             "year": "2015"
         },
-        "link": "GO TO SITE",
+        "link": "",
+        "details": true,
         "image_path": "../assets/images/o-01.svg",
         "type": "regular",
         "class": "section-1",
@@ -46,6 +47,7 @@ app.value("sectionData", {
             "year": "2015"
         },
         "link": "GO TO SITE",
+        "details": false,
         "image_path": "../assets/images/d.svg",
         "type": "regular",
         "class": "section-2",

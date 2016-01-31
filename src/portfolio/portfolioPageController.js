@@ -12,7 +12,8 @@ app.controller("portfolioPageController",
             var portfolioIndex = $stateParams.portfolioIndex || 0;
 
             //use portfolioIndex instead of 0 when portfolioData is populated
-            this.portfolioItem = portfolioData[portfolioIndex - 1];
+
+            this.portfolioItem = portfolioData["item" + portfolioIndex];
             this.isScreenNarrow = appUtil.isScreenNarrow();
 
             this.goToHomePage = function () {
