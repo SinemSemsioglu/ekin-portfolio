@@ -2,3 +2,12 @@
 bower_components/**
 node_modules/**
 dist/**
+src/modules/program/programDisplayController.js
+
+src/modules/program/programDisplay.js
+
+src/modules/program/program.html
+
+src/modules/program/detail/module.less
+
+src/modules/program/detail/content/program-detail-content.html

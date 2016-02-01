@@ -3,6 +3,25 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
 
         var self = this;
 
+        this.nickJonasScroll = function () {
+
+            $('.window').windows({
+                snapping: true,
+                snapSpeed: 500,
+                snapInterval: 1100,
+                onScroll: function(scrollPos){
+                    // scrollPos:Number
+                },
+                onSnapComplete: function($el){
+                    // after window ($el) snaps into place
+                },
+                onWindowEnter: function($el){
+                    // when new window ($el) enters viewport
+                }
+            });
+
+        };
+
         this.unsetScrollProperties = function () {
             var window = $($window);
             window.off("resize, scroll, scrollstart, scrollstop");
@@ -24,7 +43,10 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
 
             //decide which scroll events to bind, fucks up clicking on the nav
             window.bind("scroll", function (event) {
+                self.hideAllNavs();
+
                 if (!scrollStarted) {
+
                     window.trigger("scrollstart");
                 }
                 event.preventDefault();
@@ -90,26 +112,36 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
         };
 
         this.navBarElementOnTransition = function (sectionId) {
-            var sectionName = "section_" + sectionId;
-            var navColor = sectionData[sectionName].color.nav;
+            //var sectionName = "section_" + sectionId;
+           // var navColor = sectionData[sectionName].color.nav;
             //be careful about resize events
             var targetOpacity = appUtil.isScreenNarrow() ? 0.6 : 1;
 
-            var navbarElement = self.getNavBarElement();
+            var navbarElement = self.getNavBarElement(sectionId);
             var logoElement = $(navbarElement.find(".logo"));
 
-            navbarElement.css("color", navColor);
-            logoElement.css("background-image", "url(\"/assets/images/logo-" + navColor + ".svg\")");
+            //navbarElement.css("color", navColor);
+            //logoElement.css("background-image", "url(\"/assets/images/logo-" + navColor + ".svg\")");
+
+
 
             if (sectionId != 0){
-                navbarElement.css("opacity", 0);
+                //navbarElement.css("opacity", 0);
                 navbarElement.animate({
                     "opacity": targetOpacity
                 }, scrollTimeValues.NAV_ANIMATION_DURATION, "linear");
             }
         };
 
+        this.hideAllNavs = function () {
+            var navbars = $(document).find(".navigation");
+            for (var i=0; i<navbars.length; i++) {
+                $(navbars[i]).css("opacity", 0);
+            }
+        };
+
         this.decideWhereToGo = function () {
+
             var windowVerticalOffset = appUtil.getWindowVerticalOffset();
             var screenHeight = appUtil.getScreenHeight();
 
@@ -134,8 +166,9 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
             return $(sectionElement);
         };
 
-        this.getNavBarElement = function () {
-            return $($(document).find(".navigation"));
+        this.getNavBarElement = function (sectionIndex) {
+            var sectionElement = self.findSectionElement(sectionIndex);
+            return $(sectionElement.find(".navigation"));
         };
 
         this.findNavElement = function (sectionIndex) {

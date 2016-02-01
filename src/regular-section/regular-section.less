@@ -7,9 +7,16 @@
 @medium-content-element-padding: 10px;
 
 .section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   height: 100%;
+}
+
+.section-content-wrapper {
   display: flex;
   align-items: center;
+  margin: auto 0;
 
   .content-container, .image-container {
     display: inline-block;
@@ -22,7 +29,7 @@
     height: @medium-content-container-height;
 
     .section-title {
-      font-size: @font-size-1;
+      font-size: @font-size-1-1-1;
       font-weight: @extra-bold-font-weight;
       line-height: 100%;
       letter-spacing: -2px;
@@ -31,7 +38,10 @@
     .section-description {
       font-size: @font-size-3;
       font-weight: @light-font-weight;
-      line-height: 200%;
+      //line-height: 200%;
+      line-height: 150%; //to prevent vertically overflowing content
+      overflow-y: auto;
+      max-height: 30%;
     }
     
 
@@ -61,7 +71,7 @@
 
   .image-container {
     width: @image-container-width;
-    height: 100%;
+    height: 50vh;
    // float: right;
     .section-image {
       width: 85%;
@@ -73,30 +83,20 @@
       background-size: contain;
     }
   }
+}
 
-  &#section-1 {
-    background-color: white;
-  }
-
-  &#section-2 {
-    background-color: blue;
-  }
-
-  &#section-3 {
-    background-color: red;
-  }
-
-  &#section-4 {
-    background-color: green;
-  }
-
-  &#section-5 {
-    background-color: yellow;
+@media @large-device {
+  .section-content-wrapper {
+    .content-container {
+      .section-title {
+        font-size: @font-size-1;
+      }
+    }
   }
 }
 
 @media @small-device {
-  .section-container {
+  .section-content-wrapper {
     width: 100%;
     flex-direction: column-reverse;
     justify-content: space-around;
@@ -114,13 +114,12 @@
       .section-description {
         font-size: @font-size-5;
         line-height: 125%;
-        overflow-y: auto;
         max-height: 30vh;
       }
 
 
       .section-date, .section-link, .section-more {
-        font-size: @font-size-6;
+        font-size: @font-size-4;
       }
 
       .section-title, .section-description, .section-date, .section-links {

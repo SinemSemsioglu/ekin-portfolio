@@ -9,15 +9,26 @@
   font-size: @font-size-9;
 
   display: flex;
-  justify-content: space-between;
+  //justify-content: space-between;
+  flex-direction: column-reverse;
+  align-items: center;
 
   //could be declared in either here or in text-section.less
   //if the annotation properties are going to stay the same
-  .annotation-container {
+  /*.annotation-container {
     align-self: flex-end;
-  }
+  }*/
 
   .image-container {
+
+    width: 100%;
+    max-width: 1000px;
+    margin: 0;
+
+    .section-image {
+      width: 100%;
+    }
+    /*
     .section-image {
       max-width: 100%;
     }
@@ -37,7 +48,7 @@
 
     &.regular {
       width: @portfolio-page-right-side-section-width;
-    }
+    }*/
   }
 }
 
@@ -94,6 +105,7 @@
     .image-container {
       &.centered, &.without-padding, &.regular {
         width: 75%;
+        max-width: 1000px;
         margin: 0;
 
         .section-image {

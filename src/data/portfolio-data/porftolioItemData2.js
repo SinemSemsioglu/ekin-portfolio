@@ -1,5 +1,6 @@
 app.value("portfolioItemData2",
     {
+        "isIncomplete": true,
         "header": {
             "title": "2Helping architects get the most out of events",
             "description": "Cantilever is a simple tool to keep up with design and architecture events.",

@@ -27,6 +27,10 @@ app.controller("portfolioPageController",
             };
 
             this.goToPortfolioPage = function (itemId) {
+                if(portfolioData["item" + itemId].isIncomplete) {
+                   self.goToHomePage();
+                    scrollUtil.goToSection(itemId);
+                }
                 $state.go("portfolio." + itemId, {
                     "portfolioIndex": itemId
                 });

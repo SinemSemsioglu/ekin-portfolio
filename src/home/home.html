@@ -1,26 +1,31 @@
 <div class="home-container">
     <div class="section-wrapper">
+
+        <!--div class="navigation">
+            <div class="logo nav-item"
+                 ng-click="home.goToAboutSection()">
+            </div>
+            <div class="page-nav nav-item"
+                 ng-if="!home.mobile">
+                <home-nav></home-nav>
+            </div>
+            <div class="blog nav-item"
+                 ng-if="!home.mobile">
+                BLOG
+            </div>
+        </div-->
+
         <about-section section="home.aboutSection"></about-section>
+
     </div>
     <div class="section-wrapper"
          ng-repeat="homeSection in ::home.regularSections">
+
         <regular-section
                 section="homeSection"
                 go-to-portfolio-page="home.goToPortfolioPage">
         </regular-section>
     </div>
 
-    <div class="navigation" ng-hide="home.scrolling">
-        <div class="logo nav-item"
-             ng-click="home.goToAboutSection()">
-        </div>
-        <div class="page-nav nav-item"
-             ng-if="!home.mobile">
-            <home-nav></home-nav>
-        </div>
-        <div class="blog nav-item"
-             ng-if="!home.mobile">
-            BLOG
-        </div>
-    </div>
+
 </div>

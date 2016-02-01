@@ -6,7 +6,10 @@
   padding: @text-section-padding-vertical 0;
   //position: relative;
   display: flex;
-  justify-content: space-between;
+  //justify-content: space-between;
+
+  flex-direction: column-reverse;
+  align-items: center;
 
   font-weight: @light-font-weight;
   font-size: @font-size-9;
@@ -14,8 +17,11 @@
   text-align: left;
 
   .text-wrapper {
-    display: inline-block;
-    width: @portfolio-page-right-side-section-width;
+    //display: inline-block;
+    //width: @portfolio-page-right-side-section-width;
+
+    width: 100%;
+    //max-width: 1000px;
 
     .text-container {
       column-gap: 30px;
@@ -25,13 +31,20 @@
   .annotation-container {
     display: inline-block;
 
-    .bottom-annotation {
+    /*.bottom-annotation {
       align-self: flex-end;
+
     }
 
     .top-annotation {
       align-self: flex-start;
+    }*/
+
+    .top-annotation, .bottom-annotation {
+      font-weight: @regular-font-weight;
+      padding-top: @centered-screen-annotation-padding-top;
     }
+
   }
 }
 
@@ -66,6 +79,7 @@
 
     .text-wrapper {
       width: 75%;
+      max-width: 1000px;
     }
 
     .top-annotation, .bottom-annotation {

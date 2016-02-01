@@ -1,5 +1,5 @@
 app.directive("aboutSection",
-    [function () {
+    ["appUtil", function (appUtil) {
         return {
             replace: true,
             restrict: "E",
@@ -9,6 +9,8 @@ app.directive("aboutSection",
             link: function (scope, element) {
                 element.css("background-color", scope.section.color.background);
                 element.css("color", scope.section.color.font);
+
+                scope.mobile = appUtil.isScreenNarrow();
             },
             templateUrl: "templates/about-section/about-section.html"
         };
