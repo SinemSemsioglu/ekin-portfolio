@@ -2,6 +2,8 @@
 @section-width: 100%;
 @container-width: calculate(@section-width - @medium-screen-side);
 @nav-width: 60%;
+@nav-height: 80px;
+@nav-top-offset: 20px;
 
 .home-container {
 
@@ -16,9 +18,11 @@
   }
 
   .navigation {
-    position: fixed;
-    left: @medium-screen-side;
-    top: 20px;
+    //position: fixed;
+    //left: @medium-screen-side;
+    //top: 20px;
+    margin-top: @nav-top-offset;
+    //margin-left: @medium-screen-side;
     width: @nav-width;
   }
 }
@@ -26,16 +30,14 @@
 @media @small-device {
   .home-container {
     .section-wrapper {
-
-      .section-container {
+      .section-content-wrapper, .section-container {
         padding: 0;
         width: 100%;
       }
-
     }
 
     .navigation {
-      left: @small-screen-side;
+      margin-left: @small-screen-side;
     }
   }
 }

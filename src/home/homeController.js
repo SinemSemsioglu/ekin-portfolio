@@ -17,7 +17,6 @@ app.controller("homeController", [
         };
 
         this.goToPortfolioPage = function (portfolioIndex) {
-            console.log("/portfolio/" + portfolioIndex);
             $state.transitionTo("portfolio." + portfolioIndex,{
                     "portfolioIndex": portfolioIndex
                 });
