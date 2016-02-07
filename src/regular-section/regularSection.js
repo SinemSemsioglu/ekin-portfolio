@@ -24,6 +24,7 @@ app.directive("regularSection",
                 scope.mobile = appUtil.isScreenNarrow();
 
                 scope.goToAboutSection = function () {
+                    console.log("regular section", 0);
                     scrollUtil.goToSection(0);
                 };
 

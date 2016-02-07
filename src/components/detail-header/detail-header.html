@@ -2,14 +2,14 @@
     <div class="navigation-wrapper">
         <div class="navigation">
             <div class="logo nav-item"
-                 ng-click="goToHomePage()">
+                 ng-click="portfolioPage.goToHomePage()">
             </div>
             <div class="page-nav nav-item"
-                 ng-if="!isScreenNarrow">
+                 ng-if="!portfolioPage.isScreenNarrow">
                 <detail-nav></detail-nav>
             </div>
             <div class="blog nav-item"
-                 ng-if="!isScreenNarrow">
+                 ng-if="!portfolioPage.isScreenNarrow">
                 BLOG
             </div>
         </div>
@@ -17,13 +17,13 @@
 
     <div class="header-image">
         <img class="image-image"
-             ng-src="{{::headerInfo.image_path}}">
+             ng-src="{{::portfolioPage.portfolioItem.header.image_path}}">
     </div>
 
     <div class="text-container">
         <div class="header-tags">
             <div class="header-tag"
-                 ng-repeat="tag in ::headerInfo.tags">
+                 ng-repeat="tag in ::portfolioPage.portfolioItem.header.tags">
                 <div class="tag"
                      ng-class="{odd: $odd, even: $even}"
                      ng-bind="tag">
@@ -35,14 +35,14 @@
             </div>
         </div>
         <div class="detail-header-title"
-             ng-bind="headerInfo.title">
+             ng-bind="::portfolioPage.portfolioItem.header.title">
 
         </div>
         <div class="detail-header-description"
-             ng-bind="headerInfo.description">
+             ng-bind="::portfolioPage.portfolioItem.header.description">
         </div>
         <div class="detail-header-date"
-             ng-bind="headerInfo.date">
+             ng-bind="::portfolioPage.portfolioItem.header.date">
         </div>
     </div>
 </div>

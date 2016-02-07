@@ -4,7 +4,8 @@ app.directive("aboutSection",
             replace: true,
             restrict: "E",
             scope: {
-                section: "="
+                section: "=",
+                sectionText: "="
             },
             link: function (scope, element) {
                 element.css("background-color", scope.section.color.background);

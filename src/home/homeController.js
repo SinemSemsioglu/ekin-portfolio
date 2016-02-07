@@ -1,8 +1,8 @@
 app.controller("homeController", [
     "sectionData", "numberOfSections", "scrollUtil", "$scope", "$window", "$timeout",
-    "scrollTimeValues", "appUtil", "$state",
+    "scrollTimeValues", "appUtil", "$state", "$sce",
     function (sectionData, numberOfSections, scrollUtil, $scope, $window, $timeout,
-              scrollTimeValues, appUtil, $state) {
+              scrollTimeValues, appUtil, $state, $sce) {
 
         var self = this;
 
@@ -13,6 +13,7 @@ app.controller("homeController", [
         scrollUtil.setScrollPropertiesForHomePage(self, $scope);
 
         this.goToAboutSection = function () {
+            console.log("home page", 0);
             scrollUtil.goToSection(0);
         };
 
@@ -28,6 +29,7 @@ app.controller("homeController", [
 
             if (sectionType === "about") {
                 this.aboutSection = section;
+                this.aboutSectionText = $sce.trustAsHtml(section.text);
             } else if (sectionType === "regular") {
                 this.regularSections.push(section);
             }

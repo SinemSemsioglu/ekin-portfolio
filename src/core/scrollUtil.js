@@ -1,26 +1,8 @@
 app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scrollTimeValues",
-    function ($window, appUtil, sectionData, $timeout, scrollTimeValues) {
+    "homeNavHelper",
+    function ($window, appUtil, sectionData, $timeout, scrollTimeValues, homeNavHelper) {
 
         var self = this;
-
-        this.nickJonasScroll = function () {
-
-            $('.window').windows({
-                snapping: true,
-                snapSpeed: 500,
-                snapInterval: 1100,
-                onScroll: function(scrollPos){
-                    // scrollPos:Number
-                },
-                onSnapComplete: function($el){
-                    // after window ($el) snaps into place
-                },
-                onWindowEnter: function($el){
-                    // when new window ($el) enters viewport
-                }
-            });
-
-        };
 
         this.unsetScrollProperties = function () {
             var window = $($window);
@@ -36,14 +18,14 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
             var window = $($window);
             var navBar = self.getNavBarElement();
 
-            window.resize( function () {
+            window.resize(function () {
                 homeController.mobile = appUtil.isScreenNarrow();
                 window.stop();
             });
 
             //decide which scroll events to bind, fucks up clicking on the nav
             window.bind("scroll", function (event) {
-                self.hideAllNavs();
+               // self.hideAllNavs();
 
                 if (!scrollStarted) {
 
@@ -65,7 +47,7 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
             window.bind("scrollstop", function () {
                 var sectionToBeScrolled = self.decideWhereToGo();
 
-                if (sectionToBeScrolled === 0){
+                if (sectionToBeScrolled === 0) {
                     scrollStarted = false;
                     homeController.scrolling = false;
                 } else {
@@ -86,6 +68,8 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
         };
 
         this.goToSection = function (sectionId) {
+            homeNavHelper.updateSelectedSection(sectionId);
+
             var navElement = self.findNavElement(sectionId);
             var sectionElement = self.findSectionElement(sectionId);
 
@@ -102,18 +86,19 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
             }, scrollTimeValues.TRANSITION_DURATION);
 
 
+            /*
             if (sectionId === 0) {
                 self.navBarElementOnTransition(sectionId);
             } else {
                 $timeout(function () {
                     self.navBarElementOnTransition(sectionId);
                 }, null, scrollTimeValues.TRANSTION_DURATION + 200);
-            }
+            }*/
         };
 
         this.navBarElementOnTransition = function (sectionId) {
             //var sectionName = "section_" + sectionId;
-           // var navColor = sectionData[sectionName].color.nav;
+            // var navColor = sectionData[sectionName].color.nav;
             //be careful about resize events
             var targetOpacity = appUtil.isScreenNarrow() ? 0.6 : 1;
 
@@ -123,19 +108,15 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
             //navbarElement.css("color", navColor);
             //logoElement.css("background-image", "url(\"/assets/images/logo-" + navColor + ".svg\")");
 
+            navbarElement.animate({
+                "opacity": targetOpacity
+            }, scrollTimeValues.NAV_ANIMATION_DURATION, "linear");
 
-
-            if (sectionId != 0){
-                //navbarElement.css("opacity", 0);
-                navbarElement.animate({
-                    "opacity": targetOpacity
-                }, scrollTimeValues.NAV_ANIMATION_DURATION, "linear");
-            }
         };
 
         this.hideAllNavs = function () {
             var navbars = $(document).find(".navigation");
-            for (var i=0; i<navbars.length; i++) {
+            for (var i = 0; i < navbars.length; i++) {
                 $(navbars[i]).css("opacity", 0);
             }
         };
@@ -147,6 +128,7 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
 
             var sectionId = Math.round(windowVerticalOffset / screenHeight);
 
+            console.log("decide where to go", sectionId);
             self.goToSection(sectionId);
 
             return sectionId;
@@ -155,9 +137,9 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
         this.findSectionElement = function (sectionIndex) {
             var sectionId;
 
-            if (sectionIndex <=12 && sectionIndex >= 0) {
+            if (sectionIndex <= 12 && sectionIndex >= 0) {
                 sectionId = "section-" + sectionIndex;
-            }  else {
+            } else {
                 //blog?
             }
 
@@ -172,9 +154,9 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
         };
 
         this.findNavElement = function (sectionIndex) {
-            if (sectionIndex <=12 && sectionIndex > 0) {
+            if (sectionIndex <= 12 && sectionIndex > 0) {
                 sectionId = "section-" + sectionIndex;
-            } else if (sectionIndex === 0){
+            } else if (sectionIndex === 0) {
                 sectionId = "logo";
                 //dont highlight in this case though
             } else {

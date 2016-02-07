@@ -12,7 +12,6 @@ app.controller("portfolioPageController",
             var portfolioIndex = $stateParams.portfolioIndex || 0;
 
             //use portfolioIndex instead of 0 when portfolioData is populated
-
             this.portfolioItem = portfolioData["item" + portfolioIndex];
             this.isScreenNarrow = appUtil.isScreenNarrow();
 
@@ -28,7 +27,8 @@ app.controller("portfolioPageController",
 
             this.goToPortfolioPage = function (itemId) {
                 if(portfolioData["item" + itemId].isIncomplete) {
-                   self.goToHomePage();
+                    self.goToHomePage();
+                    console.log("portfoliopage call", itemId);
                     scrollUtil.goToSection(itemId);
                 }
                 $state.go("portfolio." + itemId, {
@@ -36,4 +36,7 @@ app.controller("portfolioPageController",
                 });
             };
 
+            this.isSelected = function (itemId) {
+                return (itemId === parseInt(portfolioIndex));
+            };
         }]);

@@ -1,6 +1,12 @@
 app.value("sectionData", {
     "section_0": {
-        "text": "Hi, I am Ekin a multidisciplinary designer with an analytical mind. (and a love for systems). I’ve co-created cil.io. Currently: design intern at Markforged I try to figure out how programmable matter can influence the way we design over at auton.io - check it out.",
+        "text": "<p>Hi, I am <b>Ekin</b></p>" +
+        "<p>a <b>multidisciplinary</b> designer with an analytical mind. (and a love for systems).</p>" +
+        "<br>" +
+        "<p>I’ve co-created cil.io.</p>" +
+        "<p>Currently: <b>design intern at Markforged</b></p>" +
+        "<br>" +
+        "<p>I try to figure out how programmable matter can influence the way we design over at <b>auton.io</b> - check it out.</p>",
         "type": "about",
         "class": "section-0",
         "color": {
@@ -11,6 +17,7 @@ app.value("sectionData", {
     },
     "section_1": {
         "id": 1,
+        "name": "sample_name",
         "title": "Infrastructure for human enhancement",
         "description": "Natural selection for your copy. Cilio " +
         "intelligently optimizes your writing for traction. Built " +
@@ -21,6 +28,7 @@ app.value("sectionData", {
             "year": "2015"
         },
         "link": "",
+        "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
         "details": true,
         "image_path": "../assets/images/o-01.svg",
         "type": "regular",

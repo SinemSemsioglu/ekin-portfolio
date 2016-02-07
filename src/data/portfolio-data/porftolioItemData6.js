@@ -39,7 +39,8 @@ app.value("portfolioItemData6",
                 "path": "/assets/images/pitems/6-buharo/buharo3.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
-            },
+            }],
+        "extra_images": [
             {
                 "path": "/assets/images/pitems/6-buharo/buharo4.jpg",
                 "class": "regular",

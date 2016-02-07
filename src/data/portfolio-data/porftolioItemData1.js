@@ -17,21 +17,21 @@ app.value("portfolioItemData1",
         "text_sections": [
             {
                 "text": "Built upon the slopes of Mount Ingino in Umbria, the ancient town of Gubbio boasts many well-preserved structures that document its glorious history. Founded by the Etruscans between the second and first centuries B.C., its Roman theater, Consuls Palace, and various churches and fountains are spectacular monuments to the Roman, Medieval, and Renaissance periods.",
-                "number_of_columns": 1,
+                "number_of_columns": 1
             },
             {
                 "text": "Estibulum mollis eget eros et tincidunt. Sed et nisl et enim dictum tincidunt. Phasellus" +
                 " accumsan at lacus non dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada" +
                 " fames ac turpis egestas. Phasellus et semper erat. Etiam convallis mauris quis nibh tristique" +
                 " pharetra. Aliquam",
-                "number_of_columns": 1,
+                "number_of_columns": 1
             },
             {
                 "text": "Estibulum mollis eget eros et tincidunt. Sed et nisl et enim dictum tincidunt. Phasellus" +
                 " accumsan at lacus non dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada" +
                 " fames ac turpis egestas. Phasellus et semper erat. Etiam convallis mauris quis nibh tristique" +
                 " pharetra. Aliquam",
-                "number_of_columns": 1,
+                "number_of_columns": 1
             }
         ],
         "image_sections": [
@@ -48,7 +48,9 @@ app.value("portfolioItemData1",
                 "path": "/assets/images/pitems/1-cilio/cilio2.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
-            },
+            }
+    ],
+    "extra_images": [
             {
                 "path": "/assets/images/pitems/1-cilio/cilio3.jpg",
                 "class": "regular",

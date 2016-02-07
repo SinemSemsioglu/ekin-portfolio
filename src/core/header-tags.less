@@ -1,0 +1,27 @@
+.header-tags {
+  display: inline-flex;
+  align-items: baseline;
+
+  .header-tag {
+    // add background image for separator
+    .tag {
+      margin-right: 5px;
+      display: inline-block;
+
+      &.even {
+        font-weight: @bold-font-weight;
+      }
+
+      &.odd {
+        font-weight: @light-font-weight;
+      }
+    }
+
+    .separator {
+      display: inline-block;
+      margin-right: 5px;
+      font-weight: @bold-font-weight;
+      //font-size: @font-size-2;
+    }
+  }
+}

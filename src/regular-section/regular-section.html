@@ -1,18 +1,5 @@
-<div class="section-container" id="{{section.class}}">
-
-    <div class="navigation">
-        <div class="logo nav-item"
-             ng-click="goToAboutSection()">
-        </div>
-        <div class="page-nav nav-item"
-             ng-if="!mobile">
-            <home-nav></home-nav>
-        </div>
-        <div class="blog nav-item"
-             ng-if="!mobile">
-            BLOG
-        </div>
-    </div>
+<div class="section-container"
+     id="{{section.class}}">
 
     <div class="section-content-wrapper">
         <div class="content-container">
@@ -22,11 +9,25 @@
             <span class="section-year"
                   ng-bind="section.date.year"></span>
             </div>
+            <div class="header-tags">
+                <div class="header-tag"
+                     ng-repeat="tag in ::section.tags">
+                    <div class="tag"
+                         ng-class="{odd: $odd, even: $even}"
+                         ng-bind="tag">
+                    </div>
+                    <div class="separator"
+                         ng-hide="$last">
+                        |
+                    </div>
+                </div>
+            </div>
             <div class="section-title"
                  ng-bind="section.title"></div>
+
             <div class="section-description"
                  ng-bind="section.description"></div>
-            <div class ="section-links">
+            <div class="section-links">
                 <div class="section-more"
                      ng-if="section.details"
                      ng-click="goToPortfolioPage(section.id)">

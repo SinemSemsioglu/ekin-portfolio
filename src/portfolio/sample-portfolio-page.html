@@ -1,9 +1,6 @@
 <div class="portfolio-page">
     <div class="portfolio-header-container">
-        <detail-header header-info="portfolioPage.portfolioItem.header"
-                       go-to-home-page="portfolioPage.goToHomePage"
-                       go-to-portfolio-page="portfolioPage.goToPortfolioPage"
-                       is-screen-narrow="portfolioPage.isScreenNarrow"></detail-header>
+        <detail-header></detail-header>
     </div>
     <div class="portfolio-content-container">
         <text-section class="text-content"
@@ -29,6 +26,10 @@
         </text-section>
         <image-section class="image-content"
                        image="portfolioPage.portfolioItem.image_sections[2]">
+        </image-section>
+        <image-section ng-repeat="image in portfolioPage.portfolioItem.extra_images"
+                       class="image-content"
+                       image="image">
         </image-section>
     </div>
     <div class="portfolio-page-bottom-links">

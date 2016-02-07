@@ -9,11 +9,15 @@
 .home-nav-container {
   display: flex;
   flex-direction: row;
+  background-color: white;
+  box-shadow: grey;
 
   align-items: center;
   justify-content: space-around;
 
   padding: 10px 0;
+
+  width: 100%;
 
   .nav-button-wrapper {
     margin: 5px;
@@ -22,12 +26,6 @@
     .nav-button {
       margin: auto;
       z-index: @button-z-index;
-    }
-
-    &.selected {
-      .nav-button {
-        text-decoration: underline;
-      }
     }
   }
 }

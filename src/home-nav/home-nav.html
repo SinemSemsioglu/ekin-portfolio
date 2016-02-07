@@ -2,8 +2,12 @@
     <div class="nav-button-wrapper {{home.regularSections[buttonId-1].class}}"
          ng-repeat="buttonId in ::homeNav.numberOfSections">
         <div class="nav-button"
+             ng-class="{selected: homeNav.isSelected(buttonId)}"
              ng-click="homeNav.goToSection(buttonId)"
-             ng-bind="buttonId">
+             ng-bind="buttonId"
+             uib-tooltip={{homeNav.menuData[$index]}}
+             tooltip-placement="bottom"
+             tooltip-class="nav-button-tooltip">
         </div>
     </div>
 </div>

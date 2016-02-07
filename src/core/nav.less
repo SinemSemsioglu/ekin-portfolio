@@ -1,13 +1,24 @@
 @logo-width: 20px;
 @logo-height: 30px;
-@nav-height: @logo-height + 50px;
+@nav-height: @logo-height + 70px;
 
 .navigation {
   display: flex;
   flex-direction: row;
   align-items: center;
 
+  background-color: white;
+  box-shadow: 0 0 2px 0 #cccccc;
+
   font-size: @font-size-5;
+
+  height: @nav-height;
+
+  position: fixed;
+  //left: @medium-screen-side;
+  //top: 20px;
+  padding-left: @medium-screen-side;
+  width: 100%;
 
   .logo {
     height: @logo-height;
@@ -23,6 +34,19 @@
     margin-left: @logo-width;
     margin-right: @logo-width;
     font-weight: @regular-font-weight;
-    width: 70%;
+    width: 50%;
+  }
+
+  .selected.nav-button {
+    text-decoration: underline;
+  }
+
+  .nav-button-tooltip {
+  }
+}
+
+@media @small-device {
+  .navigation {
+    padding-left: @small-screen-side;
   }
 }

@@ -3,12 +3,6 @@ app.directive("detailHeader",
         return {
             replace: true,
             restrict: "E",
-            scope: {
-                headerInfo: "=",
-                goToHomePage: "=",
-                goToPortfolioPage: "=",
-                isScreenNarrow: "="
-            },
             templateUrl: "templates/components/detail-header/detail-header.html"
         };
     }]);

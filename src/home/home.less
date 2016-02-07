@@ -1,7 +1,7 @@
 @section-height: 100vh;
 @section-width: 100%;
 @container-width: calculate(@section-width - @medium-screen-side);
-@nav-width: 60%;
+@nav-width: 100%;
 @nav-height: 80px;
 @nav-top-offset: 20px;
 
@@ -17,14 +17,6 @@
     }
   }
 
-  .navigation {
-    //position: fixed;
-    //left: @medium-screen-side;
-    //top: 20px;
-    margin-top: @nav-top-offset;
-    //margin-left: @medium-screen-side;
-    width: @nav-width;
-  }
 }
 
 @media @small-device {
@@ -34,10 +26,6 @@
         padding: 0;
         width: 100%;
       }
-    }
-
-    .navigation {
-      margin-left: @small-screen-side;
     }
   }
 }

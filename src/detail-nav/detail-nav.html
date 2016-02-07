@@ -2,7 +2,8 @@
     <div class="nav-button-wrapper"
          ng-repeat="buttonId in ::detailNav.numberOfPortfolioItems">
         <div class="nav-button"
-             ng-click="goToPortfolioPage(buttonId)"
+             ng-class="{selected: portfolioPage.isSelected(buttonId)}"
+             ng-click="portfolioPage.goToPortfolioPage(buttonId)"
              ng-bind="buttonId">
         </div>
     </div>
