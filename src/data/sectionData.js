@@ -1,9 +1,6 @@
 app.value("sectionData", {
     "section_0": {
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore" +
-        " et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip " +
-        "ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu " +
-        "fugiat nulla pariatur.",
+        "text": "Hi, I am Ekin a multidisciplinary designer with an analytical mind. (and a love for systems). I’ve co-created cil.io. Currently: design intern at Markforged I try to figure out how programmable matter can influence the way we design over at auton.io - check it out.",
         "type": "about",
         "class": "section-0",
         "color": {

@@ -1,53 +1,62 @@
+// BUHARO
+
 app.value("portfolioItemData6",
     {
         "header": {
-            "title": "6Helping architects get the most out of events",
-            "description": "Cantilever is a simple tool to keep up with design and architecture events.",
-            "image_path": "/assets/images/bg.jpg",
-            "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
+            "title": "Redesigning an oriental tradition",
+            "description": "Buharo was a hookah startup addressing many problems a traditional hookah faces with design.",
+            "image_path": "/assets/images/pitems/6-buharo/buharohead.jpg",
+            "tags": ["INDUSTRIAL DESIGN", "ENTREPRENEURSHIP"],
             "date": "SEPTEMBER 2014"
         },
         "text_sections": [
             {
-                "text": "Built upon the slopes of Mount Ingino in Umbria, the ancient town of Gubbio boasts many well-preserved structures that document its glorious history. Founded by the Etruscans between the second and first centuries B.C., its Roman theater, Consuls Palace, and various churches and fountains are spectacular monuments to the Roman, Medieval, and Renaissance periods.",
+                "text": "Buharo started out as a satirical pet project. I used to work on a minimal, ergonomic and innovative hookah design mostly because it was an amusing idea (my friends still laugh at me when I tell them I’ve pitched a carbon fiber hookah to some of Turkey’s prominent angels and a roomful of tech people). This project just let me get away from the more ‘serious’ work on my desktop and later on became a relatively simple project with which I could try entrepreneurship. Around that time an annual entrepreneurship competition called Fikir Kutusu (Idea Box) came up at Koc University (one of the top universities in Turkey). I decided to attend with a friend of mine, Zeynep, who is a business student. Our aim was to learn as much as we could through thinking of Buharo as a business. As we pored through the market data, age, and consumption research for a business plan, the idea started to gradually become more serious. In the end, we concluded it was absurd that such a large and rapidly growing global market didn’t have any large-scale disruption.",
                 "number_of_columns": 1,
-                "annotations": {
-                    "bottom": "Lorem ipsum dolor sit amet"
-                }
+                
             },
             {
-                "text": "Estibulum mollis eget eros et tincidunt. Sed et nisl et enim dictum tincidunt. Phasellus" +
-                " accumsan at lacus non dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada" +
-                " fames ac turpis egestas. Phasellus et semper erat. Etiam convallis mauris quis nibh tristique" +
-                " pharetra. Aliquam",
+                "text": "Buharo became one of the three finalists out of dozens of projects from all over the country. As a finalist, we pitched Buharo to a well-known Istanbul based angel investor, Galata Business Angels. Expectedly, they were more interested in software than tobacco (or the lackthereof) but it was quite an informative and formative experience.",
                 "number_of_columns": 1,
-                "annotations": {
-                    "bottom": "Lorem ipsum dolor sit amet"
-                }
             },
             {
-                "text": "Estibulum mollis eget eros et tincidunt. Sed et nisl et enim dictum tincidunt. Phasellus" +
-                " accumsan at lacus non dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada" +
-                " fames ac turpis egestas. Phasellus et semper erat. Etiam convallis mauris quis nibh tristique" +
-                " pharetra. Aliquam",
-                "number_of_columns": 3,
-                "annotations": {
-                    "bottom": "Lorem ipsum dolor sit amet"
-                }
+                "text": "Since then I’ve met with many manufacturing companies, refined the designs for production with mechanical engineers, have found key partners in Turkey and the Middle East. Now we are prototyping with different materials and hope to be in market in 2016.",
+                "number_of_columns": 1,
             }
+
         ],
         "image_sections": [
             {
-                "path": "/assets/images/size.jpg",
+                "path": "/assets/images/pitems/6-buharo/buharo1.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             },
             {
-                "path": "/assets/images/size2.jpg",
+                "path": "/assets/images/pitems/6-buharo/buharo2.jpg",
                 "class": "regular"
             },
             {
-                "path": "/assets/images/size3.jpg",
+                "path": "/assets/images/pitems/6-buharo/buharo3.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            },
+            {
+                "path": "/assets/images/pitems/6-buharo/buharo4.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            },
+            {
+                "path": "/assets/images/pitems/6-buharo/buharo5.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            },
+            {
+                "path": "/assets/images/pitems/6-buharo/buharo6.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            },
+            {
+                "path": "/assets/images/pitems/6-buharo/buharo7.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             }

@@ -3,7 +3,7 @@ app.value("portfolioItemData10",
         "header": {
             "title": "10Helping architects get the most out of events",
             "description": "Cantilever is a simple tool to keep up with design and architecture events.",
-            "image_path": "/assets/images/bg.jpg",
+            "image_path": "/assets/images/pitems/2-dunemoon/duneheader.jpg",
             "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
             "date": "SEPTEMBER 2014"
         },
@@ -38,16 +38,16 @@ app.value("portfolioItemData10",
         ],
         "image_sections": [
             {
-                "path": "/assets/images/size.jpg",
+                "path": "/assets/images/pitems/2-dunemoon/dune1.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             },
             {
-                "path": "/assets/images/size2.jpg",
+                "path": "/assets/images/pitems/2-dunemoon/dune2.jpg",
                 "class": "regular"
             },
             {
-                "path": "/assets/images/size3.jpg",
+                "path": "/assets/images/pitems/2-dunemoon/dune1.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             }

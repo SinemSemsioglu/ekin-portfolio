@@ -38,16 +38,16 @@ app.value("portfolioItemData3",
         ],
         "image_sections": [
             {
-                "path": "/assets/images/size.jpg",
+                "path": "/assets/images/pitems/3-cantilever/cantilever1.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             },
             {
-                "path": "/assets/images/size2.jpg",
+                "path": "/assets/images/pitems/3-cantilever/cantilever2.jpg",
                 "class": "regular"
             },
             {
-                "path": "/assets/images/size3.jpg",
+                "path": "/assets/images/pitems/3-cantilever/cantilever3.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             }
