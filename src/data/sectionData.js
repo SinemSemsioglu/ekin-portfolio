@@ -1,12 +1,14 @@
 app.value("sectionData", {
     "section_0": {
-        "text": "<p>Hi, I am <b>Ekin</b></p>" +
-        "<p>a <b>multidisciplinary</b> designer with an analytical mind. (and a love for systems).</p>" +
+        "text": "<h1>Hi, this is <b>Ekin</b>.</h1>" +
+        "<h1><p>I am a <b>multidisciplinary</b> designer based in New York.</p>" +
+        "<p>I am currently a junior in Architecture at <a href='http://www.newschool.edu/parsons/'><b>Parsons</b></a>.</p>" + "<p>Beyond <b>spaces</b>, I design <b>interfaces</b>, <b>products</b>, and <b>brands</b>.</p>" +
+
         "<br>" +
-        "<p>I’ve co-created cil.io.</p>" +
-        "<p>Currently: <b>design intern at Markforged</b></p>" +
+        "<p>Currently: product design intern at <a href='http://markforged.com'><b>Markforged</b></a></p>" +
+        "<p>I’ve co-created <a href='http://cil.io'><b>cil.io</b></a>.</p>" +
         "<br>" +
-        "<p>I try to figure out how programmable matter can influence the way we design over at <b>auton.io</b> - check it out.</p>",
+        "<p>Here's my <a href='http://cil.io'><b>resume</b></a>.</p></h1>",
         "type": "about",
         "class": "section-0",
         "color": {
