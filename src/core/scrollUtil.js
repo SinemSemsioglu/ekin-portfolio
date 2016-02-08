@@ -28,7 +28,6 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
                // self.hideAllNavs();
 
                 if (!scrollStarted) {
-
                     window.trigger("scrollstart");
                 }
                 event.preventDefault();
@@ -65,6 +64,14 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
 
         this.getElementOffsetTop = function (element) {
             return element.offset().top;
+        };
+
+        this.goToTop = function () {
+           // alert("called");
+            var page = $('html,body');
+            page.animate({
+                scrollTop: 0
+            });
         };
 
         this.goToSection = function (sectionId) {

@@ -1,10 +1,11 @@
 app.controller("portfolioPageController",
-    ["$state", "portfolioData", "appUtil", "$stateParams", "numberOfSections", "scrollUtil",
-        function ($state, portfolioData, appUtil, $stateParams, numberOfSections, scrollUtil) {
+    ["$state", "portfolioData", "appUtil", "$stateParams", "numberOfSections", "scrollUtil", "$anchorScroll",
+        function ($state, portfolioData, appUtil, $stateParams, numberOfSections, scrollUtil, $anchorScroll) {
             "use strict";
 
             var self = this;
 
+            scrollUtil.goToTop();
             scrollUtil.unsetScrollProperties();
 
             //goes to the first portfolio item if nothing is given
@@ -31,6 +32,9 @@ app.controller("portfolioPageController",
                     console.log("portfoliopage call", itemId);
                     scrollUtil.goToSection(itemId);
                 }
+
+                scrollUtil.goToTop();
+
                 $state.go("portfolio." + itemId, {
                     "portfolioIndex": itemId
                 });
