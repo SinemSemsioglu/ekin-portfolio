@@ -29,7 +29,7 @@ app.controller("portfolioPageController",
             this.goToPortfolioPage = function (itemId) {
                 if(portfolioData["item" + itemId].isIncomplete) {
                     self.goToHomePage();
-                    console.log("portfoliopage call", itemId);
+                    //console.log("portfoliopage call", itemId);
                     scrollUtil.goToSection(itemId);
                 }
 

@@ -9,10 +9,21 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
             window.off("resize, scroll, scrollstart, scrollstop");
         };
 
-        this.setScrollPropertiesForHomePage = function (homeController, scope) {
-            var scrollStarted = false;
+        this.toggleDefaultScrollActions = function (preventDefault) {
+            var scrollEvents = "mousedown wheel DOMMouseScroll mousewheel keyup touchmove";
+            var window = $($window);
 
-            var scrollEvents = "scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove";
+            if (preventDefault) {
+                window.bind(scrollEvents, function (event) {
+                    event.preventDefault();
+                });
+            } else {
+                window.unbind(scrollEvents);
+            }
+        };
+        this.setScrollPropertiesForHomePage = function (homeController, scope) {
+
+            var scrollStarted = false;
 
             /* scroll event stuff */
             var window = $($window);
@@ -25,12 +36,13 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
 
             //decide which scroll events to bind, fucks up clicking on the nav
             window.bind("scroll", function (event) {
-               // self.hideAllNavs();
+                // self.hideAllNavs();
 
                 if (!scrollStarted) {
                     window.trigger("scrollstart");
                 }
                 event.preventDefault();
+
                 scrollStarted = true;
             });
 
@@ -50,10 +62,13 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
                     scrollStarted = false;
                     homeController.scrolling = false;
                 } else {
+                    self.toggleDefaultScrollActions(true);
+
                     $timeout(function () {
                         scrollStarted = false;
                         homeController.scrolling = false;
                         scope.$apply();
+                        self.toggleDefaultScrollActions(false);
                     }, scrollTimeValues.TRANSITION_DURATION);
                 }
 
@@ -67,7 +82,7 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
         };
 
         this.goToTop = function () {
-           // alert("called");
+            // alert("called");
             var page = $('html,body');
             page.animate({
                 scrollTop: 0
@@ -90,17 +105,17 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
 
             page.stop().animate({
                 scrollTop: targetOffset
-            }, scrollTimeValues.TRANSITION_DURATION);
+            }, scrollTimeValues.TRANSITION_DURATION, "linear");
 
 
             /*
-            if (sectionId === 0) {
-                self.navBarElementOnTransition(sectionId);
-            } else {
-                $timeout(function () {
-                    self.navBarElementOnTransition(sectionId);
-                }, null, scrollTimeValues.TRANSTION_DURATION + 200);
-            }*/
+             if (sectionId === 0) {
+             self.navBarElementOnTransition(sectionId);
+             } else {
+             $timeout(function () {
+             self.navBarElementOnTransition(sectionId);
+             }, null, scrollTimeValues.TRANSTION_DURATION + 200);
+             }*/
         };
 
         this.navBarElementOnTransition = function (sectionId) {
@@ -135,7 +150,7 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
 
             var sectionId = Math.round(windowVerticalOffset / screenHeight);
 
-            console.log("decide where to go", sectionId);
+            //console.log("decide where to go", sectionId);
             self.goToSection(sectionId);
 
             return sectionId;

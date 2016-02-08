@@ -4,7 +4,11 @@
         <div class="nav-button"
              ng-class="{selected: portfolioPage.isSelected(buttonId)}"
              ng-click="portfolioPage.goToPortfolioPage(buttonId)"
-             ng-bind="buttonId">
+             ng-bind="buttonId"
+             uib-tooltip={{detailNav.menuData[$index]}}
+             tooltip-placement="bottom"
+             tooltip-class="nav-button-tooltip"
+             tooltip-animation="false">
         </div>
     </div>
 </div>
