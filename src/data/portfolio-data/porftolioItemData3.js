@@ -1,7 +1,9 @@
+// Cantilever
+
 app.value("portfolioItemData3",
     {
         "header": {
-            "title": "3Helping architects get the most out of events",
+            "title": "Helping architects get the most out of events",
             "description": "Cantilever is a simple tool to keep up with design and architecture events.",
             "image_path": "/assets/images/bg.jpg",
             "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],

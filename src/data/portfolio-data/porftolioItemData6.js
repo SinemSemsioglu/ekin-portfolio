@@ -1,10 +1,10 @@
-// BUHARO
+// Buharo
 
 app.value("portfolioItemData6",
     {
         "header": {
             "title": "Redesigning an oriental tradition",
-            "description": "Buharo was a hookah startup addressing many problems a traditional hookah faces with design.",
+            "description": "Buharo addresses many problems a traditional hookah creates with design.",
             "image_path": "/assets/images/pitems/6-buharo/buharohead.jpg",
             "tags": ["INDUSTRIAL DESIGN", "ENTREPRENEURSHIP"],
             "date": "SEPTEMBER 2014"

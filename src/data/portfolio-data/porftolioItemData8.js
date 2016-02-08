@@ -1,8 +1,10 @@
+// Information Design
+
 app.value("portfolioItemData8",
     {
         "header": {
-            "title": "8Helping architects get the most out of events",
-            "description": "Cantilever is a simple tool to keep up with design and architecture events.",
+            "title": "Information comes in many forms",
+            "description": "These are experiments in information design incorporating somewhat unusual datasets",
             "image_path": "/assets/images/bg.jpg",
             "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
             "date": "SEPTEMBER 2014"

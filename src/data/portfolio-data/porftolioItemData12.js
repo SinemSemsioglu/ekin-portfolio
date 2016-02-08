@@ -1,3 +1,5 @@
+// More Architecture
+
 app.value("portfolioItemData12",
     {
         "header": {

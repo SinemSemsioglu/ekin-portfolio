@@ -1,10 +1,12 @@
+// Logos
+
 app.value("portfolioItemData10",
     {
         "header": {
-            "title": "10Helping architects get the most out of events",
-            "description": "Cantilever is a simple tool to keep up with design and architecture events.",
+            "title": "Three samples of identity design",
+            "description": "A construction company, a nonprofit, and a retailer walk into a bar",
             "image_path": "/assets/images/pitems/2-dunemoon/duneheader.jpg",
-            "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
+            "tags": ["BRANDING", "IDENTITY"],
             "date": "SEPTEMBER 2014"
         },
         "text_sections": [

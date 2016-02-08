@@ -1,7 +1,9 @@
+// Experiments
+
 app.value("portfolioItemData9",
     {
         "header": {
-            "title": "9Helping architects get the most out of events",
+            "title": "Experiments in space, form, noise, and free will",
             "description": "Cantilever is a simple tool to keep up with design and architecture events.",
             "image_path": "/assets/images/bg.jpg",
             "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
