@@ -54,6 +54,7 @@ app.value("sectionData", {
             "year": "2015"
         },
         "link": "GO TO SITE",
+        "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
         "details": false,
         "image_path": "../assets/images/d.svg",
         "type": "regular",
@@ -76,6 +77,7 @@ app.value("sectionData", {
             "year": "2015"
         },
         "link": "GO TO SITE",
+        "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
         "image_path": "../assets/images/c-01.svg",
         "type": "regular",
         "class": "section-3",
@@ -98,6 +100,7 @@ app.value("sectionData", {
             "year": "2015"
         },
         "link": "GO TO SITE",
+        "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
         "image_path": "../assets/images/kp-01.svg",
         "type": "regular",
         "class": "section-4",
@@ -116,10 +119,11 @@ app.value("sectionData", {
         "I did a lot of things, the most impactful of which is about to be released in " +
         "early 2016.",
         "date": {
-            "month": "SEP",
+            "month": "AUG",
             "year": "2015"
         },
         "link": "GO TO SITE",
+        "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
         "image_path": "../assets/images/of.png",
         "type": "regular",
         "class": "section-5",
@@ -141,6 +145,7 @@ app.value("sectionData", {
             "year": "2015"
         },
         "link": "GO TO SITE",
+        "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
         "image_path": "../assets/images/b1.jpg",
         "type": "regular",
         "class": "section-6",
@@ -162,6 +167,7 @@ app.value("sectionData", {
             "year": "2015"
         },
         "link": "GO TO SITE",
+        "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
         "image_path": "../assets/images/watch-01.png",
         "type": "regular",
         "class": "section-7",
@@ -183,6 +189,7 @@ app.value("sectionData", {
             "year": "2015"
         },
         "link": "GO TO SITE",
+        "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
         "image_path": "../assets/images/quant.jpg",
         "type": "regular",
         "class": "section-8",
@@ -204,6 +211,7 @@ app.value("sectionData", {
             "year": "2015"
         },
         "link": "GO TO SITE",
+        "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
         "image_path": "../assets/images/pseud.jpg",
         "type": "regular",
         "class": "section-9",
@@ -225,6 +233,7 @@ app.value("sectionData", {
             "year": "2015"
         },
         "link": "GO TO SITE",
+        "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
         "image_path": "../assets/images/logos-01.svg",
         "type": "regular",
         "class": "section-10",
@@ -246,6 +255,7 @@ app.value("sectionData", {
             "year": "2015"
         },
         "link": "GO TO SITE",
+        "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
         "image_path": "",
         "type": "regular",
         "class": "section-11",
@@ -267,12 +277,13 @@ app.value("sectionData", {
             "year": "2015"
         },
         "link": "GO TO SITE",
+        "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
         "image_path": "../assets/images/auton-01.svg",
         "type": "regular",
         "class": "section-12",
         "color": {
             "background": "#00aeef",
-            "font": "black",
+            "font": "white",
             "nav": "black"
         }
     }

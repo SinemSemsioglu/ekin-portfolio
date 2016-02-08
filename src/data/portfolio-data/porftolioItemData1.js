@@ -16,21 +16,15 @@ app.value("portfolioItemData1",
         },
         "text_sections": [
             {
-                "text": "Built upon the slopes of Mount Ingino in Umbria, the ancient town of Gubbio boasts many well-preserved structures that document its glorious history. Founded by the Etruscans between the second and first centuries B.C., its Roman theater, Consuls Palace, and various churches and fountains are spectacular monuments to the Roman, Medieval, and Renaissance periods.",
+                "text": "Cilio first identifies the essential bits of information in your text, such as names, dates, organizations etc. using IBM Watson’s Relationship Extraction service, and makes sure to keep them unaltered. Later, using the Tone Analyzer service Cilio identifies the parts of the text that could be mutated in order to change the audiences reaction on the text.",
                 "number_of_columns": 1
             },
             {
-                "text": "Estibulum mollis eget eros et tincidunt. Sed et nisl et enim dictum tincidunt. Phasellus" +
-                " accumsan at lacus non dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada" +
-                " fames ac turpis egestas. Phasellus et semper erat. Etiam convallis mauris quis nibh tristique" +
-                " pharetra. Aliquam",
+                "text": "Again, utilizing the Tone Analyzer Cilio, replaces the previously identified mutable parts of the text with their synonyms. Through this technique it creates a multitude of permutations of the text and deploys these mutated versions to different users.",
                 "number_of_columns": 1
             },
             {
-                "text": "Estibulum mollis eget eros et tincidunt. Sed et nisl et enim dictum tincidunt. Phasellus" +
-                " accumsan at lacus non dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada" +
-                " fames ac turpis egestas. Phasellus et semper erat. Etiam convallis mauris quis nibh tristique" +
-                " pharetra. Aliquam",
+                "text": "Cilio then tracks the conversion rates of users with regards to the deployment of each mutated text. It then selects the most successful versions of the text and repeats this process until it cannot get any higher returns.",
                 "number_of_columns": 1
             }
         ],
