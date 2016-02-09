@@ -2,7 +2,7 @@ app.value("sectionData", {
     "section_0": {
         "text": "<h1>Hi, this is <b>Ekin</b>.</h1>" +
         "<h1><p>I am a <b>multidisciplinary</b> designer based in New York.</p>" +
-        "<p>I am currently a junior in Architecture at <a href='http://www.newschool.edu/parsons/'><b>Parsons</b></a>.</p>" + "<p>Beyond <b>spaces</b>, I design <b>interfaces</b>, <b>products</b>, and <b>brands</b>.</p>" +
+        "<p>I am currently a junior in Architecture at <a href='http://www.newschool.edu/parsons/'><b>Parsons School of Design</b></a>.</p>" + "<p>Beyond <b>spaces</b>, I design <b>interfaces</b>, <b>products</b>, and <b>brands</b>.</p>" +
 
         "<br>" +
         "<p>Currently: product design intern at <a href='http://markforged.com'><b>Markforged</b></a></p>" +
@@ -20,16 +20,13 @@ app.value("sectionData", {
     "section_1": {
         "id": 1,
         "name": "sample_name",
-        "title": "Infrastructure for human enhancement",
-        "description": "Natural selection for your copy. Cilio " +
-        "intelligently optimizes your writing for traction. Built " +
-        "at a hackathon in late 2015, it has been a growing project " +
-        "ever since, securing mentorship...",
+        "title": "Optimizing text strategically through natural selection",
+        "description": "Cilio is a machine learning project which won first place The Next Web USA 2015 Hackathon in New York. It optimizes blocks of text for traffic without changing their meaning through IBM Watson APIs and evolutionary algorithms.",
         "date": {
             "month": "NOV",
             "year": "2015"
         },
-        "link": "",
+        "link": "GO TO SITE",
         "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
         "details": true,
         "image_path": "../assets/images/o-01.svg",
@@ -43,19 +40,15 @@ app.value("sectionData", {
     },
     "section_2": {
         "id": 2,
-        "title": "Commenting the web of music, a treatise",
-        "description": "Dunemoon came out of my fascination with the " +
-        "Spotify API, it might sound weird but thinking that something " +
-        "like this would exist 20 years ago would be downright scifi. We " +
-        "have tried to use this amazing opportunity to create a fun product " +
-        "that Spotify users might appreciate.",
+        "title": "Adding social context to a vast web of music",
+        "description": "Dunemoon is a service which uses Spotify Web API to let users comment on and songs, playlists,  a la Soundcloud. Even though new versions of Spotify has a host of social features none are as direct as Soundcloud, Dunemoon is an experiment in bringing about that functionality.",
         "date": {
             "month": "NOV",
             "year": "2015"
         },
-        "link": "GO TO SITE",
+        "link": "",
         "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
-        "details": false,
+        "details": true,
         "image_path": "../assets/images/d.svg",
         "type": "regular",
         "class": "section-2",
@@ -67,16 +60,13 @@ app.value("sectionData", {
     },
     "section_3": {
         "id": 3,
-        "title": "A small fix to the architect’s burden, behold...",
-        "description": "Cantilever. It is meant to solve a problem. An architect " +
-        "will suffer in NYC. But it’s also very rewarding, how do you balance the " +
-        "two?  Let Cantilever ping you when you have some free time (if ever). Don’t " +
-        "miss out on great events by reputable sources of Art and Design.",
+        "title": "Helping architects get the most out of events",
+        "description": "Cantilever is a web and mobile app to keep up with architecture events in NYC. As an architecture student I've experienced first hand how easy it is to completely miss interesting architecture events and lectures. Cantilever aims to resolve this by aggregating such events.",
         "date": {
             "month": "JUN",
             "year": "2015"
         },
-        "link": "GO TO SITE",
+        "link": "",
         "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
         "image_path": "../assets/images/c-01.svg",
         "type": "regular",
@@ -99,10 +89,10 @@ app.value("sectionData", {
             "month": "SEP",
             "year": "2015"
         },
-        "link": "GO TO SITE",
+        "link": "",
         "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
         "image_path": "../assets/images/kp-01.svg",
-        "type": "regular",
+        "type": "regular",  
         "class": "section-4",
         "color": {
             "background": "#00adf2",
@@ -113,17 +103,13 @@ app.value("sectionData", {
     "section_5": {
         "id": 5,
         "title": "Rebranding the world’s first carbon fiber 3D Printer",
-        "description": "I’ve had the opportunity of interning as a designer " +
-        "at Markforged last summer. The startup that’s building a 3d printer for " +
-        "real world uses and serious prototyping rather than toys. During my internship " +
-        "I did a lot of things, the most impactful of which is about to be released in " +
-        "early 2016.",
+        "description": "Markforged is a 3D printing startup, building the world’s first composite 3d printer, able to print in carbon fiber, Kevlar, and, fiberglass and nylon. During my time there as a Product Design Intern, I got to rebrand the whole company, and the new brand will be coming out soon!",
         "date": {
             "month": "AUG",
             "year": "2015"
         },
-        "link": "GO TO SITE",
-        "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
+        "link": "",
+        "tags": ["BRANDING", "TECHNOLOGY"],
         "image_path": "../assets/images/of.png",
         "type": "regular",
         "class": "section-5",
@@ -135,17 +121,14 @@ app.value("sectionData", {
     },
     "section_6": {
         "id": 6,
-        "title": "A puffy arrangement: building a hookah startup?",
-        "description": "Natural selection for your copy. Cilio " +
-        "intelligently optimizes your writing for traction. Built " +
-        "at a hackathon in late 2015, it has been a growing project " +
-        "ever since, securing mentorship...",
+        "title": "Redesigning an oriental tradition for a new generation",
+        "description": "Buharo is a redesign of the hookah experience Markforged is a 3D printing startup, building the world’s first composite 3d printer, able to print in carbon fiber, Kevlar, and, fiberglass and nylon. During my time there as a Product Design Intern, I got to rebrand the whole company, and the new brand will be coming out soon",
         "date": {
             "month": "SEP",
             "year": "2015"
         },
-        "link": "GO TO SITE",
-        "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
+        "link": "",
+        "tags": ["INDUSTRIAL DESIGN", "ENTREPRENEURSHIP"],
         "image_path": "../assets/images/b1.jpg",
         "type": "regular",
         "class": "section-6",
@@ -166,7 +149,7 @@ app.value("sectionData", {
             "month": "NOV",
             "year": "2015"
         },
-        "link": "GO TO SITE",
+        "link": "",
         "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
         "image_path": "../assets/images/watch-01.png",
         "type": "regular",
@@ -188,7 +171,7 @@ app.value("sectionData", {
             "month": "NOV",
             "year": "2015"
         },
-        "link": "GO TO SITE",
+        "link": "",
         "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
         "image_path": "../assets/images/quant.jpg",
         "type": "regular",
@@ -210,7 +193,7 @@ app.value("sectionData", {
             "month": "NOV",
             "year": "2015"
         },
-        "link": "GO TO SITE",
+        "link": "",
         "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
         "image_path": "../assets/images/pseud.jpg",
         "type": "regular",
@@ -232,7 +215,7 @@ app.value("sectionData", {
             "month": "NOV",
             "year": "2015"
         },
-        "link": "GO TO SITE",
+        "link": "",
         "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
         "image_path": "../assets/images/logos-01.svg",
         "type": "regular",
@@ -254,7 +237,7 @@ app.value("sectionData", {
             "month": "NOV",
             "year": "2015"
         },
-        "link": "GO TO SITE",
+        "link": "",
         "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
         "image_path": "",
         "type": "regular",
@@ -276,7 +259,7 @@ app.value("sectionData", {
             "month": "NOV",
             "year": "2015"
         },
-        "link": "GO TO SITE",
+        "link": "",
         "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
         "image_path": "../assets/images/auton-01.svg",
         "type": "regular",

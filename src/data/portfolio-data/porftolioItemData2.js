@@ -2,7 +2,7 @@
 
 app.value("portfolioItemData2",
     {
-        "isIncomplete": true,
+        "isIncomplete": false,
         "header": {
             "title": "Social context for a web of music",
             "description": "Dunemoon tries to help users become more engaged with their playlists.",
