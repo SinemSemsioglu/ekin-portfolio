@@ -122,10 +122,10 @@ app.value("sectionData", {
     "section_6": {
         "id": 6,
         "title": "Redesigning an oriental tradition for a new generation",
-        "description": "Buharo is a redesign of the hookah experience Markforged is a 3D printing startup, building the world’s first composite 3d printer, able to print in carbon fiber, Kevlar, and, fiberglass and nylon. During my time there as a Product Design Intern, I got to rebrand the whole company, and the new brand will be coming out soon",
+        "description": "Buharo is an updated hookah experience, addressing a host of issues a traditional hookah creates through design. The resurging global popularity of hookah smoking is an indicator of the potential in innovating in this field. And yes, this design started out as a joke.",
         "date": {
-            "month": "SEP",
-            "year": "2015"
+            "month": "APR",
+            "year": "2014"
         },
         "link": "",
         "tags": ["INDUSTRIAL DESIGN", "ENTREPRENEURSHIP"],
@@ -141,16 +141,13 @@ app.value("sectionData", {
     "section_7": {
         "id": 7,
         "title": "Horology and information design problems",
-        "description": "Natural selection for your copy. Cilio " +
-        "intelligently optimizes your writing for traction. Built " +
-        "at a hackathon in late 2015, it has been a growing project " +
-        "ever since, securing mentorship...",
+        "description": "The value of a timepiece never lied in its ability to tell time during my lifetime. Good watches are dense objects imbued with poetics, and ingenuity. But why? And how can that effect be amplified? To find out I've designed quite a few of them.",
         "date": {
-            "month": "NOV",
-            "year": "2015"
+            "month": "MAY",
+            "year": "2012"
         },
         "link": "",
-        "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
+        "tags": ["INDUSTRIAL DESIGN", "INFORMATION DESIGN"],
         "image_path": "../assets/images/watch-01.png",
         "type": "regular",
         "class": "section-7",
@@ -162,17 +159,14 @@ app.value("sectionData", {
     },
     "section_8": {
         "id": 8,
-        "title": "Diagrams of quantified unquantifiables",
-        "description": "Natural selection for your copy. Cilio " +
-        "intelligently optimizes your writing for traction. Built " +
-        "at a hackathon in late 2015, it has been a growing project " +
-        "ever since, securing mentorship...",
+        "title": "Diagramming ambiguities and fiction",
+        "description": "In this series rather than working with traditional and real datasets, I've visualised information extracted from Escherian paintings, Invisible Cities and colorful conversations. The time required to work on such things of course is afforded by school.",
         "date": {
             "month": "NOV",
             "year": "2015"
         },
         "link": "",
-        "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
+        "tags": ["INFORMATION DESIGN", "FICTION"],
         "image_path": "../assets/images/quant.jpg",
         "type": "regular",
         "class": "section-8",
@@ -184,17 +178,14 @@ app.value("sectionData", {
     },
     "section_9": {
         "id": 9,
-        "title": "Spatial neurotransmission of helical pseudonyms",
-        "description": "Natural selection for your copy. Cilio " +
-        "intelligently optimizes your writing for traction. Built " +
-        "at a hackathon in late 2015, it has been a growing project " +
-        "ever since, securing mentorship...",
+        "title": "Experiments in space, noise, and free will",
+        "description": "“But it is so difficult to really believe that there is no free will, when so many of the threads of causality are not yet known, or are as intellectually inaccessible as having to automatically think about the behavioral consequences of everything from the selective pressures of hominid evolution to what someone had for breakfast.”",
         "date": {
-            "month": "NOV",
-            "year": "2015"
+            "month": "DEC",
+            "year": "2013"
         },
         "link": "",
-        "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
+        "tags": ["SPATIAL DESIGN", "FICTION"],
         "image_path": "../assets/images/pseud.jpg",
         "type": "regular",
         "class": "section-9",
@@ -206,17 +197,14 @@ app.value("sectionData", {
     },
     "section_10": {
         "id": 10,
-        "title": "A tale of three logos",
-        "description": "Natural selection for your copy. Cilio " +
-        "intelligently optimizes your writing for traction. Built " +
-        "at a hackathon in late 2015, it has been a growing project " +
-        "ever since, securing mentorship...",
+        "title": "Three samples of identity design",
+        "description": "Throughout the years I've designed many identity systems and these are three samples of client work. The clients are a construction company, a nonprofit, and a retailer.",
         "date": {
-            "month": "NOV",
-            "year": "2015"
+            "month": "SEP",
+            "year": "2014"
         },
         "link": "",
-        "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
+        "tags": ["BRANDING", "CLIENT WORK"],
         "image_path": "../assets/images/logos-01.svg",
         "type": "regular",
         "class": "section-10",
@@ -228,17 +216,14 @@ app.value("sectionData", {
     },
     "section_11": {
         "id": 11,
-        "title": "A vacation house",
-        "description": "Natural selection for your copy. Cilio " +
-        "intelligently optimizes your writing for traction. Built " +
-        "at a hackathon in late 2015, it has been a growing project " +
-        "ever since, securing mentorship...",
+        "title": "A vacation house and other architectural misgivings",
+        "description": "These are some samples of architectural work including a vacation house project for a client, and many more conceptual school projects that might involve some less 'practical' designs.",
         "date": {
             "month": "NOV",
             "year": "2015"
         },
         "link": "",
-        "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
+        "tags": ["ARCHITECTURE", "ECLECTIC"],
         "image_path": "",
         "type": "regular",
         "class": "section-11",
@@ -251,22 +236,19 @@ app.value("sectionData", {
     "section_12": {
         "id": 12,
         "title": "The sharing economy of reprogrammable architecture",
-        "description": "Natural selection for your copy. Cilio " +
-        "intelligently optimizes your writing for traction. Built " +
-        "at a hackathon in late 2015, it has been a growing project " +
-        "ever since, securing mentorship...",
+        "description": "With the advent of programmable matter, all design disciplines will undergo fundamental changes.Auton is an exploration into the possible architectural implementations and resulting economic implications of large scale programmable matter.",
         "date": {
-            "month": "NOV",
-            "year": "2015"
+            "month": "FEB",
+            "year": "2016"
         },
         "link": "",
-        "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
+        "tags": ["ARCHITECTURE", "TECHNOLOGY"],
         "image_path": "../assets/images/auton-01.svg",
         "type": "regular",
         "class": "section-12",
         "color": {
             "background": "#00aeef",
-            "font": "white",
+            "font": "black",
             "nav": "black"
         }
     }

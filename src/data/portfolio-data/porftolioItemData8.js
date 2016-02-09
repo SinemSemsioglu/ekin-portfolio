@@ -3,7 +3,7 @@
 app.value("portfolioItemData8",
     {
         "header": {
-            "title": "Information comes in many forms",
+            "title": "Diagramming ambiguities and fiction",
             "description": "These are experiments in information design incorporating somewhat unusual datasets",
             "image_path": "/assets/images/bg.jpg",
             "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
