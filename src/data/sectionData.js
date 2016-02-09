@@ -43,7 +43,7 @@ app.value("sectionData", {
         "title": "Adding social context to a vast web of music",
         "description": "Dunemoon is a service which uses Spotify Web API to let users comment on and songs, playlists,  a la Soundcloud. Even though new versions of Spotify has a host of social features none are as direct as Soundcloud, Dunemoon is an experiment in bringing about that functionality.",
         "date": {
-            "month": "NOV",
+            "month": "OCT",
             "year": "2015"
         },
         "link": "",
@@ -63,7 +63,7 @@ app.value("sectionData", {
         "title": "Helping architects get the most out of events",
         "description": "Cantilever is a web and mobile app to keep up with architecture events in NYC. As an architecture student I've experienced first hand how easy it is to completely miss interesting architecture events and lectures. Cantilever aims to resolve this by aggregating such events.",
         "date": {
-            "month": "JUN",
+            "month": "SEP",
             "year": "2015"
         },
         "link": "",
@@ -86,7 +86,7 @@ app.value("sectionData", {
         "over there but still want to check out a feature redesign for " +
         "Slack tag along!",
         "date": {
-            "month": "SEP",
+            "month": "AUG",
             "year": "2015"
         },
         "link": "",

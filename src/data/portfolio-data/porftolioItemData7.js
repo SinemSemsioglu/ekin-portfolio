@@ -6,8 +6,8 @@ app.value("portfolioItemData7",
             "title": "Horology and information design problems",
             "description": "The value of a timepiece never lied in its ability to tell time during my lifetime.",
             "image_path": "/assets/images/bg.jpg",
-            "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
-            "date": "SEPTEMBER 2014"
+            "tags": ["INDUSTRIAL DESIGN", "INFORMATION DESIGN"],
+            "date": "MAY 2012"
         },
         "text_sections": [
             {

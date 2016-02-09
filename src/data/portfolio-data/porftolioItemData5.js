@@ -6,8 +6,8 @@ app.value("portfolioItemData5",
             "title": "Rebranding the world’s first carbon fiber 3D printer",
             "description": "I've had the opportunity to rebrand Markforged,",
             "image_path": "/assets/images/bg.jpg",
-            "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
-            "date": "SEPTEMBER 2014"
+            "tags": ["BRANDING", "TECHNOLOGY"],
+            "date": "AUGUST 2015"
         },
         "text_sections": [
             {

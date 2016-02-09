@@ -6,7 +6,7 @@ app.value("portfolioItemData10",
             "title": "Three samples of identity design",
             "description": "A construction company, a nonprofit, and a retailer walk into a bar",
             "image_path": "/assets/images/pitems/2-dunemoon/duneheader.jpg",
-            "tags": ["BRANDING", "IDENTITY"],
+            "tags": ["BRANDING", "CLIENT WORK"],
             "date": "SEPTEMBER 2014"
         },
         "text_sections": [

@@ -7,7 +7,7 @@ app.value("portfolioItemData6",
             "description": "Buharo addresses many problems a traditional hookah creates with design.",
             "image_path": "/assets/images/pitems/6-buharo/buharohead.jpg",
             "tags": ["INDUSTRIAL DESIGN", "ENTREPRENEURSHIP"],
-            "date": "SEPTEMBER 2014"
+            "date": "APRIL 2014"
         },
         "text_sections": [
             {

@@ -6,8 +6,8 @@ app.value("portfolioItemData8",
             "title": "Diagramming ambiguities and fiction",
             "description": "These are experiments in information design incorporating somewhat unusual datasets",
             "image_path": "/assets/images/bg.jpg",
-            "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
-            "date": "SEPTEMBER 2014"
+            "tags": ["INFORMATION DESIGN", "FICTION"],
+            "date": "NOVEMBER 2015"
         },
         "text_sections": [
             {

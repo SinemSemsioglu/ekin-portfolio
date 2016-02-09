@@ -6,8 +6,8 @@ app.value("portfolioItemData12",
             "title": "12Helping architects get the most out of events",
             "description": "Cantilever is a simple tool to keep up with design and architecture events.",
             "image_path": "/assets/images/bg.jpg",
-            "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
-            "date": "SEPTEMBER 2014"
+            "tags": ["ARCHITECTURE", "TECHNOLOGY"],
+            "date": "FEBRUARY 2016"
         },
         "text_sections": [
             {

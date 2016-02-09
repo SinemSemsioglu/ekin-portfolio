@@ -8,7 +8,7 @@ app.value("portfolioItemData2",
             "description": "Dunemoon tries to help users become more engaged with their playlists.",
             "image_path": "/assets/images/pitems/2-dunemoon/duneheader.jpg",
             "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
-            "date": "SEPTEMBER 2014"
+            "date": "OCTOBER 2015"
         },
         "footer": {
             "showNext": true,
