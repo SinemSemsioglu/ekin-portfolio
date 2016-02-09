@@ -236,7 +236,7 @@ app.value("sectionData", {
     "section_12": {
         "id": 12,
         "title": "The sharing economy of reprogrammable architecture",
-        "description": "With the advent of programmable matter, all design disciplines will undergo fundamental changes.Auton is an exploration into the possible architectural implementations and resulting economic implications of large scale programmable matter.",
+        "description": "With the advent of programmable matter, all design disciplines will undergo fundamental changes. Auton is an exploration into the possible architectural implementations and resulting economic implications of large scale programmable matter.",
         "date": {
             "month": "FEB",
             "year": "2016"
