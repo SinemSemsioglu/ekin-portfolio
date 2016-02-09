@@ -219,7 +219,7 @@ app.value("sectionData", {
         "title": "A vacation house and other architectural misgivings",
         "description": "These are some samples of architectural work including a vacation house project for a client, and many more conceptual school projects that might involve some less 'practical' designs.",
         "date": {
-            "month": "NOV",
+            "month": "MAR",
             "year": "2015"
         },
         "link": "",
