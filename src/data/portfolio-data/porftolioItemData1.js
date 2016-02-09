@@ -4,7 +4,7 @@ app.value("portfolioData", {});
 app.value("portfolioItemData1",
     {
         "header": {
-            "title": "Machine learning with humans in the stack",
+            "title": "Optimizing text strategically through natural selection",
             "description": "Cilio intelligently optimizes your writing for traction.",
             "image_path": "/assets/images/bg.jpg",
             "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
