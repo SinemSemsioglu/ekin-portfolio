@@ -13,18 +13,19 @@ app.directive("regularSection",
                 var imageElement = $($(element).find(".section-image"));
                 imageElement.css("background-image","url(\"" + scope.section.image_path + "\")");
 
+                /*
                 var navColor = scope.section.color.nav;
+
 
                 var navbarElement = element.find(".navigation");
                 var logoElement = $(navbarElement.find(".logo"));
 
                 navbarElement.css("color", navColor);
-                logoElement.css("background-image", "url(\"/assets/images/logo-" + navColor + ".svg\")");
+                logoElement.css("background-image", "url(\"/assets/images/logo-" + navColor + ".svg\")");*/
 
                 scope.mobile = appUtil.isScreenNarrow();
 
                 scope.goToAboutSection = function () {
-                    console.log("regular section", 0);
                     scrollUtil.goToSection(0);
                 };
 

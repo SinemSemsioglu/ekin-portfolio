@@ -1,6 +1,6 @@
 "use strict";
 
-var app = angular.module("portfolio", ["ui.router", "ui.bootstrap"]);
+var app = angular.module("portfolio", ["ui.router", "ui.bootstrap", "angular-loading-bar"]);
 
 app.config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider

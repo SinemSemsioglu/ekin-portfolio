@@ -9,13 +9,18 @@ var gulp = require("gulp"),
 
 gulp.task("default", ["watch"]);
 
-var pathList = ["bower_components/jquery/dist/jquery.js",
+var jsPathList = ["bower_components/jquery/dist/jquery.js",
     "bower_components/angular/angular.js",
     "bower_components/angular-route/angular-route.js",
     "bower_components/angular-ui-router/release/angular-ui-router.min.js",
     "bower_components/angular-bootstrap/ui-bootstrap-tpls.js",
+    "bower_components/angular-loading-bar/build/loading-bar.min.js",
     "src/core/app.js",
     "src/**/**.js"];
+
+var cssPathList = ["bower_components/bootstrap/dist/css/bootstrap.css",
+    "bower_components/angular-loading-bar/build/loading-bar.min.css",
+    "src/portfolio.less"];
 
 gulp.task("browser-sync", function () {
 
@@ -29,7 +34,7 @@ gulp.task("browser-sync", function () {
 });
 
 gulp.task("less", function () {
-    return gulp.src(["bower_components/bootstrap/dist/css/bootstrap.css", "src/portfolio.less"])
+    return gulp.src(cssPathList)
         .pipe(less({
             "paths": [path.join(__dirname, "less", "includes")]
         }))
@@ -57,7 +62,7 @@ gulp.task("webserver", function () {
 });
 
 gulp.task("scripts", function () {
-    return gulp.src(pathList)
+    return gulp.src(jsPathList)
         .pipe(concat("portfolio.js"))
         .pipe(gulp.dest("dist/"));
 });
@@ -81,7 +86,7 @@ gulp.task("build", ["less", "copyAssets", "copyTemplates", "scripts", "copyIndex
 
 gulp.task("watch", function () {
     gulp.watch("/src/**.less", ["less"]);
-    gulp.watch(pathList,["scripts"]);
+    gulp.watch(pathList, ["scripts"]);
     gulp.watch("/src/**").on("change", "build");
 });
 

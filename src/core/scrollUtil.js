@@ -55,7 +55,7 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
 
             window.bind("scrollstop", function () {
                     self.decideWhereToGo();
-                    //self.toggleDefaultScrollActions(true);
+                    //self.toggleDef ultScrollActions(true);
 
 
                     $timeout(function () {
@@ -96,9 +96,14 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
 
             var window = $($window);
 
+            if (appUtil.isScreenNarrow()) {
+                self.setNavBarColor(sectionId);
+            }
+
             page.stop().animate({
                 scrollTop: targetOffset
             }, scrollTimeValues.TRANSITION_DURATION, "linear");
+
 
 
             /*
@@ -111,19 +116,23 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
              }*/
         };
 
-        this.navBarElementOnTransition = function (sectionId) {
-            //var sectionName = "section_" + sectionId;
-            // var navColor = sectionData[sectionName].color.nav;
-            //be careful about resize events
+        this.setNavBarColor = function (sectionId) {
+            /*
+            be careful about resize events
             var targetOpacity = appUtil.isScreenNarrow() ? 0.6 : 1;
-
             var navbarElement = self.getNavBarElement(sectionId);
-            var logoElement = $(navbarElement.find(".logo"));
+            navbarElement.css("color", navColor);*/
 
-            //navbarElement.css("color", navColor);
-            //logoElement.css("background-image", "url(\"/assets/images/logo-" + navColor + ".svg\")");
+            var sectionName = "section_" + sectionId;
+            var navColor = sectionData[sectionName].color.nav;
 
-            navbarElement.animate({
+            var targetOpacity = 0.8;
+
+            var logoElement = $($(document).find(".logo"));
+
+            logoElement.css("background-image", "url(\"/assets/images/logo-" + navColor + ".svg\")");
+
+            logoElement.animate({
                 "opacity": targetOpacity
             }, scrollTimeValues.NAV_ANIMATION_DURATION, "linear");
 
