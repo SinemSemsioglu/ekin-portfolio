@@ -30,33 +30,33 @@ app.value("portfolioItemData1",
         ],
         "image_sections": [
             {
-                "path": "/assets/images/pitems/1-cilio/cilioheader.jpg",
+                "path": "/assets/images/pitems/1_cilio/cilioheader.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             },
             {
-                "path": "/assets/images/pitems/1-cilio/cilio1.jpg",
+                "path": "/assets/images/pitems/1_cilio/cilio1.jpg",
                 "class": "regular"
             },
             {
-                "path": "/assets/images/pitems/1-cilio/cilio2.jpg",
+                "path": "/assets/images/pitems/1_cilio/cilio2.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             }
     ],
     "extra_images": [
             {
-                "path": "/assets/images/pitems/1-cilio/cilio3.jpg",
+                "path": "/assets/images/pitems/1_cilio/cilio3.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             },
             {
-                "path": "/assets/images/pitems/1-cilio/cilio4.jpg",
+                "path": "/assets/images/pitems/1_cilio/cilio4.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             },
             {
-                "path": "/assets/images/pitems/1-cilio/cilio5.jpg",
+                "path": "/assets/images/pitems/1_cilio/cilio5.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             }

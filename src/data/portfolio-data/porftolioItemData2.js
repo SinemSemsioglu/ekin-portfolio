@@ -6,7 +6,7 @@ app.value("portfolioItemData2",
         "header": {
             "title": "Social context for a web of music",
             "description": "Dunemoon tries to help users become more engaged with their playlists.",
-            "image_path": "/assets/images/pitems/2-dunemoon/duneheader.jpg",
+            "image_path": "/assets/images/pitems/2_Dunemoon/duneheader.jpg",
             "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
             "date": "OCTOBER 2015"
         },
@@ -45,16 +45,16 @@ app.value("portfolioItemData2",
         ],
         "image_sections": [
             {
-                "path": "/assets/images/pitems/2-dunemoon/dune1.jpg",
+                "path": "/assets/images/pitems/2_dunemoon/dune1.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             },
             {
-                "path": "/assets/images/pitems/2-dunemoon/dune2.jpg",
+                "path": "/assets/images/pitems/2_dunemoon/dune2.jpg",
                 "class": "regular"
             },
             {
-                "path": "/assets/images/pitems/2-dunemoon/dune1.jpg",
+                "path": "/assets/images/pitems/2_dunemoon/dune1.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             }
