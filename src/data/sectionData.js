@@ -79,29 +79,6 @@ app.value("sectionData", {
     },
     "section_4": {
         "id": 4,
-        "title": "This one is for the good folks at KPCB",
-        "description": "Ever since I found out about it, " +
-        "I’ve been eager to apply to the KPCB Fellows Program, " +
-        "this year I made it to the deadline. If you are not from " +
-        "over there but still want to check out a feature redesign for " +
-        "Slack tag along!",
-        "date": {
-            "month": "AUG",
-            "year": "2015"
-        },
-        "link": "",
-        "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
-        "image_path": "../assets/images/kp-01.svg",
-        "type": "regular",  
-        "class": "section-4",
-        "color": {
-            "background": "#00adf2",
-            "font": "white",
-            "nav": "white"
-        }
-    },
-    "section_5": {
-        "id": 5,
         "title": "Rebranding the world’s first carbon fiber 3D Printer",
         "description": "Markforged is a 3D printing startup, building the world’s first composite 3d printer, able to print in carbon fiber, Kevlar, and, fiberglass and nylon. During my time there as a Product Design Intern, I got to rebrand the whole company, and the new brand will be coming out soon!",
         "date": {
@@ -112,15 +89,15 @@ app.value("sectionData", {
         "tags": ["BRANDING", "TECHNOLOGY"],
         "image_path": "../assets/images/of.png",
         "type": "regular",
-        "class": "section-5",
+        "class": "section-4",
         "color": {
             "background": "#c3c2c0",
             "font": "black",
             "nav": "black"
         }
     },
-    "section_6": {
-        "id": 6,
+    "section_5": {
+        "id": 5,
         "title": "Redesigning an oriental tradition for a new generation",
         "description": "Buharo is an updated hookah experience, addressing a host of issues a traditional hookah creates through design. The resurging global popularity of hookah smoking is an indicator of the potential in innovating in this field. And yes, this design started out as a joke.",
         "date": {
@@ -131,15 +108,15 @@ app.value("sectionData", {
         "tags": ["INDUSTRIAL DESIGN", "ENTREPRENEURSHIP"],
         "image_path": "../assets/images/b1.jpg",
         "type": "regular",
-        "class": "section-6",
+        "class": "section-5",
         "color": {
             "background": "white",
             "font": "black",
             "nav": "black"
         }
     },
-    "section_7": {
-        "id": 7,
+    "section_6": {
+        "id": 6,
         "title": "Horology and information design problems",
         "description": "The value of a timepiece never lied in its ability to tell time during my lifetime. Good watches are dense objects imbued with poetics, and ingenuity. But why? And how can that effect be amplified? To find out I've designed quite a few of them.",
         "date": {
@@ -150,15 +127,15 @@ app.value("sectionData", {
         "tags": ["INDUSTRIAL DESIGN", "INFORMATION DESIGN"],
         "image_path": "../assets/images/watch-01.png",
         "type": "regular",
-        "class": "section-7",
+        "class": "section-6",
         "color": {
             "background": "#ffde17",
             "font": "black",
             "nav": "black"
         }
     },
-    "section_8": {
-        "id": 8,
+    "section_7": {
+        "id": 7,
         "title": "Diagramming ambiguities and fiction",
         "description": "In this series rather than working with traditional and real datasets, I've visualised information extracted from Escherian paintings, Invisible Cities and colorful conversations. The time required to work on such things of course is afforded by school.",
         "date": {
@@ -169,15 +146,15 @@ app.value("sectionData", {
         "tags": ["INFORMATION DESIGN", "FICTION"],
         "image_path": "../assets/images/quant.jpg",
         "type": "regular",
-        "class": "section-8",
+        "class": "section-7",
         "color": {
             "background": "black",
             "font": "white",
             "nav": "white"
         }
     },
-    "section_9": {
-        "id": 9,
+    "section_8": {
+        "id": 8,
         "title": "Experiments in space, noise, and free will",
         "description": "“But it is so difficult to really believe that there is no free will, when so many of the threads of causality are not yet known, or are as intellectually inaccessible as having to automatically think about the behavioral consequences of everything from the selective pressures of hominid evolution to what someone had for breakfast.”",
         "date": {
@@ -188,15 +165,16 @@ app.value("sectionData", {
         "tags": ["SPATIAL DESIGN", "FICTION"],
         "image_path": "../assets/images/pseud.jpg",
         "type": "regular",
-        "class": "section-9",
+        "class": "section-8",
         "color": {
             "background": "black",
             "font": "white",
             "nav": "white"
         }
     },
-    "section_10": {
-        "id": 10,
+
+    "section_9": {
+        "id": 9,
         "title": "Three samples of identity design",
         "description": "Throughout the years I've designed many identity systems and these are three samples of client work. The clients are a construction company, a nonprofit, and a retailer.",
         "date": {
@@ -207,15 +185,15 @@ app.value("sectionData", {
         "tags": ["BRANDING", "CLIENT WORK"],
         "image_path": "../assets/images/logos-01.svg",
         "type": "regular",
-        "class": "section-10",
+        "class": "section-9",
         "color": {
             "background": "white",
             "font": "black",
             "nav": "black"
         }
     },
-    "section_11": {
-        "id": 11,
+    "section_10": {
+        "id": 10,
         "title": "A vacation house and other architectural misgivings",
         "description": "These are some samples of architectural work including a vacation house project for a client, and many more conceptual school projects that might involve some less 'practical' designs.",
         "date": {
@@ -226,15 +204,15 @@ app.value("sectionData", {
         "tags": ["ARCHITECTURE", "ECLECTIC"],
         "image_path": "",
         "type": "regular",
-        "class": "section-11",
+        "class": "section-10",
         "color": {
             "background": "white",
             "font": "black",
             "nav": "black"
         }
     },
-    "section_12": {
-        "id": 12,
+    "section_11": {
+        "id": 11,
         "title": "The sharing economy of reprogrammable architecture",
         "description": "With the advent of programmable matter, all design disciplines will undergo fundamental changes. Auton is an exploration into the possible architectural implementations and resulting economic implications of large scale programmable matter.",
         "date": {
@@ -245,7 +223,7 @@ app.value("sectionData", {
         "tags": ["ARCHITECTURE", "TECHNOLOGY"],
         "image_path": "../assets/images/auton-01.svg",
         "type": "regular",
-        "class": "section-12",
+        "class": "section-11",
         "color": {
             "background": "#00aeef",
             "font": "black",

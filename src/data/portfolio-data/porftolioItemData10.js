@@ -1,13 +1,13 @@
-// Logos
+// Architecture
 
 app.value("portfolioItemData10",
     {
         "header": {
-            "title": "Three samples of identity design",
-            "description": "A construction company, a nonprofit, and a retailer walk into a bar",
-            "image_path": "/assets/images/pitems/2-dunemoon/duneheader.jpg",
-            "tags": ["BRANDING", "CLIENT WORK"],
-            "date": "SEPTEMBER 2014"
+            "title": "11Helping architects get the most out of events",
+            "description": "Cantilever is a simple tool to keep up with design and architecture events.",
+            "image_path": "/assets/images/bg.jpg",
+            "tags": ["ARCHITECTURE", "ECLECTIC"],
+            "date": "MARCH 2015"
         },
         "text_sections": [
             {
@@ -40,16 +40,16 @@ app.value("portfolioItemData10",
         ],
         "image_sections": [
             {
-                "path": "/assets/images/pitems/2-dunemoon/dune1.jpg",
+                "path": "/assets/images/size.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             },
             {
-                "path": "/assets/images/pitems/2-dunemoon/dune2.jpg",
+                "path": "/assets/images/size2.jpg",
                 "class": "regular"
             },
             {
-                "path": "/assets/images/pitems/2-dunemoon/dune1.jpg",
+                "path": "/assets/images/size3.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             }
@@ -59,4 +59,4 @@ app.value("portfolioItemData10",
 app.run(["portfolioData", "portfolioItemData10",
     function (portfolioData, portfolioItemData10) {
         portfolioData.item10 = portfolioItemData10;
-}]);
+    }]);

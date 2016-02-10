@@ -50,6 +50,8 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
                 homeController.scrolling = true;
                 scope.$apply();
 
+               // alert("scrollstart");
+
                 $timeout(function () {
                     window.trigger("scrollstop");
                 }, scrollTimeValues.TRANSITION_WAIT);
@@ -58,10 +60,10 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
             window.bind("scrollstop", function () {
                 var sectionToBeScrolled = self.decideWhereToGo();
 
-                if (sectionToBeScrolled === 0) {
+               /* if (sectionToBeScrolled === 0) {
                     scrollStarted = false;
                     homeController.scrolling = false;
-                } else {
+                } else {*/
                     self.toggleDefaultScrollActions(true);
 
                     $timeout(function () {
@@ -70,7 +72,7 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
                         scope.$apply();
                         self.toggleDefaultScrollActions(false);
                     }, scrollTimeValues.TRANSITION_DURATION);
-                }
+                //}
 
             });
 

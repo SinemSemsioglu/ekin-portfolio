@@ -1,13 +1,13 @@
-// Experiments
+// Logos
 
 app.value("portfolioItemData9",
     {
         "header": {
-            "title": "Experiments in space, noise, and free will",
-            "description": "Cantilever is a simple tool to keep up with design and architecture events.",
-            "image_path": "/assets/images/bg.jpg",
-            "tags": ["SPATIAL DESIGN", "FICTION"],
-            "date": "DECEMBER 2013"
+            "title": "Three samples of identity design",
+            "description": "A construction company, a nonprofit, and a retailer walk into a bar",
+            "image_path": "/assets/images/pitems/2-dunemoon/duneheader.jpg",
+            "tags": ["BRANDING", "CLIENT WORK"],
+            "date": "SEPTEMBER 2014"
         },
         "text_sections": [
             {
@@ -40,16 +40,16 @@ app.value("portfolioItemData9",
         ],
         "image_sections": [
             {
-                "path": "/assets/images/size.jpg",
+                "path": "/assets/images/pitems/2-dunemoon/dune1.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             },
             {
-                "path": "/assets/images/size2.jpg",
+                "path": "/assets/images/pitems/2-dunemoon/dune2.jpg",
                 "class": "regular"
             },
             {
-                "path": "/assets/images/size3.jpg",
+                "path": "/assets/images/pitems/2-dunemoon/dune1.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             }
@@ -59,4 +59,4 @@ app.value("portfolioItemData9",
 app.run(["portfolioData", "portfolioItemData9",
     function (portfolioData, portfolioItemData9) {
         portfolioData.item9 = portfolioItemData9;
-}]);
+    }]);

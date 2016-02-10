@@ -1,13 +1,13 @@
-// Information Design
+// Experiments
 
 app.value("portfolioItemData8",
     {
         "header": {
-            "title": "Diagramming ambiguities and fiction",
-            "description": "These are experiments in information design incorporating somewhat unusual datasets",
+            "title": "Experiments in space, noise, and free will",
+            "description": "Cantilever is a simple tool to keep up with design and architecture events.",
             "image_path": "/assets/images/bg.jpg",
-            "tags": ["INFORMATION DESIGN", "FICTION"],
-            "date": "NOVEMBER 2015"
+            "tags": ["SPATIAL DESIGN", "FICTION"],
+            "date": "DECEMBER 2013"
         },
         "text_sections": [
             {
@@ -56,7 +56,8 @@ app.value("portfolioItemData8",
         ]
     }
 );
+
 app.run(["portfolioData", "portfolioItemData8",
     function (portfolioData, portfolioItemData8) {
         portfolioData.item8 = portfolioItemData8;
-}]);
+    }]);

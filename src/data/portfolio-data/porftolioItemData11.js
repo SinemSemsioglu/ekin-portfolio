@@ -1,13 +1,13 @@
-// Architecture
+// More Architecture
 
 app.value("portfolioItemData11",
     {
         "header": {
-            "title": "11Helping architects get the most out of events",
+            "title": "12Helping architects get the most out of events",
             "description": "Cantilever is a simple tool to keep up with design and architecture events.",
             "image_path": "/assets/images/bg.jpg",
-            "tags": ["ARCHITECTURE", "ECLECTIC"],
-            "date": "MARCH 2015"
+            "tags": ["ARCHITECTURE", "TECHNOLOGY"],
+            "date": "FEBRUARY 2016"
         },
         "text_sections": [
             {
@@ -59,4 +59,4 @@ app.value("portfolioItemData11",
 app.run(["portfolioData", "portfolioItemData11",
     function (portfolioData, portfolioItemData11) {
         portfolioData.item11 = portfolioItemData11;
-}]);
+    }]);

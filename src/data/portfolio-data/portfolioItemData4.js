@@ -1,13 +1,13 @@
-// KPCB
+// Markforged
 
 app.value("portfolioItemData4",
     {
         "header": {
-            "title": "Wubba lubba dub dub",
-            "description": "Cantilever is a simple tool to keep up with design and architecture events.",
+            "title": "Rebranding the world’s first carbon fiber 3D printer",
+            "description": "I've had the opportunity to rebrand Markforged,",
             "image_path": "/assets/images/bg.jpg",
-            "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
-            "date": "SEPTEMBER 2014"
+            "tags": ["BRANDING", "TECHNOLOGY"],
+            "date": "AUGUST 2015"
         },
         "text_sections": [
             {
