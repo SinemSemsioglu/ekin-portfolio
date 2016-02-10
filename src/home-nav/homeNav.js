@@ -5,7 +5,7 @@ app.directive("homeNav",
             restrict: "E",
             controller: "homeNavController",
             controllerAs: "homeNav",
-            bindToController: true,
+           // bindToController: true,
             templateUrl: "templates/home-nav/home-nav.html"
         };
     });

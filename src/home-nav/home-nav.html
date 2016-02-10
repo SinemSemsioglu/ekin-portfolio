@@ -1,4 +1,5 @@
-<div class="home-nav-container">
+<div class="home-nav-container"
+     ng-if="!home.mobile">
     <div class="nav-button-wrapper {{home.regularSections[buttonId-1].class}}"
          ng-repeat="buttonId in ::homeNav.numberOfSections">
         <div class="nav-button"

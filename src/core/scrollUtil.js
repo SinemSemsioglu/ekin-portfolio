@@ -36,8 +36,6 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
 
             //decide which scroll events to bind, fucks up clicking on the nav
             window.bind("scroll", function (event) {
-                // self.hideAllNavs();
-
                 if (!scrollStarted) {
                     window.trigger("scrollstart");
                 }
@@ -50,21 +48,15 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
                 homeController.scrolling = true;
                 scope.$apply();
 
-               // alert("scrollstart");
-
                 $timeout(function () {
                     window.trigger("scrollstop");
                 }, scrollTimeValues.TRANSITION_WAIT);
             });
 
             window.bind("scrollstop", function () {
-                var sectionToBeScrolled = self.decideWhereToGo();
+                    self.decideWhereToGo();
+                    //self.toggleDefaultScrollActions(true);
 
-               /* if (sectionToBeScrolled === 0) {
-                    scrollStarted = false;
-                    homeController.scrolling = false;
-                } else {*/
-                    self.toggleDefaultScrollActions(true);
 
                     $timeout(function () {
                         scrollStarted = false;
@@ -72,7 +64,7 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
                         scope.$apply();
                         self.toggleDefaultScrollActions(false);
                     }, scrollTimeValues.TRANSITION_DURATION);
-                //}
+
 
             });
 
@@ -84,7 +76,6 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
         };
 
         this.goToTop = function () {
-            // alert("called");
             var page = $('html,body');
             page.animate({
                 scrollTop: 0
@@ -146,13 +137,9 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
         };
 
         this.decideWhereToGo = function () {
-
             var windowVerticalOffset = appUtil.getWindowVerticalOffset();
             var screenHeight = appUtil.getScreenHeight();
-
             var sectionId = Math.round(windowVerticalOffset / screenHeight);
-
-            //console.log("decide where to go", sectionId);
             self.goToSection(sectionId);
 
             return sectionId;
