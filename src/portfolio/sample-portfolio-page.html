@@ -3,30 +3,17 @@
         <detail-header></detail-header>
     </div>
     <div class="portfolio-content-container">
-        <text-section class="text-content"
-                      number-of-columns="portfolioPage.portfolioItem.text_sections[0].number_of_columns"
-                      text="portfolioPage.portfolioItem.text_sections[0].text"
-                      annotations="portfolioPage.portfolioItem.text_sections[0].annotations">
-        </text-section>
-        <image-section class="image-content"
-                       image="portfolioPage.portfolioItem.image_sections[0]">
-        </image-section>
-        <text-section class="text-content"
-                      number-of-columns="portfolioPage.portfolioItem.text_sections[1].number_of_columns"
-                      text="portfolioPage.portfolioItem.text_sections[1].text"
-                      annotations="portfolioPage.portfolioItem.text_sections[1].annotations">
-        </text-section>
-        <image-section class="image-content"
-                       image="portfolioPage.portfolioItem.image_sections[1]">
-        </image-section>
-        <text-section class="text-content"
-                      number-of-columns="portfolioPage.portfolioItem.text_sections[2].number_of_columns"
-                      text="portfolioPage.portfolioItem.text_sections[2].text"
-                      annotations="portfolioPage.portfolioItem.text_sections[2].annotations">
-        </text-section>
-        <image-section class="image-content"
-                       image="portfolioPage.portfolioItem.image_sections[2]">
-        </image-section>
+        <div ng-repeat="textSection in ::portfolioPage.portfolioItem.text_sections">
+            <text-section class="text-content"
+                          number-of-columns="textSection.number_of_columns"
+                          text="textSection.text"
+                          annotations="textSection.annotations">
+            </text-section>
+            <image-section ng-if="portfolioPage.portfolioItem.image_sections[$index]"
+                           class="image-content"
+                           image="portfolioPage.portfolioItem.image_sections[$index]">
+            </image-section>
+        </div>
         <image-section ng-repeat="image in portfolioPage.portfolioItem.extra_images"
                        class="image-content"
                        image="image">
