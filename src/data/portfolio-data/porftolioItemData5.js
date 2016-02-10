@@ -5,7 +5,7 @@ app.value("portfolioItemData5",
         "header": {
             "title": "Redesigning an oriental tradition",
             "description": "Buharo addresses many problems a traditional hookah creates with design.",
-            "image_path": "/assets/images/pitems/5_buharo/buharohead.jpg",
+            "image_path": "/assets/images/pitems/buharo/buharohead.jpg",
             "tags": ["INDUSTRIAL DESIGN", "ENTREPRENEURSHIP"],
             "date": "APRIL 2014"
         },
@@ -26,37 +26,37 @@ app.value("portfolioItemData5",
         ],
         "image_sections": [
             {
-                "path": "/assets/images/pitems/5_buharo/buharo1.jpg",
+                "path": "/assets/images/pitems/buharo/buharo1.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             },
             {
-                "path": "/assets/images/pitems/5_buharo/buharo2.jpg",
+                "path": "/assets/images/pitems/buharo/buharo2.jpg",
                 "class": "regular"
             },
             {
-                "path": "/assets/images/pitems/5_buharo/buharo3.jpg",
+                "path": "/assets/images/pitems/buharo/buharo3.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             }],
         "extra_images": [
             {
-                "path": "/assets/images/pitems/5_buharo/buharo4.jpg",
+                "path": "/assets/images/pitems/buharo/buharo4.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             },
             {
-                "path": "/assets/images/pitems/5_buharo/buharo5.jpg",
+                "path": "/assets/images/pitems/buharo/buharo5.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             },
             {
-                "path": "/assets/images/pitems/5_buharo/buharo6.jpg",
+                "path": "/assets/images/pitems/buharo/buharo6.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             },
             {
-                "path": "/assets/images/pitems/5_buharo/buharo7.jpg",
+                "path": "/assets/images/pitems/buharo/buharo7.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             }

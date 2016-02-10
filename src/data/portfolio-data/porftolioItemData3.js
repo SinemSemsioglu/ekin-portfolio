@@ -37,16 +37,16 @@ app.value("portfolioItemData3",
         ],
         "image_sections": [
             {
-                "path": "/assets/images/pitems/3_cantilever/cantilever1.jpg",
+                "path": "/assets/images/pitems/cantilever/cantilever1.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             },
             {
-                "path": "/assets/images/pitems/3_cantilever/cantilever2.jpg",
+                "path": "/assets/images/pitems/cantilever/cantilever2.jpg",
                 "class": "regular"
             },
             {
-                "path": "/assets/images/pitems/3_cantilever/cantilever3.jpg",
+                "path": "/assets/images/pitems/cantilever/cantilever3.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             }
