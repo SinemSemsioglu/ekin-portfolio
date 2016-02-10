@@ -2,7 +2,8 @@
 @section-width: 100%;
 @container-width: calculate(@section-width - @medium-screen-side);
 @nav-width: 60%;
-@detail-header-element-bottom-margin: 15px;
+@detail-header-element-bottom-margin: 10px;
+@detail-header-date-top-margin: 20px;
 
 .detail-header-container {
   //put in a more general portfolio styling file
@@ -60,7 +61,6 @@
 
     .detail-header-title {
       font-size: @font-size-1-1;
-      margin-bottom: @detail-header-element-bottom-margin;
       //max-width: 80%;
       //letter-spacing: -3px;
     }
@@ -72,14 +72,13 @@
     }
 
     .detail-header-date {
-      margin-top: 20px;
+      margin-top: @detail-header-date-top-margin;
     }
   }
 }
 
 @media @small-device {
   .detail-header-container {
-
     .text-container {
       .detail-header-title {
         font-size: @font-size-3;

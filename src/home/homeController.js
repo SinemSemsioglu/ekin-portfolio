@@ -13,7 +13,7 @@ app.controller("homeController", [
         scrollUtil.setScrollPropertiesForHomePage(self, $scope);
 
         this.goToAboutSection = function () {
-            console.log("home page", 0);
+           // console.log("home page", 0);
             scrollUtil.goToSection(0);
         };
 
