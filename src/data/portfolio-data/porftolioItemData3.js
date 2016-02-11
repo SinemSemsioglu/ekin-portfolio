@@ -43,12 +43,12 @@ app.constant("portfolioItemData3",
                 "annotation": "Lorem ipsum dolor sit amet"
             },
             {
-                "path": "/assets/images/pitems/cantilever/cantiweb1.jpg",
+                "path": "/assets/images/pitems/cantilever/cantiweb2.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             },
             {
-                "path": "/assets/images/pitems/cantilever/cantiweb2.jpg",
+                "path": "/assets/images/pitems/cantilever/cantiweb1.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             },
