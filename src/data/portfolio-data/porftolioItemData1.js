@@ -54,23 +54,6 @@ app.constant("portfolioItemData1",
             }
         ],
         "extra_images": [
-<<<<<<< Updated upstream
-            {
-                "path": "/assets/images/pitems/cilio/cilio3.jpg",
-                "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
-            },
-            {
-                "path": "/assets/images/pitems/cilio/cilio4.jpg",
-                "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
-            },
-            {
-                "path": "/assets/images/pitems/cilio/cilio5.jpg",
-                "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
-            }
-=======
                 {
                     "path": "/assets/images/pitems/cilio/cilio3.jpg",
                     "class": "regular",
@@ -86,7 +69,6 @@ app.constant("portfolioItemData1",
                     "class": "regular",
                     "annotation": "Lorem ipsum dolor sit amet"
                 }
->>>>>>> Stashed changes
         ]
     }
 );
