@@ -6,7 +6,7 @@ app.constant("portfolioItemData3",
         "header": {
             "title": "Helping architects get the most out of events",
             "description": "Cantilever is a simple tool to keep up with design and architecture events.",
-            "image_path": "/assets/images/bg.jpg",
+            "image_path": "/assets/images/pitems/cantilever/cantiheader1.jpg",
             "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
             "date": "SEPTEMBER 2015"
         },
@@ -21,8 +21,19 @@ app.constant("portfolioItemData3",
                 " important events for the year. Asked a cohort of a dozen architects and architecture students " +
                 "if they went and or heard about it. research",
                 "number_of_columns": 1
-            },
+            }
+        ],
+        "image_sections": [
             {
+                "path": "/assets/images/pitems/cantilever/cantimobil1.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            },
+            
+        ],
+        "extra_images": [
+            {
+<<<<<<< Updated upstream
                 "text": "The results showed people went to less than 30 percent of these events even when they’ve" +
                 " heard about them. A general complaint was that when people did indeed have time finding events " +
                 "was a pain some didn’t even think of it. Another problem is that these people think facebook is " +
@@ -51,17 +62,39 @@ app.constant("portfolioItemData3",
             }
         ],
         "image_sections": [
-            {
-                "path": "/assets/images/pitems/cantilever/cantilever1.jpg",
+=======
+                "path": "/assets/images/pitems/cantilever/cantimobil2.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             },
             {
-                "path": "/assets/images/pitems/cantilever/cantilever2.jpg",
-                "class": "regular"
+                "path": "/assets/images/pitems/cantilever/cantimobil3.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
             },
             {
-                "path": "/assets/images/pitems/cantilever/cantilever3.jpg",
+                "path": "/assets/images/pitems/cantilever/cantiweb1.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            },
+            {
+                "path": "/assets/images/pitems/cantilever/cantiweb2.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            },
+>>>>>>> Stashed changes
+            {
+                "path": "/assets/images/pitems/cantilever/cantiweb3.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            },
+            {
+                "path": "/assets/images/pitems/cantilever/cantinight1.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            },
+            {
+                "path": "/assets/images/pitems/cantilever/cantinight2.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             }
