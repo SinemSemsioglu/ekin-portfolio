@@ -7,3 +7,7 @@ app.constant("scrollTimeValues", {
 app.constant("screenWidths", {
     "MEDIUM_MIN": 768
 });
+app.constant("pageTitles", {
+    "HOME": "Ekin Keserer",
+    "PORTFOLIO_SUFFIX": " | Ekin Keserer"
+});

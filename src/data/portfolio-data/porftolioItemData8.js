@@ -1,7 +1,8 @@
 // Experiments
 
-app.value("portfolioItemData8",
+app.constant("portfolioItemData8",
     {
+        "name": "Experiments",
         "header": {
             "title": "Experiments in space, noise, and free will",
             "description": "Cantilever is a simple tool to keep up with design and architecture events.",
@@ -11,7 +12,10 @@ app.value("portfolioItemData8",
         },
         "text_sections": [
             {
-                "text": "Built upon the slopes of Mount Ingino in Umbria, the ancient town of Gubbio boasts many well-preserved structures that document its glorious history. Founded by the Etruscans between the second and first centuries B.C., its Roman theater, Consuls Palace, and various churches and fountains are spectacular monuments to the Roman, Medieval, and Renaissance periods.",
+                "text": "Built upon the slopes of Mount Ingino in Umbria, the ancient town of Gubbio boasts many" +
+                " well-preserved structures that document its glorious history. Founded by the Etruscans between the" +
+                " second and first centuries B.C., its Roman theater, Consuls Palace, and various churches and " +
+                "fountains are spectacular monuments to the Roman, Medieval, and Renaissance periods.",
                 "number_of_columns": 1,
                 "annotations": {
                     "bottom": "Lorem ipsum dolor sit amet"
@@ -57,7 +61,7 @@ app.value("portfolioItemData8",
     }
 );
 
-app.run(["portfolioData", "portfolioItemData8",
+app.config(["portfolioData", "portfolioItemData8",
     function (portfolioData, portfolioItemData8) {
         portfolioData.item8 = portfolioItemData8;
     }]);

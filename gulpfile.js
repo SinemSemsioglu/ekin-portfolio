@@ -42,12 +42,11 @@ gulp.task("less", function () {
         .pipe(gulp.dest("dist/style/"));
 });
 
-gulp.task("eslint", function () {
-    return gulp.src("src/**/**.js")
-        .pipe(eslint())
-        .pipe(eslint.format())
-        .pipe(eslint.failOnError());
-
+gulp.task("lint", function () {
+    return gulp.src(["/src/**/*.js"])
+            .pipe(eslint())
+            .pipe(eslint.format())
+            .pipe(eslint.failAfterError());
 });
 
 gulp.task("webserver", function () {
@@ -90,4 +89,4 @@ gulp.task("watch", function () {
     gulp.watch("/src/**").on("change", "build");
 });
 
-gulp.task("dev-live", ["eslint", "build", "browser-sync", "watch"]);
+gulp.task("dev-live", ["lint", "build", "browser-sync", "watch"]);

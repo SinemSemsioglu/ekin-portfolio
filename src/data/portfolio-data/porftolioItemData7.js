@@ -1,7 +1,8 @@
 // Information Design
 
-app.value("portfolioItemData7",
+app.constant("portfolioItemData7",
     {
+        "name": "Information Design",
         "header": {
             "title": "Diagramming ambiguities and fiction",
             "description": "These are experiments in information design incorporating somewhat unusual datasets",
@@ -11,7 +12,11 @@ app.value("portfolioItemData7",
         },
         "text_sections": [
             {
-                "text": "Built upon the slopes of Mount Ingino in Umbria, the ancient town of Gubbio boasts many well-preserved structures that document its glorious history. Founded by the Etruscans between the second and first centuries B.C., its Roman theater, Consuls Palace, and various churches and fountains are spectacular monuments to the Roman, Medieval, and Renaissance periods.",
+                "text": "Built upon the slopes of Mount Ingino in Umbria, the ancient town of Gubbio boasts many " +
+                "well-preserved structures that document its glorious history. Founded by the Etruscans between the " +
+                "second and first centuries B.C., its Roman theater, Consuls Palace, and various churches and " +
+                "fountains " +
+                "are spectacular monuments to the Roman, Medieval, and Renaissance periods.",
                 "number_of_columns": 1,
                 "annotations": {
                     "bottom": "Lorem ipsum dolor sit amet"
@@ -56,7 +61,7 @@ app.value("portfolioItemData7",
         ]
     }
 );
-app.run(["portfolioData", "portfolioItemData7",
+app.config(["portfolioData", "portfolioItemData7",
     function (portfolioData, portfolioItemData7) {
         portfolioData.item7 = portfolioItemData7;
     }]);

@@ -1,7 +1,8 @@
 // Dunemoon
 
-app.value("portfolioItemData2",
+app.constant("portfolioItemData2",
     {
+        "name": "Dunemoon",
         "isIncomplete": false,
         "header": {
             "title": "Social context for a web of music",
@@ -16,7 +17,10 @@ app.value("portfolioItemData2",
         },
         "text_sections": [
             {
-                "text": "Built upon the slopes of Mount Ingino in Umbria, the ancient town of Gubbio boasts many well-preserved structures that document its glorious history. Founded by the Etruscans between the second and first centuries B.C., its Roman theater, Consuls Palace, and various churches and fountains are spectacular monuments to the Roman, Medieval, and Renaissance periods.",
+                "text": "Built upon the slopes of Mount Ingino in Umbria, the ancient town of Gubbio boasts many " +
+                "well-preserved structures that document its glorious history. Founded by the Etruscans between the " +
+                "second and first centuries B.C., its Roman theater, Consuls Palace, and various churches and " +
+                "fountains are spectacular monuments to the Roman, Medieval, and Renaissance periods.",
                 "number_of_columns": 1,
                 "annotations": {
                     "bottom": "Lorem ipsum dolor sit amet"
@@ -61,7 +65,7 @@ app.value("portfolioItemData2",
         ]
     }
 );
-app.run(["portfolioData", "portfolioItemData2",
+app.config(["portfolioData", "portfolioItemData2",
     function (portfolioData, portfolioItemData2) {
         portfolioData.item2 = portfolioItemData2;
     }]);

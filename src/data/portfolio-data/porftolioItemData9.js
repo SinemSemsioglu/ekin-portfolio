@@ -1,7 +1,8 @@
 // Logos
 
-app.value("portfolioItemData9",
+app.constant("portfolioItemData9",
     {
+        "name": "Logos",
         "header": {
             "title": "Three samples of identity design",
             "description": "A construction company, a nonprofit, and a retailer walk into a bar",
@@ -11,7 +12,10 @@ app.value("portfolioItemData9",
         },
         "text_sections": [
             {
-                "text": "Built upon the slopes of Mount Ingino in Umbria, the ancient town of Gubbio boasts many well-preserved structures that document its glorious history. Founded by the Etruscans between the second and first centuries B.C., its Roman theater, Consuls Palace, and various churches and fountains are spectacular monuments to the Roman, Medieval, and Renaissance periods.",
+                "text": "Built upon the slopes of Mount Ingino in Umbria, the ancient town of Gubbio boasts many" +
+                " well-preserved structures that document its glorious history. Founded by the Etruscans between the " +
+                "second and first centuries B.C., its Roman theater, Consuls Palace, and various churches and " +
+                "fountains are spectacular monuments to the Roman, Medieval, and Renaissance periods.",
                 "number_of_columns": 1,
                 "annotations": {
                     "bottom": "Lorem ipsum dolor sit amet"
@@ -56,7 +60,7 @@ app.value("portfolioItemData9",
         ]
     }
 );
-app.run(["portfolioData", "portfolioItemData9",
+app.config(["portfolioData", "portfolioItemData9",
     function (portfolioData, portfolioItemData9) {
         portfolioData.item9 = portfolioItemData9;
     }]);
