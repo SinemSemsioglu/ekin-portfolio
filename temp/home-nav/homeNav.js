@@ -1,0 +1,1 @@
+app.directive("homeNav",function(){return{replace:!0,restrict:"E",controller:"homeNavController",controllerAs:"homeNav",templateUrl:"templates/home-nav/home-nav.html"}});

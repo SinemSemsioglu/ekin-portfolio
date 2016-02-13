@@ -1,0 +1,1 @@
+app.service("homeNavHelper",function(){var e;this.init=function(i){console.log("init called"),e=i},this.updateSelectedSection=function(i){e.selectedSectionIndex=i}});

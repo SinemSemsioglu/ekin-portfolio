@@ -1,0 +1,1 @@
+app.directive("descriptiveSection",function(){return{replace:!0,restrict:"E",scope:{section:"="}}});

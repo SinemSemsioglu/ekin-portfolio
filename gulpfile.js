@@ -5,25 +5,34 @@ var gulp = require("gulp"),
     path = require("path"),
     url = require("url"),
     eslint = require("gulp-eslint"),
+    uglify = require("gulp-uglify"),
+    cssnano = require("gulp-cssnano"),
+    ngAnnotate = require("gulp-ng-annotate"),
+    del = require("del"),
+    runSequence = require("run-sequence"),
     concat = require("gulp-concat");
+
 
 gulp.task("default", ["watch"]);
 
-var jsPathList = ["bower_components/jquery/dist/jquery.js",
-    "bower_components/angular/angular.js",
-    "bower_components/angular-route/angular-route.js",
+var libPathList = ["bower_components/jquery/dist/jquery.min.js",
+    "bower_components/angular/angular.min.js",
+    "bower_components/angular-route/angular-route.min.js",
     "bower_components/angular-ui-router/release/angular-ui-router.min.js",
-    "bower_components/angular-bootstrap/ui-bootstrap-tpls.js",
-    "bower_components/angular-loading-bar/build/loading-bar.min.js",
+    "bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js",
+    "bower_components/angular-loading-bar/build/loading-bar.min.js"
+    ];
+
+var sourcePathList = [
     "src/core/app.js",
-    "src/**/**.js"];
+    "src/**/**.js"
+];
 
 var cssPathList = ["bower_components/bootstrap/dist/css/bootstrap.css",
     "bower_components/angular-loading-bar/build/loading-bar.min.css",
     "src/portfolio.less"];
 
 gulp.task("browser-sync", function () {
-
     browserSync.init({
         "server": {
             "baseDir": "dist",
@@ -40,6 +49,16 @@ gulp.task("less", function () {
         }))
         .pipe(concat("portfolio.css"))
         .pipe(gulp.dest("dist/style/"));
+});
+
+gulp.task("minify-css", function() {
+    return gulp.src("dist/style/portfolio.css")
+        .pipe(cssnano())
+        .pipe(gulp.dest('dist/style/'));
+});
+
+gulp.task("build-style", function () {
+    runSequence("less", "minify-css");
 });
 
 gulp.task("lint", function () {
@@ -60,10 +79,27 @@ gulp.task("webserver", function () {
         }));
 });
 
-gulp.task("scripts", function () {
-    return gulp.src(jsPathList)
+gulp.task("concat-scripts", function () {
+    return gulp.src(libPathList.concat(["temp/app.js","temp/**/**.js"]))
         .pipe(concat("portfolio.js"))
         .pipe(gulp.dest("dist/"));
+});
+
+gulp.task("scripts", function () {
+    return gulp.src(libPathList.concat(sourcePathList))
+        .pipe(concat("portfolio.js"))
+        .pipe(gulp.dest("dist/"));
+});
+
+gulp.task("uglify-scripts", function () {
+    return gulp.src(sourcePathList)
+        .pipe(ngAnnotate({add: true, remove: true}))
+        .pipe(uglify())
+        .pipe(gulp.dest("temp/"));
+});
+
+gulp.task("build-scripts", function () {
+    runSequence("uglify-scripts", "concat-scripts");
 });
 
 gulp.task("copyAssets", function () {
@@ -81,12 +117,20 @@ gulp.task("copyIndex", function () {
         .pipe(gulp.dest("dist/"));
 });
 
-gulp.task("build", ["less", "copyAssets", "copyTemplates", "scripts", "copyIndex"]);
-
-gulp.task("watch", function () {
-    gulp.watch("/src/**.less", ["less"]);
-    gulp.watch(pathList, ["scripts"]);
-    gulp.watch("/src/**").on("change", "build");
+gulp.task("clean-temp", function () {
+    del("temp/**");
 });
 
-gulp.task("dev-live", ["lint", "build", "browser-sync", "watch"]);
+gulp.task("build-dev", ["less", "copyAssets", "copyTemplates", "scripts", "copyIndex"]);
+
+gulp.task("build", function () {
+    runSequence("build-style", "build-scripts", "copyAssets", "copyIndex", "copyTemplates", "clean-temp");
+});
+
+gulp.task("watch", function () {
+   // gulp.watch("/src/**.less", ["less"]);
+   // gulp.watch(jsPathList, ["build-scripts"]);
+    //gulp.watch("/src/**").on("change", "build-dev");
+});
+
+gulp.task("dev-live", ["lint", "build-dev", "browser-sync", "watch"]);

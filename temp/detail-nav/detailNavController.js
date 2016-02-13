@@ -1,0 +1,1 @@
+app.controller("detailNavController",["numberOfSections","arrayUtil","menuData",function(t,r,e){this.numberOfPortfolioItems=r.getNumberArray(t),this.menuData=e}]);

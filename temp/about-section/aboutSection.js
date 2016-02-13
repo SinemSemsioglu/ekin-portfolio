@@ -1,0 +1,1 @@
+app.directive("aboutSection",["appUtil",function(o){return{replace:!0,restrict:"E",scope:{section:"=",sectionText:"="},link:function(t,c){c.css("background-color",t.section.color.background),c.css("color",t.section.color.font),t.mobile=o.isScreenNarrow()},templateUrl:"templates/about-section/about-section.html"}}]);
