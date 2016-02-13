@@ -10,8 +10,8 @@ var gulp = require("gulp"),
     ngAnnotate = require("gulp-ng-annotate"),
     del = require("del"),
     runSequence = require("run-sequence"),
+    htmlMin = require("gulp-htmlMin"),
     concat = require("gulp-concat");
-
 
 gulp.task("default", ["watch"]);
 
@@ -107,9 +107,19 @@ gulp.task("copyAssets", function () {
         .pipe(gulp.dest("dist/assets/"));
 });
 
-gulp.task("copyTemplates", function () {
+gulp.task("minify-html", function() {
     return gulp.src("src/**/**.html")
+        .pipe(htmlMin({collapseWhitespace: true}))
+        .pipe(gulp.dest("temp/templates/"));
+});
+
+gulp.task("copyTemplates", function () {
+    return gulp.src("temp/templates/**/**.html")
         .pipe(gulp.dest("dist/templates/"));
+});
+
+gulp.task("build-templates", function () {
+   runSequence("minify-html", "copyTemplates");
 });
 
 gulp.task("copyIndex", function () {
@@ -124,7 +134,7 @@ gulp.task("clean-temp", function () {
 gulp.task("build-dev", ["less", "copyAssets", "copyTemplates", "scripts", "copyIndex"]);
 
 gulp.task("build", function () {
-    runSequence("build-style", "build-scripts", "copyAssets", "copyIndex", "copyTemplates", "clean-temp");
+    runSequence("build-style", "build-scripts", "build-templates", "copyAssets", "copyIndex", "clean-temp");
 });
 
 gulp.task("watch", function () {
