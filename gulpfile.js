@@ -118,6 +118,11 @@ gulp.task("copyTemplates", function () {
         .pipe(gulp.dest("dist/templates/"));
 });
 
+gulp.task("copyTemplatesDev", function () {
+    return gulp.src("src/**/**.html")
+        .pipe(gulp.dest("dist/templates/"));
+});
+
 gulp.task("build-templates", function () {
    runSequence("minify-html", "copyTemplates");
 });
@@ -131,7 +136,7 @@ gulp.task("clean-temp", function () {
     del("temp/**");
 });
 
-gulp.task("build-dev", ["less", "copyAssets", "copyTemplates", "scripts", "copyIndex"]);
+gulp.task("build-dev", ["less", "copyAssets", "copyTemplatesDev", "scripts", "copyIndex"]);
 
 gulp.task("build", function () {
     runSequence("build-style", "build-scripts", "build-templates", "copyAssets", "copyIndex", "clean-temp");

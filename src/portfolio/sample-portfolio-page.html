@@ -19,7 +19,8 @@
                        image="image">
         </image-section>
     </div>
-    <div class="portfolio-page-bottom-links">
+    <div ng-if="false"
+         class="portfolio-page-bottom-links">
         <div class="next-project"
              ng-if="portfolioPage.portfolioItem.footer.showNext"
              ng-click="portfolioPage.goToNextPortfolioItem()">
@@ -29,6 +30,16 @@
              ng-if="portfolioPage.portfolioItem.footer.showLive">
             <!-- add link here, also to the portfolio data ie portfolioItem.link_to_live_site !-->
             Go to live site
+        </div>
+    </div>
+    <div class="portfolio-page-footer">
+        <div class="footer-item">
+            © 2016 Ekin Keserer
+        </div>
+        <div class="footer-item footer-logo">
+        </div>
+        <div class="footer-item">
+            <a href="https://www.linkedin.com/in/ekinkeserer">Linkedin</a>
         </div>
     </div>
 </div>

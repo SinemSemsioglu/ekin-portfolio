@@ -1,6 +1,9 @@
 @portfolio-page-right-side-section-width: 65%;
 @portfolio-element-bottom-space: 30px;
 @portfolio-element-bottom-space-small: 15px;
+@portfolio-page-footer-height: 100px;
+@portfolio-page-footer-font-color: #aaaaaa;
+@portfolio-page-footer-item-height: 30px;
 
 .portfolio-page {
   max-width: @large-window-min-width;
@@ -16,6 +19,39 @@
 
     .text-content, .image-content {
       margin-bottom: @portfolio-element-bottom-space;
+    }
+  }
+
+  .portfolio-page-footer {
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    display: flex;
+    height: @portfolio-page-footer-height;
+    align-items: center;
+
+    color: @portfolio-page-footer-font-color;
+    font-size: @font-size-5;
+
+    margin: 70px @medium-screen-side;
+    border-top: 2px solid @portfolio-page-footer-font-color;
+
+    .footer-item {
+      flex: 1 1 auto;
+      height: @portfolio-page-footer-item-height;
+
+      &.footer-logo {
+        background-image: url("/assets/images/logo-black.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        opacity: 0.3;
+      }
+
+      &:last-child {
+        text-align: right;
+      }
     }
   }
 
@@ -38,7 +74,7 @@
       margin-bottom: @portfolio-element-bottom-space-small;
     }
 
-    .portfolio-page-bottom-links {
+    .portfolio-page-bottom-links, .portfolio-page-footer {
       margin: 30px @small-screen-side;
       font-size: @font-size-3;
     }
