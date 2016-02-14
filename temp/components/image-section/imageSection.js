@@ -1,1 +1,0 @@
-app.directive("imageSection",function(){return{replace:!0,restrict:"E",scope:{image:"="},templateUrl:"templates/components/image-section/image-section.html"}});

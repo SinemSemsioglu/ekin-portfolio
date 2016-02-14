@@ -4,6 +4,7 @@ app.constant("portfolioData", {});
 app.constant("portfolioItemData1",
     {
         "name": "Cilio",
+        "isIncomplete": false,
         "header": {
             "title": "Optimizing text strategically through natural selection",
             "description": "Cilio intelligently optimizes your writing for traction.",

@@ -3,6 +3,7 @@
 app.constant("portfolioItemData8",
     {
         "name": "Experiments",
+        "isIncomplete": false,
         "header": {
             "title": "Experiments in space, noise, and free will",
             "description": "Cantilever is a simple tool to keep up with design and architecture events.",
@@ -17,46 +18,87 @@ app.constant("portfolioItemData8",
                 " second and first centuries B.C., its Roman theater, Consuls Palace, and various churches and " +
                 "fountains are spectacular monuments to the Roman, Medieval, and Renaissance periods.",
                 "number_of_columns": 1,
-                "annotations": {
-                    "bottom": "Lorem ipsum dolor sit amet"
-                }
-            },
-            {
-                "text": "Estibulum mollis eget eros et tincidunt. Sed et nisl et enim dictum tincidunt. Phasellus" +
-                " accumsan at lacus non dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada" +
-                " fames ac turpis egestas. Phasellus et semper erat. Etiam convallis mauris quis nibh tristique" +
-                " pharetra. Aliquam",
-                "number_of_columns": 1,
-                "annotations": {
-                    "bottom": "Lorem ipsum dolor sit amet"
-                }
-            },
-            {
-                "text": "Estibulum mollis eget eros et tincidunt. Sed et nisl et enim dictum tincidunt. Phasellus" +
-                " accumsan at lacus non dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada" +
-                " fames ac turpis egestas. Phasellus et semper erat. Etiam convallis mauris quis nibh tristique" +
-                " pharetra. Aliquam",
-                "number_of_columns": 3,
-                "annotations": {
-                    "bottom": "Lorem ipsum dolor sit amet"
-                }
             }
         ],
         "image_sections": [
             {
-                "path": "/assets/images/size.jpg",
-                "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
-            },
-            {
-                "path": "/assets/images/size2.jpg",
-                "class": "regular"
-            },
-            {
-                "path": "/assets/images/size3.jpg",
+                "path": "/assets/images/pitems/experiments/vac1.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             }
+        ],
+        "extra_images": [
+            {
+                "path": "/assets/images/pitems/experiments/vac2.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            },
+            {
+                "path": "/assets/images/pitems/experiments/vac3.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            },
+            {
+                "path": "/assets/images/pitems/experiments/vac4.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            },
+            {
+                "path": "/assets/images/pitems/experiments/vac5.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            },
+            {
+                "path": "/assets/images/pitems/experiments/vac6.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            },
+            {
+                "path": "/assets/images/pitems/experiments/arc1.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            },
+            {
+                "path": "/assets/images/pitems/experiments/arc2.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            },
+            {
+                "path": "/assets/images/pitems/experiments/arc3.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            },
+            {
+                "path": "/assets/images/pitems/experiments/arc5.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            },
+            {
+                "path": "/assets/images/pitems/experiments/cub1.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            },
+            {
+                "path": "/assets/images/pitems/experiments/cub2.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            },
+            {
+                "path": "/assets/images/pitems/experiments/cub4.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            },
+            {
+                "path": "/assets/images/pitems/experiments/expe1.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            },
+            {
+                "path": "/assets/images/pitems/experiments/expe2.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            },
+            
         ]
     }
 );

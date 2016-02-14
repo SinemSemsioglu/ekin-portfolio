@@ -1,1 +1,0 @@
-app.service("appUtil",["$window","screenWidths",function(t,e){var n=this;this.getScreenHeight=function(){return t.innerHeight},this.getScreenWidth=function(){return t.innerWidth},this.isScreenNarrow=function(){return n.getScreenWidth()<e.MEDIUM_MIN},this.getWindowVerticalOffset=function(){return $(t).scrollTop()}}]);

@@ -1,1 +1,0 @@
-app.directive("detailNav",function(){return{replace:!0,restrict:"E",controller:"detailNavController",controllerAs:"detailNav",templateUrl:"templates/detail-nav/detail-nav.html"}});

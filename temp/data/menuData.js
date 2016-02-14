@@ -1,1 +1,0 @@
-app.constant("menuData",[]),app.run(["portfolioData","menuData","numberOfSections",function(a,n,t){for(var e=1;t>=e;e++){"item"+parseInt(e);n.push(a["item"+e].name)}}]);

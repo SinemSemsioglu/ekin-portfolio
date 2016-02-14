@@ -1,1 +1,0 @@
-app.service("arrayUtil",function(){this.getNumberArray=function(r){for(var t=[],a=1;r>=a;a++)t.push(a);return t}});

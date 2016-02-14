@@ -1,1 +1,0 @@
-app.directive("textSection",function(){return{replace:!0,restrict:"E",scope:{text:"=",numberOfColumns:"=",annotations:"="},link:function(t,e){textContainer=$($(e).find(".text-container")),textContainer.css("column-count",t.numberOfColumns)},templateUrl:"templates/components/text-section/text-section.html"}});

@@ -1,11 +1,12 @@
-// Logos
+// logo
 
 app.constant("portfolioItemData9",
     {
         "name": "Logos",
+        "isIncomplete": false,
         "header": {
-            "title": "Three samples of identity design",
-            "description": "A construction company, a nonprofit, and a retailer walk into a bar",
+            "title": "Three samples of commissioned identity design",
+            "description": "A construction company, a nonprofit, and a retailer",
             "image_path": "/assets/images/pitems/2-dunemoon/duneheader.jpg",
             "tags": ["BRANDING", "CLIENT WORK"],
             "date": "SEPTEMBER 2014"
@@ -20,40 +21,78 @@ app.constant("portfolioItemData9",
                 "annotations": {
                     "bottom": "Lorem ipsum dolor sit amet"
                 }
-            },
-            {
-                "text": "Estibulum mollis eget eros et tincidunt. Sed et nisl et enim dictum tincidunt. Phasellus" +
-                " accumsan at lacus non dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada" +
-                " fames ac turpis egestas. Phasellus et semper erat. Etiam convallis mauris quis nibh tristique" +
-                " pharetra. Aliquam",
-                "number_of_columns": 1,
-                "annotations": {
-                    "bottom": "Lorem ipsum dolor sit amet"
-                }
-            },
-            {
-                "text": "Estibulum mollis eget eros et tincidunt. Sed et nisl et enim dictum tincidunt. Phasellus" +
-                " accumsan at lacus non dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada" +
-                " fames ac turpis egestas. Phasellus et semper erat. Etiam convallis mauris quis nibh tristique" +
-                " pharetra. Aliquam",
-                "number_of_columns": 3,
-                "annotations": {
-                    "bottom": "Lorem ipsum dolor sit amet"
-                }
             }
         ],
         "image_sections": [
             {
-                "path": "/assets/images/pitems/2-dunemoon/dune1.jpg",
+                "path": "/assets/images/pitems/logo/tur1.png",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            }
+        ],
+        "extra_images": [
+            {
+                "path": "/assets/images/pitems/logo/tur2.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             },
             {
-                "path": "/assets/images/pitems/2-dunemoon/dune2.jpg",
-                "class": "regular"
+                "path": "/assets/images/pitems/logo/tur3.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
             },
             {
-                "path": "/assets/images/pitems/2-dunemoon/dune1.jpg",
+                "path": "/assets/images/pitems/logo/tur4.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            },
+            {
+                "path": "/assets/images/pitems/logo/tur5.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            },
+            {
+                "path": "/assets/images/pitems/logo/tur6.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            },
+            {
+                "path": "/assets/images/pitems/logo/tur7.png",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            },
+            {
+                "path": "/assets/images/pitems/logo/huz1.png",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            },
+            {
+                "path": "/assets/images/pitems/logo/huz2.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            },
+            {
+                "path": "/assets/images/pitems/logo/huz3.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            },
+            {
+                "path": "/assets/images/pitems/logo/huz4.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            },
+            {
+                "path": "/assets/images/pitems/logo/huz5.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            },
+            {
+                "path": "/assets/images/pitems/logo/boa1.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            },
+            {
+                "path": "/assets/images/pitems/logo/boa2.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             }

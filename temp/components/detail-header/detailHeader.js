@@ -1,1 +1,0 @@
-app.directive("detailHeader",function(){return{replace:!0,restrict:"E",templateUrl:"templates/components/detail-header/detail-header.html"}});

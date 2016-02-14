@@ -3,6 +3,7 @@
 app.constant("portfolioItemData3",
     {
         "name": "Cantilever",
+        "isIncomplete": false,
         "header": {
             "title": "Helping architects get the most out of events",
             "description": "Cantilever is a simple tool to keep up with design and architecture events.",

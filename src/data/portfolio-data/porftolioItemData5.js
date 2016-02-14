@@ -3,6 +3,7 @@
 app.constant("portfolioItemData5",
     {
         "name": "Buharo",
+        "isIncomplete": false,
         "header": {
             "title": "Redesigning an oriental tradition",
             "description": "Buharo addresses many problems a traditional hookah creates with design.",
