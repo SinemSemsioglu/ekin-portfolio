@@ -10,7 +10,7 @@ var gulp = require("gulp"),
     ngAnnotate = require("gulp-ng-annotate"),
     del = require("del"),
     runSequence = require("run-sequence"),
-    htmlMin = require("gulp-htmlMin"),
+    htmlMin = require("gulp-htmlmin"),
     concat = require("gulp-concat");
 
 gulp.task("default", ["watch"]);
