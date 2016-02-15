@@ -28,74 +28,60 @@ app.constant("portfolioItemData9",
             {
                 "path": "/assets/images/pitems/logo/tur1.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
             }
         ],
         "extra_images": [
             {
                 "path": "/assets/images/pitems/logo/tur2.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
             },
             {
                 "path": "/assets/images/pitems/logo/tur3.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
             },
             {
                 "path": "/assets/images/pitems/logo/tur4.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
             },
             {
                 "path": "/assets/images/pitems/logo/tur5.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
             },
             {
                 "path": "/assets/images/pitems/logo/tur6.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
             },
             {
                 "path": "/assets/images/pitems/logo/tur7.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
             },
             {
                 "path": "/assets/images/pitems/logo/huz1.png",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
             },
             {
                 "path": "/assets/images/pitems/logo/huz2.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
             },
             {
                 "path": "/assets/images/pitems/logo/huz3.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
             },
             {
                 "path": "/assets/images/pitems/logo/huz4.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
             },
             {
                 "path": "/assets/images/pitems/logo/huz5.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
             },
             {
                 "path": "/assets/images/pitems/logo/boa11.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
             },
             {
                 "path": "/assets/images/pitems/logo/boa2.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
             }
         ]
     }

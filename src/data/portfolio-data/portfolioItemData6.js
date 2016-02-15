@@ -28,7 +28,6 @@ app.constant("portfolioItemData6",
             {
                 "path": "/assets/images/pitems/horology/horo1.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
             }
         ]
     }
