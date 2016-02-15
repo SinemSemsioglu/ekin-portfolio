@@ -41,37 +41,11 @@ app.constant("portfolioItemData1",
         ],
         "image_sections": [
             {
-                "path": "/assets/images/pitems/cilio/cilioheader.jpg",
-                "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
-            },
-            {
-                "path": "/assets/images/pitems/cilio/cilio1.jpg",
-                "class": "regular"
-            },
-            {
-                "path": "/assets/images/pitems/cilio/cilio2.jpg",
+                "path": "/assets/images/pitems/cilio/cilio.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             }
         ],
-        "extra_images": [
-                {
-                    "path": "/assets/images/pitems/cilio/cilio3.jpg",
-                    "class": "regular",
-                    "annotation": "Lorem ipsum dolor sit amet"
-                },
-                {
-                    "path": "/assets/images/pitems/cilio/cilio4.jpg",
-                    "class": "regular",
-                    "annotation": "Lorem ipsum dolor sit amet"
-                },
-                {
-                    "path": "/assets/images/pitems/cilio/cilio5.jpg",
-                    "class": "regular",
-                    "annotation": "Lorem ipsum dolor sit amet"
-                }
-        ]
     }
 );
 app.config(["portfolioData", "portfolioItemData1",
