@@ -6,6 +6,7 @@ app.constant("portfolioItemData1",
         "name": "Cilio",
         "isIncomplete": false,
         "header": {
+            "alert_message": "Deneme deneme",
             "title": "Optimizing text strategically through natural selection",
             "description": "Cilio intelligently optimizes your writing for traction.",
             "image_path": "/assets/images/bg.jpg",

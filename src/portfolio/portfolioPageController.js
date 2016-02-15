@@ -14,12 +14,11 @@ app.controller("portfolioPageController",
             //actually info is in the url so we should probably take that
             var portfolioIndex = $stateParams.portfolioIndex || 0;
 
-
-
             //use portfolioIndex instead of 0 when portfolioData is populated
             this.portfolioItem = portfolioData["item" + portfolioIndex];
             $rootScope.pageTitle = this.portfolioItem.name + pageTitles.PORTFOLIO_SUFFIX;
             this.isScreenNarrow = appUtil.isScreenNarrow();
+            this.message = this.portfolioItem.header.alert_message;
 
             this.goToHomePage = function () {
                 $state.go("home");

@@ -9,17 +9,23 @@
   //put in a more general portfolio styling file
 
   .navigation-wrapper {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
+    position: relative;
     /*height: @nav-height;
     background-color: white;
     box-shadow: 0 0 2px 0 #cccccc;*/
 
     z-index: 100;
+    min-height: @nav-height;
+
+    .message-box {
+      z-index: 102;
+    }
 
     .navigation {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
       z-index: 101;
     }
   }
@@ -27,7 +33,6 @@
   .header-image {
     width: 100%;
     height: 100%;
-    margin-top: @nav-height;
     margin-bottom: @detail-header-element-bottom-margin;
     background-position: center;
     background-repeat: no-repeat;
