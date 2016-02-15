@@ -7,7 +7,7 @@ app.constant("portfolioItemData10",
         "header": {
             "title": "A vacation house and other architectural misgivings",
             "description": "house is a simple tool to keep up with design and architecture events.",
-            "image_path": "/assets/images/bg.jpg",
+            "image_path": "/assets/images/pitems/house/househead.jpg",
             "tags": ["ARCHITECTURE", "ECLECTIC"],
             "date": "MARCH 2015"
         },

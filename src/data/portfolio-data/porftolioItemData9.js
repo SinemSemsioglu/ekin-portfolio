@@ -7,7 +7,7 @@ app.constant("portfolioItemData9",
         "header": {
             "title": "Three samples of commissioned identity design",
             "description": "A construction company, a nonprofit, and a retailer",
-            "image_path": "/assets/images/pitems/2-dunemoon/duneheader.jpg",
+            "image_path": "/assets/images/pitems/logo/logohead.jpg",
             "tags": ["BRANDING", "CLIENT WORK"],
             "date": "SEPTEMBER 2014"
         },
@@ -18,14 +18,11 @@ app.constant("portfolioItemData9",
                 "second and first centuries B.C., its Roman theater, Consuls Palace, and various churches and " +
                 "fountains are spectacular monuments to the Roman, Medieval, and Renaissance periods.",
                 "number_of_columns": 1,
-                "annotations": {
-                    "bottom": "Lorem ipsum dolor sit amet"
-                }
             }
         ],
         "image_sections": [
             {
-                "path": "/assets/images/pitems/logo/tur1.png",
+                "path": "/assets/images/pitems/logo/tur1.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             }
@@ -57,7 +54,7 @@ app.constant("portfolioItemData9",
                 "annotation": "Lorem ipsum dolor sit amet"
             },
             {
-                "path": "/assets/images/pitems/logo/tur7.png",
+                "path": "/assets/images/pitems/logo/tur7.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             },
@@ -87,7 +84,7 @@ app.constant("portfolioItemData9",
                 "annotation": "Lorem ipsum dolor sit amet"
             },
             {
-                "path": "/assets/images/pitems/logo/boa1.jpg",
+                "path": "/assets/images/pitems/logo/boa11.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
             },

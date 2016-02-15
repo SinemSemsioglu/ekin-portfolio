@@ -23,19 +23,9 @@ app.constant("portfolioItemData1",
                 " dates, " +
                 "organizations etc. using IBM Watson’s Relationship Extraction service, and makes sure to keep them " +
                 "unaltered. Later, using the Tone Analyzer service Cilio identifies the parts of the text that could " +
-                "be mutated in order to change the audiences reaction on the text.",
-                "number_of_columns": 1
-            },
-            {
-                "text": "Again, utilizing the Tone Analyzer Cilio, replaces the previously identified mutable parts " +
+                "be mutated in order to change the audiences reaction on the text." + "Again, utilizing the Tone Analyzer Cilio, replaces the previously identified mutable parts " +
                 "of the text with their synonyms. Through this technique it creates a multitude of permutations of " +
                 "the text and deploys these mutated versions to different users.",
-                "number_of_columns": 1
-            },
-            {
-                "text": "Cilio then tracks the conversion rates of users with regards to the deployment of each " +
-                "mutated text. It then selects the most successful versions of the text and repeats this process " +
-                "until it cannot get any higher returns.",
                 "number_of_columns": 1
             }
         ],
@@ -46,6 +36,14 @@ app.constant("portfolioItemData1",
                 "annotation": "Lorem ipsum dolor sit amet"
             }
         ],
+        "extra_images": [
+            {
+                "path": "/assets/images/pitems/cilio/twitter.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            }
+        ]
+
     }
 );
 app.config(["portfolioData", "portfolioItemData1",
