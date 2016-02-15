@@ -1,11 +1,24 @@
 app.controller("portfolioPageController",
     ["$state", "portfolioData", "appUtil", "$stateParams", "numberOfSections", "scrollUtil", "$rootScope",
-        "pageTitles",
+        "pageTitles", "$sce",
         function ($state, portfolioData, appUtil, $stateParams, numberOfSections, scrollUtil, $rootScope,
-                  pageTitles) {
+                  pageTitles, $sce) {
             "use strict";
 
             var self = this;
+
+            this.processMedia = function (portfolioItem) {
+                //TODO make the extra images field extra media
+                var extraMedia = portfolioItem.extra_images;
+                var extraMediaLength = extraMedia.length;
+
+                for (var mediaIndex = 0; mediaIndex < extraMediaLength; mediaIndex++) {
+                    var media = extraMedia[mediaIndex];
+                    if (media.type === "video") {
+                        media.source = $sce.trustAsHtml(media.source);
+                    }
+                }
+            };
 
             scrollUtil.goToTop();
             scrollUtil.unsetScrollProperties();
@@ -16,6 +29,7 @@ app.controller("portfolioPageController",
 
             //use portfolioIndex instead of 0 when portfolioData is populated
             this.portfolioItem = portfolioData["item" + portfolioIndex];
+            self.processMedia(this.portfolioItem);
             $rootScope.pageTitle = this.portfolioItem.name + pageTitles.PORTFOLIO_SUFFIX;
             this.isScreenNarrow = appUtil.isScreenNarrow();
 
@@ -57,4 +71,5 @@ app.controller("portfolioPageController",
             this.isSelected = function (itemId) {
                 return (itemId === parseInt(portfolioIndex));
             };
+
         }]);

@@ -14,10 +14,18 @@
                            image="portfolioPage.portfolioItem.image_sections[$index]">
             </image-section>
         </div>
-        <image-section ng-repeat="image in portfolioPage.portfolioItem.extra_images"
-                       class="image-content"
-                       image="image">
-        </image-section>
+        <div ng-repeat="media in portfolioPage.portfolioItem.extra_images">
+            <image-section ng-if="media.type !== 'video'"
+                           class="image-content"
+                           image="media">
+            </image-section>
+            <div class="image-content image-section video-section"
+                 ng-if="media.type === 'video'">
+                <div class="image-container regular video-container"
+                     ng-bind-html="media.source">
+                </div>
+            </div>
+        </div>
     </div>
     <div ng-if="false"
          class="portfolio-page-bottom-links">
