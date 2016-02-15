@@ -6,7 +6,7 @@ app.constant("portfolioItemData10",
         "isIncomplete": false,
         "header": {
             "alert_box": {
-                "message":  "Hey there! This is the new version of my portfolio and it was deployed very recently. It will be updated heavily throughout this week. Please check again soon if any content is buggy or missing.",
+                "message":  "Hey there! This site is very new, it will be updated heavily throughout this week. Please check again in a day or two if any content is buggy or missing.",
                 "show_message": true
             },
             "title": "A vacation house and other architectural misgivings",
