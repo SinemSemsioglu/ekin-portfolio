@@ -7,7 +7,7 @@ app.constant("portfolioItemData1",
         "isIncomplete": false,
         "header": {
             "alert_box": {
-                "message":  "Deneme deneme",
+                "message":  "Hey there! This is the new version of my portfolio and it was deployed very recently. It will be updated heavily throughout this week. Please check again soon if any content is buggy or missing.",
                 "show_message": true
             },
             "title": "Optimizing text strategically through natural selection",

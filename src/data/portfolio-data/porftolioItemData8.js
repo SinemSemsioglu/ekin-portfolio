@@ -5,6 +5,10 @@ app.constant("portfolioItemData8",
         "name": "Experiments",
         "isIncomplete": false,
         "header": {
+            "alert_box": {
+                "message":  "Hey there! This is the new version of my portfolio and it was deployed very recently. It will be updated heavily throughout this week. Please check again soon if any content is buggy or missing.",
+                "show_message": true
+            },
             "title": "Experiments in space, noise, and free will",
             "description": "Cantilever is a simple tool to keep up with design and architecture events.",
             "image_path": "/assets/images/pitems/experiments/expheader.jpg",

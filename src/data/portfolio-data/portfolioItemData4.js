@@ -5,6 +5,10 @@ app.constant("portfolioItemData4",
         "name": "Markforged",
         "isIncomplete": false,
         "header": {
+            "alert_box": {
+                "message":  "Hey there! This is the new version of my portfolio and it was deployed very recently. It will be updated heavily throughout this week. Please check again soon if any content is buggy or missing.",
+                "show_message": true
+            },
             "title": "Rebranding the world’s first carbon fiber 3D printer",
             "description": "I've had the opportunity to rebrand Markforged,",
             "image_path": "/assets/images/pitems/markforged/mfheader.png",

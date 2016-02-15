@@ -5,6 +5,10 @@ app.constant("portfolioItemData11",
         "name": "More Architecture",
         "isIncomplete": false,
         "header": {
+            "alert_box": {
+                "message":  "Hey there! This is the new version of my portfolio and it was deployed very recently. It will be updated heavily throughout this week. Please check again soon if any content is buggy or missing.",
+                "show_message": true
+            },
             "title": "The sharing economy of reprogrammable architecture",
             "description": "With the advent of programmable matter, all design disciplines will undergo fundamental changes.",
             "image_path": "/assets/images/pitems/auton/authead.jpg",

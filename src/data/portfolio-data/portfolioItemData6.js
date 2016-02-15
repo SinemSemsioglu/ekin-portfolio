@@ -5,6 +5,10 @@ app.constant("portfolioItemData6",
         "name": "Horology",
         "isIncomplete": false,
         "header": {
+            "alert_box": {
+                "message":  "Hey there! This is the new version of my portfolio and it was deployed very recently. It will be updated heavily throughout this week. Please check again soon if any content is buggy or missing.",
+                "show_message": true
+            },
             "title": "Horology and information design problems",
             "description": "The value of a timepiece never lied in its ability to tell time during my lifetime.",
             "image_path": "/assets/images/pitems/horology/horoheader.jpg",

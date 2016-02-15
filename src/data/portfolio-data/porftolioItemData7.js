@@ -5,6 +5,10 @@ app.constant("portfolioItemData7",
         "name": "Information Design",
         "isIncomplete": false,
         "header": {
+            "alert_box": {
+                "message":  "Hey there! This is the new version of my portfolio and it was deployed very recently. It will be updated heavily throughout this week. Please check again soon if any content is buggy or missing.",
+                "show_message": true
+            },
             "title": "Diagramming ambiguities and fiction",
             "description": "These are experiments in information design incorporating somewhat unusual datasets",
             "image_path": "/assets/images/pitems/diagrams/diagheader.jpg",

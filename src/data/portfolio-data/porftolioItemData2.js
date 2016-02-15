@@ -5,6 +5,10 @@ app.constant("portfolioItemData2",
         "name": "Dunemoon",
         "isIncomplete": false,
         "header": {
+            "alert_box": {
+                "message":  "Hey there! This is the new version of my portfolio and it was deployed very recently. It will be updated heavily throughout this week. Please check again soon if any content is buggy or missing.",
+                "show_message": true
+            },
             "title": "Social context for a web of music",
             "description": "Dunemoon tries to help users become more engaged with their playlists.",
             "image_path": "/assets/images/pitems/dunemoon/duneheader.jpg",

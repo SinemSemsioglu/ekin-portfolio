@@ -5,6 +5,10 @@ app.constant("portfolioItemData5",
         "name": "Buharo",
         "isIncomplete": false,
         "header": {
+            "alert_box": {
+                "message":  "Hey there! This is the new version of my portfolio and it was deployed very recently. It will be updated heavily throughout this week. Please check again soon if any content is buggy or missing.",
+                "show_message": true
+            },
             "title": "Redesigning an oriental tradition",
             "description": "Buharo addresses many problems a traditional hookah creates with design.",
             "image_path": "/assets/images/pitems/buharo/buharohead.jpg",
