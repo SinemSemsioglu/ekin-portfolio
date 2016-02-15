@@ -77,6 +77,16 @@ app.constant("portfolioItemData5",
                 "path": "/assets/images/pitems/buharo/buharo7.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"
+            },
+            {
+                "path": "/assets/images/pitems/buharo/buharo8.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
+            },
+            {
+                "path": "/assets/images/pitems/buharo/buharo9.jpg",
+                "class": "regular",
+                "annotation": "Lorem ipsum dolor sit amet"
             }
         ]
     }
