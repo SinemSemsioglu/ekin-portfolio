@@ -18,7 +18,17 @@ app.controller("portfolioPageController",
             this.portfolioItem = portfolioData["item" + portfolioIndex];
             $rootScope.pageTitle = this.portfolioItem.name + pageTitles.PORTFOLIO_SUFFIX;
             this.isScreenNarrow = appUtil.isScreenNarrow();
-            this.message = this.portfolioItem.header.alert_message;
+
+
+            //setting alert box message
+            var message = "";
+            var showMessage = false;
+            if (this.portfolioItem.header.alert_box) {
+                message = this.portfolioItem.header.alert_box.message;
+                showMessage = this.portfolioItem.header.alert_box.show_message;
+            }
+            this.message = message;
+            this.showMessage = showMessage;
 
             this.goToHomePage = function () {
                 $state.go("home");
