@@ -50,7 +50,7 @@ app.constant("portfolioItemData5",
             {
                 "path": "/assets/images/pitems/buharo/buharo1.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             },
             {
                 "path": "/assets/images/pitems/buharo/buharo2.jpg",
@@ -59,38 +59,38 @@ app.constant("portfolioItemData5",
             {
                 "path": "/assets/images/pitems/buharo/buharo3.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             }],
         "extra_images": [
             {
                 "path": "/assets/images/pitems/buharo/buharo4.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             },
             {
                 "path": "/assets/images/pitems/buharo/buharo5.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             },
             {
                 "path": "/assets/images/pitems/buharo/buharo6.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             },
             {
                 "path": "/assets/images/pitems/buharo/buharo7.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             },
             {
                 "path": "/assets/images/pitems/buharo/buharo8.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             },
             {
                 "path": "/assets/images/pitems/buharo/buharo9.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             }
         ]
     }

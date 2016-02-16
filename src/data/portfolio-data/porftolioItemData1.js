@@ -36,14 +36,14 @@ app.constant("portfolioItemData1",
             {
                 "path": "/assets/images/pitems/cilio/cilio.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             }
         ],
         "extra_images": [
             {
                 "path": "/assets/images/pitems/cilio/twitter.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             }
         ]
 

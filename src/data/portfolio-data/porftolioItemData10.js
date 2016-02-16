@@ -9,7 +9,7 @@ app.constant("portfolioItemData10",
                 "message":  "Hey there! This site is very new, it will be updated heavily throughout this week. Please check again in a day or two if any content is buggy or missing.",
                 "show_message": true
             },
-            "title": "A vacation house and other architectural misgivings",
+            "title": "A vacation house",
             "description": "house is a simple tool to keep up with design and architecture events.",
             "image_path": "/assets/images/pitems/house/househead.jpg",
             "tags": ["ARCHITECTURE", "ECLECTIC"],
@@ -25,39 +25,39 @@ app.constant("portfolioItemData10",
             {
                 "path": "/assets/images/pitems/house/house1.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             }
         ],
         "extra_images": [
             {
                 "path": "/assets/images/pitems/house/house2.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             },
             {
                 "path": "/assets/images/pitems/house/house3.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             },
             {
                 "path": "/assets/images/pitems/house/house4.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             },
             {
                 "path": "/assets/images/pitems/house/house5.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             },
             {
                 "path": "/assets/images/pitems/house/house6.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             },
             {
                 "path": "/assets/images/pitems/house/house7.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             }
         ]
     }

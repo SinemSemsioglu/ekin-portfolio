@@ -35,17 +35,17 @@ app.constant("portfolioItemData4",
             {
                 "path": "/assets/images/pitems/markforged/mf2.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             },
             {
                 "path": "/assets/images/pitems/markforged/mf3.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             },
             {
                 "path": "/assets/images/pitems/markforged/printer.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             }
         ]
     }

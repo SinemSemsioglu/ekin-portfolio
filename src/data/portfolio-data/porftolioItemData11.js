@@ -28,19 +28,19 @@ app.constant("portfolioItemData11",
             {
                 "path": "/assets/images/pitems/auton/aut1.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             }
         ],
         "extra_images": [
             {
                 "path": "/assets/images/pitems/auton/aut2.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             },
             {
                 "path": "/assets/images/pitems/auton/aut3.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             }
         ]
 

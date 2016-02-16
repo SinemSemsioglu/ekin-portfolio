@@ -32,7 +32,7 @@ app.constant("portfolioItemData3",
             {
                 "path": "/assets/images/pitems/cantilever/cantimobil1.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             },
             
         ],
@@ -40,37 +40,37 @@ app.constant("portfolioItemData3",
             {
                 "path": "/assets/images/pitems/cantilever/cantimobil2.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             },
             {
                 "path": "/assets/images/pitems/cantilever/cantimobil3.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             },
             {
                 "path": "/assets/images/pitems/cantilever/cantiweb2.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             },
             {
                 "path": "/assets/images/pitems/cantilever/cantiweb1.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             },
             {
                 "path": "/assets/images/pitems/cantilever/cantiweb3.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             },
             {
                 "path": "/assets/images/pitems/cantilever/cantinight1.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             },
             {
                 "path": "/assets/images/pitems/cantilever/cantinight2.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             }
         ]
     }

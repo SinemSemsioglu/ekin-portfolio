@@ -43,7 +43,7 @@ app.constant("portfolioItemData7",
             {
                 "path": "/assets/images/pitems/diagrams/calvino.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             },
             {
                 "path": "/assets/images/pitems/diagrams/diagram1.jpg",
@@ -52,7 +52,7 @@ app.constant("portfolioItemData7",
             {
                 "path": "/assets/images/pitems/diagrams/displace.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             }
         ],
         "extra_images": [
@@ -69,7 +69,7 @@ app.constant("portfolioItemData7",
                 "type": "image",
                 "path": "/assets/images/pitems/diagrams/maps1.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             }
         ]
     }
