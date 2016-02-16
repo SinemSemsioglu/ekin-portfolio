@@ -6,11 +6,11 @@ app.constant("portfolioItemData2",
         "isIncomplete": false,
         "header": {
             "alert_box": {
-                "message":  "Hey there! This site is very new, and this section is still incomplete. Please check again in a couple of days to see the final version.",
+                "message":  "Hey there! I've deployed this portfolio very recently and I'm still updating it. Check again in a couple of days to see the final version.",
                 "show_message": true
             },
             "title": "Social context for a web of music",
-            "description": "Dunemoon tries to help users become more engaged with their playlists.",
+            "description": "Dunemoon tries to help users become more engaged with their favorite songs.",
             "image_path": "/assets/images/pitems/dunemoon/duneheader.jpg",
             "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
             "date": "OCTOBER 2015"

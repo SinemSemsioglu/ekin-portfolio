@@ -6,11 +6,11 @@ app.constant("portfolioItemData8",
         "isIncomplete": false,
         "header": {
             "alert_box": {
-                "message":  "Hey there! This site is very new, and this section is still incomplete. Please check again in a couple of days to see the final version.",
+                "message":  "Hey there! I've deployed this portfolio very recently and I'm still updating it. Check again in a couple of days to see the final version.",
                 "show_message": true
             },
             "title": "Experiments in space, noise, and free will",
-            "description": "Cantilever is a simple tool to keep up with design and architecture events.",
+            "description": "Spatial experiments",
             "image_path": "/assets/images/pitems/experiments/expheader.jpg",
             "tags": ["SPATIAL DESIGN", "FICTION"],
             "date": "DECEMBER 2013"
