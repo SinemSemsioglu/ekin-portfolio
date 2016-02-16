@@ -26,11 +26,6 @@ app.value("sectionData", {
             "month": "NOV",
             "year": "2015"
         },
-<<<<<<< Updated upstream
-        "link": "https://google.com",
-=======
-            "link": "GO TO SITE",
->>>>>>> Stashed changes
         "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
         "details": true,
         "image_path": "/assets/images/pitems/cilio/ciliofront3.png",
