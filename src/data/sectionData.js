@@ -29,7 +29,7 @@ app.value("sectionData", {
         "link": "GO TO SITE",
         "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
         "details": true,
-        "image_path": "../assets/images/o-01.svg",
+        "image_path": "/assets/images/pitems/cilio/ciliofront3.png",
         "type": "regular",
         "class": "section-1",
         "color": {

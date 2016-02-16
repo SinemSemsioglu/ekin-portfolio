@@ -32,6 +32,10 @@ app.constant("portfolioItemData9",
         ],
         "extra_images": [
             {
+                "path": "/assets/images/pitems/logo/tur7.jpg",
+                "class": "regular",
+            },
+            {
                 "path": "/assets/images/pitems/logo/tur2.jpg",
                 "class": "regular",
             },
@@ -49,10 +53,6 @@ app.constant("portfolioItemData9",
             },
             {
                 "path": "/assets/images/pitems/logo/tur6.jpg",
-                "class": "regular",
-            },
-            {
-                "path": "/assets/images/pitems/logo/tur7.jpg",
                 "class": "regular",
             },
             {
