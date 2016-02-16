@@ -66,6 +66,7 @@ app.constant("portfolioItemData7",
                 "class": "regular"
             },
             {
+                "type": "image",
                 "path": "/assets/images/pitems/diagrams/maps1.jpg",
                 "class": "regular",
                 "annotation": "Lorem ipsum dolor sit amet"

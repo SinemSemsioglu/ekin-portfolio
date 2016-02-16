@@ -21,13 +21,13 @@ app.constant("portfolioItemData6",
                 "well-preserved structures that document its glorious history. Founded by the Etruscans between the " +
                 "second and first centuries B.C., its Roman theater, Consuls Palace, and various churches and " +
                 "fountains are spectacular monuments to the Roman, Medieval, and Renaissance periods.",
-                "number_of_columns": 1,
+                "number_of_columns": 1
             }
         ],
         "image_sections": [
             {
                 "path": "/assets/images/pitems/horology/horo1.jpg",
-                "class": "regular",
+                "class": "regular"
             }
         ]
     }

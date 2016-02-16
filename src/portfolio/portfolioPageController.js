@@ -6,43 +6,25 @@ app.controller("portfolioPageController",
             "use strict";
 
             var self = this;
+            var portfolioIndex;
+            var message;
+            var showMessage;
 
             this.processMedia = function (portfolioItem) {
                 //TODO make the extra images field extra media
                 var extraMedia = portfolioItem.extra_images;
-                var extraMediaLength = extraMedia.length;
+                if (extraMedia) {
+                    var extraMediaLength = extraMedia.length;
 
-                for (var mediaIndex = 0; mediaIndex < extraMediaLength; mediaIndex++) {
-                    var media = extraMedia[mediaIndex];
-                    if (media.type === "video") {
-                        media.source = $sce.trustAsHtml(media.source);
+                    for (var mediaIndex = 0; mediaIndex < extraMediaLength; mediaIndex++) {
+                        var media = extraMedia[mediaIndex];
+
+                        if (media.type && media.type === "video") {
+                            media.trustedSource = $sce.trustAsHtml(media.source);
+                        }
                     }
                 }
             };
-
-            scrollUtil.goToTop();
-            scrollUtil.unsetScrollProperties();
-
-            //goes to the first portfolio item if nothing is given
-            //actually info is in the url so we should probably take that
-            var portfolioIndex = $stateParams.portfolioIndex || 0;
-
-            //use portfolioIndex instead of 0 when portfolioData is populated
-            this.portfolioItem = portfolioData["item" + portfolioIndex];
-            self.processMedia(this.portfolioItem);
-            $rootScope.pageTitle = this.portfolioItem.name + pageTitles.PORTFOLIO_SUFFIX;
-            this.isScreenNarrow = appUtil.isScreenNarrow();
-
-
-            //setting alert box message
-            var message = "";
-            var showMessage = false;
-            if (this.portfolioItem.header.alert_box) {
-                message = this.portfolioItem.header.alert_box.message;
-                showMessage = this.portfolioItem.header.alert_box.show_message;
-            }
-            this.message = message;
-            this.showMessage = showMessage;
 
             this.goToHomePage = function () {
                 $state.go("home");
@@ -57,11 +39,9 @@ app.controller("portfolioPageController",
             this.goToPortfolioPage = function (itemId) {
                 if (portfolioData["item" + itemId].isIncomplete) {
                     self.goToHomePage();
-                    //console.log("portfoliopage call", itemId);
-                    scrollUtil.goToSection(itemId);
+                    /* doesnt work
+                    scrollUtil.goToSection(itemId); */
                 }
-
-                scrollUtil.goToTop();
 
                 $state.go("portfolio." + itemId, {
                     "portfolioIndex": itemId
@@ -72,4 +52,31 @@ app.controller("portfolioPageController",
                 return (itemId === parseInt(portfolioIndex));
             };
 
+            this.init = function () {
+                alert("called");
+                scrollUtil.goToTop();
+                scrollUtil.unsetScrollProperties();
+
+                //goes to the first portfolio item if nothing is given
+                //actually info is in the url so we should probably take that
+                portfolioIndex = $stateParams.portfolioIndex || 0;
+
+                //use portfolioIndex instead of 0 when portfolioData is populated
+                this.portfolioItem = portfolioData["item" + portfolioIndex];
+                self.processMedia(this.portfolioItem);
+                $rootScope.pageTitle = this.portfolioItem.name + pageTitles.PORTFOLIO_SUFFIX;
+                this.isScreenNarrow = appUtil.isScreenNarrow();
+
+                //setting alert box message
+                message = "";
+                showMessage = false;
+                if (this.portfolioItem.header.alert_box) {
+                    message = this.portfolioItem.header.alert_box.message;
+                    showMessage = this.portfolioItem.header.alert_box.show_message;
+                }
+                this.message = message;
+                this.showMessage = showMessage;
+            };
+
+            this.init();
         }]);
