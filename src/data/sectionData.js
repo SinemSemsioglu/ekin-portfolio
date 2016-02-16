@@ -2,7 +2,7 @@ app.value("sectionData", {
     "section_0": {
         "text": "<h1>Hi, this is <b>Ekin</b>.</h1>" +
         "<h1><p>I am a <b>multidisciplinary</b> designer based in New York.</p>" +
-        "<p>I am currently a junior in Architecture at <a href='http://www.newschool.edu/parsons/'><b>Parsons School of Design</b></a>.</p>" + "<p>Beyond <b>spaces</b>, I design <b>interfaces</b>, <b>products</b>, and <b>brands</b>.</p>" +
+        "<p>I am currently a junior in Architecture at <a href='http://www.newschool.edu/parsons/'><b>Parsons School of Design</b></a>.</p>" + "<p>Beyond <b>products</b>, I design <b>interfaces</b>, <b>brands</b>, and <b>spaces</b>.</p>" +
 
         "<br>" +
         "<p>Currently: product design intern at <a href='http://markforged.com'><b>Markforged</b></a></p>" +

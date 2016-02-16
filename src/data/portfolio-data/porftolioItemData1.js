@@ -3,11 +3,11 @@
 app.constant("portfolioData", {});
 app.constant("portfolioItemData1",
     {
-        "name": "Cilio",
+        "name": "Cilio (UX/Product)",
         "isIncomplete": false,
         "header": {
             "alert_box": {
-                "message":  "Hey there! This site is very new, it will be updated heavily throughout this week. Please check again in a day or two if any content is buggy or missing.",
+                "message":  "Hey there! This site is very new, and this section is still incomplete. Please check again in a couple of days to see the final version.",
                 "show_message": true
             },
             "title": "Optimizing text strategically through natural selection",
@@ -22,13 +22,7 @@ app.constant("portfolioItemData1",
         },
         "text_sections": [
             {
-                "text": "Cilio first identifies the essential bits of information in your text, such as names," +
-                " dates, " +
-                "organizations etc. using IBM Watson’s Relationship Extraction service, and makes sure to keep them " +
-                "unaltered. Later, using the Tone Analyzer service Cilio identifies the parts of the text that could " +
-                "be mutated in order to change the audiences reaction on the text." + "Again, utilizing the Tone Analyzer Cilio, replaces the previously identified mutable parts " +
-                "of the text with their synonyms. Through this technique it creates a multitude of permutations of " +
-                "the text and deploys these mutated versions to different users.",
+                "text": "Cilio is a machine learning project which won first place The Next Web USA 2015 Hackathon in New York. It optimizes blocks of text for traffic without changing their meaning through IBM Watson APIs and evolutionary algorithms. (Details coming soon.)",
                 "number_of_columns": 1
             }
         ],

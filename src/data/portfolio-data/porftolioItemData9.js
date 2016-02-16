@@ -6,7 +6,7 @@ app.constant("portfolioItemData9",
         "isIncomplete": false,
         "header": {
             "alert_box": {
-                "message":  "Hey there! This site is very new, it will be updated heavily throughout this week. Please check again in a day or two if any content is buggy or missing.",
+                "message":  "Hey there! This site is very new, and this section is still incomplete. Please check again in a couple of days to see the final version.",
                 "show_message": true
             },
             "title": "Three samples of commissioned identity design",
@@ -17,10 +17,7 @@ app.constant("portfolioItemData9",
         },
         "text_sections": [
             {
-                "text": "Built upon the slopes of Mount Ingino in Umbria, the ancient town of Gubbio boasts many" +
-                " well-preserved structures that document its glorious history. Founded by the Etruscans between the " +
-                "second and first centuries B.C., its Roman theater, Consuls Palace, and various churches and " +
-                "fountains are spectacular monuments to the Roman, Medieval, and Renaissance periods.",
+                "text": "Throughout the years I've designed many identity systems and these are three samples of client work. The clients are a construction company, a nonprofit, and a retailer. (Detailed descriptions coming soon)",
                 "number_of_columns": 1,
             }
         ],

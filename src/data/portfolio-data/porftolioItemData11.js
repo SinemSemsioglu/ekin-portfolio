@@ -6,7 +6,7 @@ app.constant("portfolioItemData11",
         "isIncomplete": false,
         "header": {
             "alert_box": {
-                "message":  "Hey there! This site is very new, it will be updated heavily throughout this week. Please check again in a day or two if any content is buggy or missing.",
+                "message":  "Hey there! This site is very new, and this section is still incomplete. Please check again in a couple of days to see the final version.",
                 "show_message": true
             },
             "title": "The sharing economy of reprogrammable architecture",
@@ -17,10 +17,7 @@ app.constant("portfolioItemData11",
         },
         "text_sections": [
             {
-                "text": "Built upon the slopes of Mount Ingino in Umbria, the ancient town of Gubbio boasts many " +
-                "well-preserved structures that document its glorious history. Founded by the Etruscans between the " +
-                "second and first centuries B.C., its Roman theater, Consuls Palace, and various churches and " +
-                "fountains are spectacular monuments to the Roman, Medieval, and Renaissance periods.",
+                "text": "Auton is an exploration into the possible architectural implementations and resulting economic implications of large scale programmable matter. (More details soon)",
                 "number_of_columns": 1,
             }
         ],

@@ -6,7 +6,7 @@ app.constant("portfolioItemData7",
         "isIncomplete": false,
         "header": {
             "alert_box": {
-                "message":  "Hey there! This site is very new, it will be updated heavily throughout this week. Please check again in a day or two if any content is buggy or missing.",
+                "message":  "Hey there! This site is very new, and this section is still incomplete. Please check again in a couple of days to see the final version.",
                 "show_message": true
             },
             "title": "Diagramming ambiguities and fiction",
@@ -17,25 +17,7 @@ app.constant("portfolioItemData7",
         },
         "text_sections": [
             {
-                "text": "Built upon the slopes of Mount Ingino in Umbria, the ancient town of Gubbio boasts many " +
-                "well-preserved structures that document its glorious history. Founded by the Etruscans between the " +
-                "second and first centuries B.C., its Roman theater, Consuls Palace, and various churches and " +
-                "fountains " +
-                "are spectacular monuments to the Roman, Medieval, and Renaissance periods.",
-                "number_of_columns": 1
-            },
-            {
-                "text": "Estibulum mollis eget eros et tincidunt. Sed et nisl et enim dictum tincidunt. Phasellus" +
-                " accumsan at lacus non dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada" +
-                " fames ac turpis egestas. Phasellus et semper erat. Etiam convallis mauris quis nibh tristique" +
-                " pharetra. Aliquam",
-                "number_of_columns": 1
-            },
-            {
-                "text": "Estibulum mollis eget eros et tincidunt. Sed et nisl et enim dictum tincidunt. Phasellus" +
-                " accumsan at lacus non dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada" +
-                " fames ac turpis egestas. Phasellus et semper erat. Etiam convallis mauris quis nibh tristique" +
-                " pharetra. Aliquam",
+                "text": "In this series rather than working with traditional datasets, I've visualised information extracted from Escherian paintings, Invisible Cities and colorful conversations. The time required to work on such things of course is afforded by school. (Details coming soon.)",
                 "number_of_columns": 1
             }
         ],
@@ -44,7 +26,9 @@ app.constant("portfolioItemData7",
                 "path": "/assets/images/pitems/diagrams/calvino.jpg",
                 "class": "regular",
                 "annotation": ""
-            },
+            }
+        ],
+        "extra_images": [
             {
                 "path": "/assets/images/pitems/diagrams/diagram1.jpg",
                 "class": "regular"
@@ -53,9 +37,7 @@ app.constant("portfolioItemData7",
                 "path": "/assets/images/pitems/diagrams/displace.jpg",
                 "class": "regular",
                 "annotation": ""
-            }
-        ],
-        "extra_images": [
+            },
             {
                 "type": "video",
                 "source": "<iframe src=\"https://player.vimeo.com/video/155275198\" " +

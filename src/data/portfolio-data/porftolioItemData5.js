@@ -2,11 +2,11 @@
 
 app.constant("portfolioItemData5",
     {
-        "name": "Buharo",
+        "name": "Buharo (Industrial)",
         "isIncomplete": false,
         "header": {
             "alert_box": {
-                "message":  "Hey there! This site is very new, it will be updated heavily throughout this week. Please check again in a day or two if any content is buggy or missing.",
+                "message":  "Hey there! This site is very new, and this section is still incomplete. Please check again in a couple of days to see the final version.",
                 "show_message": true
             },
             "title": "Redesigning an oriental tradition",
@@ -27,23 +27,12 @@ app.constant("portfolioItemData5",
                 "attend with a friend of mine, Zeynep, who is a business student. Our aim was to learn as" +
                 " much as we could through thinking of Buharo as a business. As we pored through the market " +
                 "data, age, and consumption research for a business plan, the idea started to gradually" +
-                " become more serious. In the end, we concluded it was absurd that such a large and rapidly " +
-                "growing global market didn’t have any large-scale disruption.",
-                "number_of_columns": 1
-                
-            },
-            {
-                "text": "Buharo became one of the three finalists out of dozens of projects from all over " +
+                " become more serious." + "Buharo became one of the three finalists out of dozens of projects from all over " +
                 "the country. As a finalist, we pitched Buharo to a well-known Istanbul based angel " +
                 "investor, Galata Business Angels. Expectedly, they were more interested in software than " +
-                "tobacco (or the lackthereof) but it was quite an informative and formative experience.",
+                "tobacco (or the lackthereof) but it was quite an informative and formative experience. (Detailed description of design process will be here soon.)",
                 "number_of_columns": 1
-            },
-            {
-                "text": "Since then I’ve met with many manufacturing companies, refined the designs for " +
-                "production with mechanical engineers, have found key partners in Turkey and the Middle East." +
-                " Now we are prototyping with different materials and hope to be in market in 2016.",
-                "number_of_columns": 1
+                
             }
         ],
         "image_sections": [
@@ -51,7 +40,9 @@ app.constant("portfolioItemData5",
                 "path": "/assets/images/pitems/buharo/buharo1.jpg",
                 "class": "regular",
                 "annotation": ""
-            },
+            }
+            ],
+        "extra_images": [
             {
                 "path": "/assets/images/pitems/buharo/buharo2.jpg",
                 "class": "regular"
@@ -60,8 +51,7 @@ app.constant("portfolioItemData5",
                 "path": "/assets/images/pitems/buharo/buharo3.jpg",
                 "class": "regular",
                 "annotation": ""
-            }],
-        "extra_images": [
+            },
             {
                 "path": "/assets/images/pitems/buharo/buharo4.jpg",
                 "class": "regular",

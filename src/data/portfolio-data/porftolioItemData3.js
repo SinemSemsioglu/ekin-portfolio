@@ -2,11 +2,11 @@
 
 app.constant("portfolioItemData3",
     {
-        "name": "Cantilever",
+        "name": "Cantilever (UX/Product)",
         "isIncomplete": false,
         "header": {
             "alert_box": {
-                "message":  "Hey there! This site is very new, it will be updated heavily throughout this week. Please check again in a day or two if any content is buggy or missing.",
+                "message":  "Hey there! This site is very new, and this section is still incomplete. Please check again in a couple of days to see the final version.",
                 "show_message": true
             },
             "title": "Helping architects get the most out of events",
@@ -21,10 +21,7 @@ app.constant("portfolioItemData3",
         },
         "text_sections": [
             {
-                "text": "When I found out about Frank Gehry’s speech at my own school too late.Architects are " +
-                "terribly busy, almost at mythical levels. define problem. I concocted a list of 10 very" +
-                " important events for the year. Asked a cohort of a dozen architects and architecture students " +
-                "if they went and or heard about it. research",
+                "text": "Cantilever is a web and mobile app to keep up with architecture events in NYC. As an architecture student I've experienced first hand how easy it is to completely miss interesting architecture events and lectures. Cantilever aims to resolve this by aggregating such events. (Details coming soon.)",
                 "number_of_columns": 1
             }
         ],

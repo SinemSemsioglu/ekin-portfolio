@@ -2,25 +2,22 @@
 
 app.constant("portfolioItemData4",
     {
-        "name": "Markforged",
+        "name": "Markforged (Branding)",
         "isIncomplete": false,
         "header": {
             "alert_box": {
-                "message":  "Hey there! This site is very new, and this section is still incomplete. Please check again in a day or two to see the final version.",
+                "message":  "Hey there! This site is very new, and this section is still incomplete. Please check again in a couple of days to see the final version.",
                 "show_message": true
             },
             "title": "Rebranding the world’s first carbon fiber 3D printer",
-            "description": "I've had the opportunity to rebrand Markforged,",
+            "description": "I will be able to share clear images soon.",
             "image_path": "/assets/images/pitems/markforged/mfheader.png",
             "tags": ["BRANDING", "TECHNOLOGY"],
             "date": "AUGUST 2015"
         },
         "text_sections": [
             {
-                "text": "Built upon the slopes of Mount Ingino in Umbria, the ancient town of Gubbio boasts many " +
-                "well-preserved structures that document its glorious history. Founded by the Etruscans between the " +
-                "second and first centuries B.C., its Roman theater, Consuls Palace, and various churches and " +
-                "fountains are spectacular monuments to the Roman, Medieval, and Renaissance periods.",
+                "text": "Markforged is a 3D printing startup, building the world’s first composite 3d printer, able to print in carbon fiber, Kevlar, and, fiberglass and nylon. During my time there as a Product Design Intern, I got to rebrand the whole company, and the new brand will be coming out soon! (Detailed description coming soon.)",
                 "number_of_columns": 1,
             }
         ],

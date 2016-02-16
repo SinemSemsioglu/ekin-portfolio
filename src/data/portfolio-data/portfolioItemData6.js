@@ -2,11 +2,11 @@
 
 app.constant("portfolioItemData6",
     {
-        "name": "Horology",
+        "name": "Horology (Industrial)",
         "isIncomplete": false,
         "header": {
             "alert_box": {
-                "message":  "Hey there! This site is very new, it will be updated heavily throughout this week. Please check again in a day or two if any content is buggy or missing.",
+                "message":  "Hey there! This site is very new, and this section is still incomplete. Please check again in a couple of days to see the final version.",
                 "show_message": true
             },
             "title": "Horology and information design problems",
@@ -17,10 +17,7 @@ app.constant("portfolioItemData6",
         },
         "text_sections": [
             {
-                "text": "Built upon the slopes of Mount Ingino in Umbria, the ancient town of Gubbio boasts many " +
-                "well-preserved structures that document its glorious history. Founded by the Etruscans between the " +
-                "second and first centuries B.C., its Roman theater, Consuls Palace, and various churches and " +
-                "fountains are spectacular monuments to the Roman, Medieval, and Renaissance periods.",
+                "text": "The value of a timepiece never lied in its ability to tell time during my lifetime. Good watches are dense objects imbued with poetics, and ingenuity. But why? And how can that effect be amplified? To find out I've designed quite a few of them. (Details coming soon.)",
                 "number_of_columns": 1
             }
         ],
