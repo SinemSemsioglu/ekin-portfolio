@@ -26,7 +26,7 @@ app.value("sectionData", {
             "month": "NOV",
             "year": "2015"
         },
-        "link": "GO TO SITE",
+        "link": "https://google.com",
         "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
         "details": true,
         "image_path": "/assets/images/pitems/cilio/ciliofront3.png",

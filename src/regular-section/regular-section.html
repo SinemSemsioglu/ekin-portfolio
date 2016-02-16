@@ -37,9 +37,11 @@
                      ng-if="!section.details">
                     DETAILS COMING SOON
                 </div>
-                <div class="section-link"
+                <a class="section-link"
                      ng-if="section.link"
-                     ng-bind="section.link"></div>
+                     href="{{section.link}}">
+                    GO TO SITE
+                </a>
             </div>
         </div>
         <div class="image-container">
