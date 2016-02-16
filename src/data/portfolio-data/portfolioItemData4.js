@@ -25,7 +25,7 @@ app.constant("portfolioItemData4",
             {
                 "path": "/assets/images/pitems/markforged/mf1.jpg",
                 "class": "regular",
-                "annotation": "Lorem ipsum dolor sit amet"
+                "annotation": ""
             }
         ],
         "extra_images": [
