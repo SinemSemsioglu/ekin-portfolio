@@ -8,7 +8,7 @@ app.value("sectionData", {
         "<p>Currently: product design intern at <a href='http://markforged.com'><b>Markforged</b></a></p>" +
         "<p>I’ve co-created <a href='http://cil.io'><b>cil.io</b></a>.</p>" +
         "<br>" +
-        "<p>Here's my <a href='/assets/ekincvfebruary2.pdf'><b>resume</b></a>.</p></h1>",
+        "<p>Here's my <a href='assets/ekincvfebruary2.pdf'><b>resume</b></a>.</p></h1>",
         "type": "about",
         "class": "section-0",
         "color": {
