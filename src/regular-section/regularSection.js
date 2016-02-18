@@ -8,7 +8,12 @@ app.directive("regularSection",
                 goToPortfolioPage: "="
             },
             link: function (scope, element) {
-                element.css("background-color", scope.section.color.background);
+
+                if (scope.section.background_image) {
+                    element.css("background-image", "url(\"" + scope.section.background_image + "\")");
+                } else {
+                    element.css("background-color", scope.section.color.background);
+                }
                 element.css("color", scope.section.color.font);
                 var imageElement = $($(element).find(".section-image"));
                 imageElement.css("background-image","url(\"" + scope.section.image_path + "\")");

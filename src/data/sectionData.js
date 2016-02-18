@@ -212,9 +212,9 @@ app.value("sectionData", {
         "image_path": "",
         "type": "regular",
         "class": "section-10",
+        "background_image": "../assets/images/pitems/house/house1.jpg",
         "color": {
-            "background": "white",
-            "font": "black",
+            "font": "white",
             "nav": "black"
         }
     },
