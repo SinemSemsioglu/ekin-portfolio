@@ -17,7 +17,7 @@ app.constant("portfolioItemData6",
         },
         "text_sections": [
             {
-                "text": "The value of a timepiece never lied in its ability to tell time during my lifetime. Good watches are dense objects imbued with poetics, and ingenuity. But why? And how can that effect be amplified? To find out I've designed quite a few of them. (Details coming soon.)",
+                "text": "The value of a timepiece never lied in its ability to tell time during my lifetime. Good watches are dense objects imbued with poetics, and ingenuity. But why? And how can that effect be amplified? To find out I've designed quite a few of them. (This section will be updated.)",
                 "number_of_columns": 1
             }
         ],

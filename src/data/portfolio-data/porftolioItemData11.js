@@ -17,7 +17,7 @@ app.constant("portfolioItemData11",
         },
         "text_sections": [
             {
-                "text": "Auton is an exploration into the possible architectural implementations and resulting economic implications of large scale programmable matter. (More details soon)",
+                "text": "Auton is an exploration into the possible architectural implementations and resulting economic implications of large scale programmable matter. (This section will be updated.)",
                 "number_of_columns": 1,
             }
         ],

@@ -100,7 +100,7 @@ app.value("sectionData", {
     "section_5": {
         "id": 5,
         "title": "Redesigning an oriental tradition for a new generation",
-        "description": "Buharo is an updated hookah experience, addressing a host of issues a traditional hookah creates through design. The resurging global popularity of hookah smoking is an indicator of the potential in innovating in this field. And yes, this design started out as a joke.",
+        "description": "Buharo is an updated hookah experience, which started out as a satirical pet project. It addresses a host of issues a traditional hookah creates through design. It also won an entrepreneurship competition.",
         "date": {
             "month": "APR",
             "year": "2014"
@@ -159,8 +159,8 @@ app.value("sectionData", {
     },
     "section_8": {
         "id": 8,
-        "title": "Experiments in space, noise, and free will",
-        "description": "“But it is so difficult to really believe that there is no free will, when so many of the threads of causality are not yet known, or are as intellectually inaccessible as having to automatically think about the behavioral consequences of everything from the selective pressures of hominid evolution to what someone had for breakfast.”",
+        "title": "Experiments in space, noise, and modulation",
+        "description": "Architecture is a field where concepts ultimately end up as environments. Therefore, the design process involves a fair amount of abstraction. These models and structures are essentially architectural abstractions.",
         "date": {
             "month": "DEC",
             "year": "2013"
@@ -180,7 +180,7 @@ app.value("sectionData", {
 
     "section_9": {
         "id": 9,
-        "title": "Three samples of identity design",
+        "title": "Three samples of commissioned identity design",
         "description": "Throughout the years I've designed many identity systems and these are three samples of client work. The clients are a construction company, a nonprofit, and a retailer.",
         "date": {
             "month": "SEP",
@@ -200,8 +200,8 @@ app.value("sectionData", {
     },
     "section_10": {
         "id": 10,
-        "title": "A vacation house and other architectural misgivings",
-        "description": "These are some samples of architectural work including a vacation house project for a client, and many more conceptual school projects that might involve some less 'practical' designs.",
+        "title": "A vacation house",
+        "description": "A vacation house project by the Aegean Sea for a client which includes custom furniture, and an adjustable membrane for daylight and views.",
         "date": {
             "month": "MAR",
             "year": "2015"

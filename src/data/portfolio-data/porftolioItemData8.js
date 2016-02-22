@@ -5,11 +5,7 @@ app.constant("portfolioItemData8",
         "name": "Experiments (Spatial)",
         "isIncomplete": false,
         "header": {
-            "alert_box": {
-                "message":  "Hey there! I've deployed this portfolio very recently and I'm still updating it. Check again in a couple of days to see the final version.",
-                "show_message": true
-            },
-            "title": "Experiments in space, noise, and free will",
+            "title": "Experiments in space, noise, and modulation",
             "description": "Spatial experiments",
             "image_path": "/assets/images/pitems/experiments/expheader.jpg",
             "tags": ["SPATIAL DESIGN", "FICTION"],
@@ -17,7 +13,7 @@ app.constant("portfolioItemData8",
         },
         "text_sections": [
             {
-                "text": "(Details coming soon)",
+                "text": "Architecture is a field where concepts ultimately end up as environments. Therefore, the design process involves a fair amount of abstraction. These models and structures are essentially architectural abstractions. Some of them came about while trying to translate an idea into space during a more literal spatial project. And some of them just exist as experiments for different spatial conditions.",
                 "number_of_columns": 1,
             }
         ],

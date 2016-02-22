@@ -5,10 +5,6 @@ app.constant("portfolioItemData9",
         "name": "Logos",
         "isIncomplete": false,
         "header": {
-            "alert_box": {
-                "message":  "Hey there! I've deployed this portfolio very recently and I'm still updating it. Check again in a couple of days to see the final version.",
-                "show_message": true
-            },
             "title": "Three samples of commissioned identity design",
             "description": "A construction company, a nonprofit, and a retailer",
             "image_path": "/assets/images/pitems/logo/logohead.jpg",
@@ -17,7 +13,7 @@ app.constant("portfolioItemData9",
         },
         "text_sections": [
             {
-                "text": "Throughout the years I've designed many identity systems and these are three samples of client work. The clients are a construction company, a nonprofit, and a retailer. (Detailed descriptions coming soon)",
+                "text": "Throughout the years I've designed many identity systems and these are three samples of client work. The clients are a construction company, a nonprofit, and a retailer. The first in these selected identity designs is Turyapi. Turyapi is a real estate developer based in Turkey. The identity design work had many components of various sizes including the logo, print and web ad templates, uniforms, and redesign of a company wide publication. The second project is the identity design for Huz Akademi which is an education non-profit based in Turkey. Three variations of the same logo concept can be seen in the images below. The last identity project on this page is for Boarder which is a retailer focused on outdoors equipment and skateboarding.",
                 "number_of_columns": 1,
             }
         ],

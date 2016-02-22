@@ -5,10 +5,6 @@ app.constant("portfolioItemData7",
         "name": "Information Design",
         "isIncomplete": false,
         "header": {
-            "alert_box": {
-                "message":  "Hey there! I've deployed this portfolio very recently and I'm still updating it. Check again in a couple of days to see the final version.",
-                "show_message": true
-            },
             "title": "Diagramming ambiguities and fiction",
             "description": "These are experiments in information design incorporating somewhat unusual datasets",
             "image_path": "/assets/images/pitems/diagrams/diagheader.jpg",
@@ -17,7 +13,23 @@ app.constant("portfolioItemData7",
         },
         "text_sections": [
             {
-                "text": "In this series rather than working with traditional datasets, I've visualised information extracted from Escherian paintings, Invisible Cities and colorful conversations. The time required to work on such things of course is afforded by school. (Details coming soon.)",
+                "text": "First diagram in this series investigates Invisible Cities. Italo Calvino's Invisible Cities is a surreal dialogue between Kublai Khan, the aging Mongolian emperor and Marco Polo, the explorer who tells him of the cities he encounters during his journey throughout Khan's empire. The book is made up of 55 short stories describing 55 imaginary cities pushing the possibilities of different urban concepts. In nine chapters the fifty-five cities are grouped into eleven thematic categories and their ordering follows a pattern pertaining to these categories.",
+                "number_of_columns": 1
+            },
+            {
+                "text": "The book itself has an overarching narrative that comes together with all the city descriptions and interludes, and it self-referentially inquires the need for describing each of the imaginary cities. This is answered by Marco Polo's declaration of \"Without the stones there's no arch.\" meaning each of the cities are required to build the whole story. The diagram below lists all the cities, identifies the chapters, and illustrates the pattern that becomes apparent in their interlocking thematic categories.",
+                "number_of_columns": 1
+            },
+            {
+                "text": "The second diagram is an analysis of M.C. Escher's Metamorphosis III. This woodcut print dates back to 1967 and is 268 inches long. It begins with the word 'Metamorphose' (the Dutch form of the word metamorphosis) which forms into a checkerboard pattern which in turn becomes a wide range of animals, places, and shapes over the entirety of the print. The diagram spans the entire length of Metamorphosis III and documents each incorporated element, foreground-background relations, color values, dominant colors, ground, sky, water relationships.",
+                "number_of_columns": 1
+            },
+            {
+                "text": "The video below is the second iteration of this diagram, which brings the previous iteration into 3d and adds an analysis of the motion which Metamorphosis III portrays.",
+                "number_of_columns": 1
+            },
+            {
+                "text": "The third diagram is a series of maps detailing different aspects of Greenwich Village. After documenting a series of rather mundane information It culminates in a psychogeographic map of a path through the neighborhood making use of the earlier maps.",
                 "number_of_columns": 1
             }
         ],
@@ -26,9 +38,7 @@ app.constant("portfolioItemData7",
                 "path": "/assets/images/pitems/diagrams/calvino.jpg",
                 "class": "regular",
                 "annotation": ""
-            }
-        ],
-        "extra_images": [
+            },
             {
                 "path": "/assets/images/pitems/diagrams/diagram1.jpg",
                 "class": "regular"

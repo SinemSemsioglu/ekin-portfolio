@@ -22,7 +22,7 @@ app.constant("portfolioItemData1",
         },
         "text_sections": [
             {
-                "text": "Cilio is a machine learning project which won first place The Next Web USA 2015 Hackathon in New York. It optimizes blocks of text for traffic without changing their meaning through IBM Watson APIs and evolutionary algorithms. (Details coming soon.)",
+                "text": "Cilio is a machine learning project which won first place The Next Web USA 2015 Hackathon in New York. It optimizes blocks of text for traffic without changing their meaning through IBM Watson APIs and evolutionary algorithms. (This section will be updated.)",
                 "number_of_columns": 1
             }
         ],

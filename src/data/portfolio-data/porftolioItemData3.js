@@ -21,7 +21,7 @@ app.constant("portfolioItemData3",
         },
         "text_sections": [
             {
-                "text": "Cantilever is a web and mobile app to keep up with architecture events in NYC. As an architecture student I've experienced first hand how easy it is to completely miss interesting architecture events and lectures. Cantilever aims to resolve this by aggregating such events. (Details coming soon.)",
+                "text": "Cantilever is a web and mobile app to keep up with architecture events in NYC. As an architecture student I've experienced first hand how easy it is to completely miss interesting architecture events and lectures. Cantilever aims to resolve this by aggregating such events. (This section will be updated.)",
                 "number_of_columns": 1
             }
         ],
