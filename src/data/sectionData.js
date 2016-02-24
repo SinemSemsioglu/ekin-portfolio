@@ -19,16 +19,16 @@ app.value("sectionData", {
     },
     "section_1": {
         "id": 1,
-        "name": "sample_name",
-        "title": "Optimizing text strategically through natural selection",
-        "description": "Cilio is a machine learning project which won first place The Next Web USA 2015 Hackathon in New York. It optimizes blocks of text for traffic without changing their meaning through IBM Watson APIs and evolutionary algorithms.",
+        "title": "Helping architects get the most out of events",
+        "description": "Cantilever is a web and mobile app to keep up with architecture events in NYC. As an architecture student I've experienced first hand how easy it is to completely miss interesting architecture events and lectures. Cantilever aims to resolve this by aggregating such events.",
         "date": {
-            "month": "NOV",
+            "month": "SEP",
             "year": "2015"
         },
+        "link": "",
         "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
         "details": true,
-        "image_path": "/assets/images/pitems/cilio/ciliofront3.png",
+        "image_path": "../assets/images/c-01.svg",
         "type": "regular",
         "class": "section-1",
         "color": {
@@ -36,6 +36,7 @@ app.value("sectionData", {
             "font": "black",
             "nav": "black"
         }
+        
     },
     "section_2": {
         "id": 2,
@@ -59,16 +60,15 @@ app.value("sectionData", {
     },
     "section_3": {
         "id": 3,
-        "title": "Helping architects get the most out of events",
-        "description": "Cantilever is a web and mobile app to keep up with architecture events in NYC. As an architecture student I've experienced first hand how easy it is to completely miss interesting architecture events and lectures. Cantilever aims to resolve this by aggregating such events.",
+        "title": "Optimizing text strategically through natural selection",
+        "description": "Cilio is a machine learning project which won first place The Next Web USA 2015 Hackathon in New York. It optimizes blocks of text for traffic without changing their meaning through IBM Watson APIs and evolutionary algorithms.",
         "date": {
-            "month": "SEP",
+            "month": "NOV",
             "year": "2015"
         },
-        "link": "",
         "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
         "details": true,
-        "image_path": "../assets/images/c-01.svg",
+        "image_path": "/assets/images/pitems/cilio/ciliofront3.png",
         "type": "regular",
         "class": "section-3",
         "color": {
