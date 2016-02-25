@@ -128,7 +128,7 @@ app.value("sectionData", {
         "link": "",
         "tags": ["INDUSTRIAL DESIGN", "INFORMATION DESIGN"],
         "details": true,
-        "image_path": "../assets/images/watch-01.png",
+        "image_path": "/assets/images/pitems/horology/watch.png",
         "type": "regular",
         "class": "section-6",
         "color": {
@@ -189,7 +189,7 @@ app.value("sectionData", {
         "link": "",
         "tags": ["BRANDING", "CLIENT WORK"],
         "details": true,
-        "image_path": "../assets/images/logos-01.svg",
+        "image_path": "",
         "type": "regular",
         "class": "section-9",
         "color": {
