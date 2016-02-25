@@ -28,7 +28,7 @@ app.value("sectionData", {
         "link": "",
         "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
         "details": true,
-        "image_path": "../assets/images/c-01.svg",
+        "image_path": "/assets/images/pitems/cantilever/cantisite.png",
         "type": "regular",
         "class": "section-1",
         "color": {
