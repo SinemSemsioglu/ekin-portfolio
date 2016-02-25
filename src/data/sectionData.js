@@ -28,7 +28,7 @@ app.value("sectionData", {
         "link": "",
         "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
         "details": true,
-        "image_path": "/assets/images/pitems/cantilever/cantisite.png",
+        "image_path": "/assets/images/pitems/cantilever/cantisite.jpg",
         "type": "regular",
         "class": "section-1",
         "color": {
@@ -49,7 +49,7 @@ app.value("sectionData", {
         "link": "",
         "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
         "details": true,
-        "image_path": "/assets/images/pitems/dunemoon/dunesite.png",
+        "image_path": "/assets/images/pitems/dunemoon/dunesite.jpg",
         "type": "regular",
         "class": "section-2",
         "color": {
