@@ -49,7 +49,7 @@ app.value("sectionData", {
         "link": "",
         "tags": ["PRODUCT DESIGN", "TECHNOLOGY"],
         "details": true,
-        "image_path": "../assets/images/d.svg",
+        "image_path": "/assets/images/pitems/dunemoon/dunesite.png",
         "type": "regular",
         "class": "section-2",
         "color": {
