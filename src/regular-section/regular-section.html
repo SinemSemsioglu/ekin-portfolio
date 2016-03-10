@@ -1,17 +1,17 @@
 <div class="section-container"
-     id="{{section.class}}">
+     id="{{regularSection.section.class}}">
 
     <div class="section-content-wrapper">
         <div class="content-container">
             <div class="section-date">
             <span class="section-month"
-                  ng-bind="section.date.month"></span>
+                  ng-bind="regularSection.section.date.month"></span>
             <span class="section-year"
-                  ng-bind="section.date.year"></span>
+                  ng-bind="regularSection.section.date.year"></span>
             </div>
             <div class="header-tags">
                 <div class="header-tag"
-                     ng-repeat="tag in ::section.tags">
+                     ng-repeat="tag in ::regularSection.section.tags">
                     <div class="tag"
                          ng-class="{odd: $odd, even: $even}"
                          ng-bind="tag">
@@ -23,23 +23,24 @@
                 </div>
             </div>
             <div class="section-title"
-                 ng-bind="section.title"></div>
+                 ng-bind="regularSection.section.title"
+                 ng-click="regularSection.goToPortfolioPage()"></div>
 
             <div class="section-description"
-                 ng-bind="section.description"></div>
+                 ng-bind="regularSection.section.description"></div>
             <div class="section-links">
                 <div class="section-more"
-                     ng-if="section.details"
-                     ng-click="goToPortfolioPage(section.id)">
+                     ng-if="regularSection.section.details"
+                     ng-click="regularSection.goToPortfolioPage()">
                     LEARN MORE
                 </div>
                 <div class="section-more"
-                     ng-if="!section.details">
+                     ng-if="!regularSection.section.details">
                     DETAILS COMING SOON
                 </div>
                 <a class="section-link"
-                     ng-if="section.link"
-                     href="{{section.link}}">
+                     ng-if="regularSection.section.link"
+                     href="{{regularSection.section.link}}">
                     GO TO SITE
                 </a>
             </div>

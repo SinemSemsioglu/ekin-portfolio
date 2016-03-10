@@ -18,12 +18,6 @@ app.controller("homeController", [
             scrollUtil.goToSection(0);
         };
 
-        this.goToPortfolioPage = function (portfolioIndex) {
-            $state.transitionTo("portfolio." + portfolioIndex,{
-                    "portfolioIndex": portfolioIndex
-                });
-        };
-
         for (var index = 0; index <= numberOfSections; index++) {
             var section = sectionData["section_" + (index)];
             var sectionType = section.type;

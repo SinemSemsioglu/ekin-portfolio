@@ -8,6 +8,9 @@ app.directive("textSection",
                 numberOfColumns: "=",
                 annotations: "="
             },
+            controller: "textSectionController",
+            controllerAs: "textSection",
+            bindToController: true,
             link: function (scope, element) {
                 textContainer = $($(element).find(".text-container"));
                 textContainer.css("column-count", scope.numberOfColumns);
