@@ -5,10 +5,6 @@ app.constant("portfolioItemData1",
         "name": "Cantilever (UX/Product)",
         "isIncomplete": false,
         "header": {
-            "alert_box": {
-                "message":  "Hey there! I've deployed this portfolio very recently and I'm still updating it. Check again in a couple of days to see the final version.",
-                "show_message": true
-            },
             "title": "Helping architects get the most out of events",
             "description": "Cantilever is a simple tool to keep up with design and architecture events.",
             "image_path": "/assets/images/pitems/cantilever/cantiheader1.jpg",

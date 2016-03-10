@@ -6,7 +6,7 @@ app.constant("portfolioItemData5",
         "isIncomplete": false,
         "header": {
             "alert_box": {
-                "message":  "Hey there! I've deployed this portfolio very recently and I'm still updating it. Check again in a couple of days to see the final version.",
+                "message":  "Hey there! This section is still missing some description. It'll be updated soon.",
                 "show_message": true
             },
             "title": "Redesigning an oriental tradition",
