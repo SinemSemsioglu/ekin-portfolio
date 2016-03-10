@@ -21,7 +21,7 @@ app.constant("portfolioItemData2",
         },
         "text_sections": [
             {
-                "text": "Dunemoon is a service which uses Spotify Web API to let users comment on and songs, playlists, a la Soundcloud. Even though new versions of Spotify has a host of social features none are as direct as Soundcloud, Dunemoon is an experiment in bringing about that functionality. (This section will be updated.)",
+                "text": "<h4>The Problem and the Audience</h4>Even though Spotify is quite good at helping users discover lesser known artists, it doesn't offer a way for users to directly engage with them. Soundcloud on the other hand is a great place for niche artists to engage with their audience, and for the audience to engage with the songs. Dunemoon is an experiment in bringing some of this functionality and more to Spotify users' libraries using the Spotify Web API to create an ever growing record of social context for music. Skills used: research, interaction design, visual design. Dunemoon is still under development.",
                 "number_of_columns": 1,
             }
         ],

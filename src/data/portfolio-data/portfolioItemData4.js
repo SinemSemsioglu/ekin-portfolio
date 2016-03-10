@@ -17,7 +17,7 @@ app.constant("portfolioItemData4",
         },
         "text_sections": [
             {
-                "text": "Markforged is a 3D printing startup, building the world’s first composite 3d printer, able to print in carbon fiber, Kevlar, and, fiberglass and nylon. During my time there as a Product Design Intern, I got to rebrand the whole company, and the new brand will be coming out soon! (This section will be updated.)",
+                "text": "Markforged is a 3D printing startup, building the world’s first composite 3d printer, able to print in carbon fiber, Kevlar, and, fiberglass and nylon. During my time there as a Product Design Intern, I got to rebrand the whole company, and the new brand is in use now. You can see it live at <b><a href=\"https://markforged.com/\">markforged.com</a></b> and <b><a href=\"https://www.eiger.io/signin\">eiger.io</a></b>. (This section will be updated.)",
                 "number_of_columns": 1,
             }
         ],
