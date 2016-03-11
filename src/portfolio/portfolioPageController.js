@@ -53,7 +53,6 @@ app.controller("portfolioPageController",
             };
 
             this.init = function () {
-                //alert("called");
                 scrollUtil.goToTop();
                 scrollUtil.unsetScrollProperties();
 

@@ -3,14 +3,16 @@ app.service("scrollUtil", ["$window", "appUtil", "sectionData", "$timeout", "scr
     function ($window, appUtil, sectionData, $timeout, scrollTimeValues, homeNavHelper) {
 
         var self = this;
+        var scrollEvents = "mousedown wheel DOMMouseScroll mousewheel keyup touchmove";
 
         this.unsetScrollProperties = function () {
             var window = $($window);
-            window.off("resize, scroll, scrollstart, scrollstop");
+            var unsetScrollEvents = scrollEvents + "resize, scroll, scrollstart, scrollstop";
+            window.off(unsetScrollEvents);
         };
 
         this.toggleDefaultScrollActions = function (preventDefault) {
-            var scrollEvents = "mousedown wheel DOMMouseScroll mousewheel keyup touchmove";
+
             var window = $($window);
 
             if (preventDefault) {
